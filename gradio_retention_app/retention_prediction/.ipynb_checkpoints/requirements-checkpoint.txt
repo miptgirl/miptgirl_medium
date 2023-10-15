@@ -1,0 +1,5 @@
+scipy
+plotly
+gradio
+numpy
+pandas
