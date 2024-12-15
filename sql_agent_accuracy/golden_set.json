@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How many customers made purchase in December 2024?",
+    "sql_query": "select uniqExact(user_id) as customers from ecommerce.sessions where (toStartOfMonth(action_date) = '2024-12-01') and (revenue > 0) format TabSeparatedWithNames"
+  },
+  {
+    "question": "What was the fraud rate in 2023, expressed as a percentage?",
+    "sql_query": "select 100*uniqExactIf(user_id, is_fraud = 1)/uniqExact(user_id) as fraud_rate from ecommerce.sessions where (toStartOfYear(action_date) = '2023-01-01') format TabSeparatedWithNames"
+  },
+  {
+    "question": "What was the share of users using Windows yesterday?",
+    "sql_query": "select 100*uniqExactIf(user_id, os = 'Windows')/uniqExact(user_id) as windows_share from ecommerce.sessions where (action_date = today() - 1) format TabSeparatedWithNames"
+  },
+  {
+    "question": "What was the revenue from Dutch users aged 55 and older in December 2024",
+    "sql_query": "select sum(s.revenue) from ecommerce.sessions AS s inner join ecommerce.users AS u on s.user_id = u.user_id where (u.country = 'Netherlands') AND (u.age >= 55) and (toStartOfMonth(action_date) = '2024-12-01') format TabSeparatedWithNames"
+  },
+  {
+    "question": "What are the median and interquartile range (IQR) of purchase revenue for each country?",
+    "sql_query": "select country, median(revenue) as median_revenue, quantile(0.25)(revenue) as percentile_25_revenue, quantile(0.75)(revenue) as percentile_75_revenue from ecommerce.sessions AS s inner join ecommerce.users AS u on u.user_id = s.user_id where (revenue > 0) group by country format TabSeparatedWithNames"
+  },
+  {
+    "question": "What is the average number of days between the first session and the first purchase for users who made at least one purchase?",
+    "sql_query": "select avg(first_purchase - first_action_date) as avg_days_to_purchase from (select user_id, min(action_date) as first_action_date, minIf(action_date, revenue > 0) as first_purchase, max(revenue) as max_revenue from ecommerce.sessions group by user_id) where max_revenue > 0 format TabSeparatedWithNames"
+  },
+  {
+    "question": "What is the number of sessions in December 2024, broken down by operating systems, including the totals?",
+    "sql_query": "SELECT os, uniqExact(session_id) as total FROM ecommerce.sessions WHERE toStartOfMonth(action_date) = '2024-12-01' GROUP BY os with totals format TabSeparatedWithNames"
+  },
+  {
+    "question": "Do we have customers who used multiple operating browsers during 2024? If so, please calculate the number of customers for each combination of browsers.",
+    "sql_query": "select browsers, count(1) as users from (select user_id, arrayStringConcat(arraySort(groupArray(distinct browser)), ', ') as browsers from ecommerce.sessions where (toStartOfYear(action_date) = '2024-01-01') group by user_id) group by browsers order by users desc format TabSeparatedWithNames"
+  },
+  {
+    "question": "Which browser has the highest share of fraud users?",
+    "sql_query": "select browser, 100*uniqExactIf(user_id, is_fraud = 1)/uniqExact(user_id) as fraud_rate from ecommerce.sessions group by browser order by fraud_rate desc limit 1 format TabSeparatedWithNames"
+  },
+  {
+    "question": "Which country had the highest number of first-time users in 2024?",
+    "sql_query": "select country, count(distinct user_id) as users from (select user_id, min(action_date) as first_date from ecommerce.sessions group by user_id having toStartOfYear(first_date) = '2024-01-01') as t inner join ecommerce.users as u on t.user_id = u.user_id group by country order by users desc limit 1 format TabSeparatedWithNames"
+  }
+]
