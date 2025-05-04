@@ -25,14 +25,14 @@ def create_share_vs_impact_chart(df, dimension, share_field, impact_field):
         Column name for the impact on the metric change values
     """
     plot_df = df.copy() # cloning df for manipulations
-    plot_df['impact_coef'] = plot_df[impact_field]/plot_df[share_field]
+    plot_df['impact_norm'] = plot_df[impact_field]/plot_df[share_field]
 
     colorscale = px.colors.qualitative.D3
     fig = go.Figure()
     
     # Add scatter plot with conditional colors
     for i, row in plot_df.iterrows():
-        marker_color = colorscale[2] if row['impact_coef'] > 1.5 else (colorscale[3] if row['impact_coef'] < -0.5 else colorscale[0]) 
+        marker_color = colorscale[2] if row['impact_norm'] > 1.5 else (colorscale[3] if row['impact_norm'] < -0.5 else colorscale[0]) 
         
         fig.add_trace(go.Scatter(
             x=[row[share_field]],
@@ -79,14 +79,14 @@ def create_share_vs_impact_chart(df, dimension, share_field, impact_field):
         title="<b>Metric change explained:</b> correlation between segment size and impact on the change",
         xaxis_title="Share of segment before, %",
         yaxis_title="Share in difference, %",
-        template="plotly_white",
+        template="simple_white",
         height=600,
         width=800, 
         showlegend = False)
     fig.show()
 
 def create_parallel_coordinates_chart(df, dimension, before_field='before', 
-                                      after_field='after', impact_coef_field = 'impact_coef'):
+                                      after_field='after', impact_norm_field = 'impact_norm'):
     """
     Creates an interactive parallel coordinates chart using Plotly
     
@@ -100,8 +100,8 @@ def create_parallel_coordinates_chart(df, dimension, before_field='before',
         Column name for the 'before' values
     after_field : str
         Column name for the 'after' values
-    impact_coef_field : str
-        Column name for the impact coefficient values (the ratio of impact to the segment size)
+    impact_norm_field : str
+        Column name for the normalised impact coefficient values (the ratio of impact to the segment size)
     """
     # Create a copy of the dataframe for manipulation
     plot_df = df.copy()
@@ -114,10 +114,10 @@ def create_parallel_coordinates_chart(df, dimension, before_field='before',
     plot_df['color'] = plot_df[dimension].map(color_map)
     
     # Create accents on meaningful changes using line width and opacity
-    plot_df['line_width'] = plot_df.impact_coef.map(
+    plot_df['line_width'] = plot_df.impact_norm.map(
         lambda x: 4 if (x > 1.5) or (x < -0.5) else 2
     )
-    plot_df['opacity'] = plot_df.impact_coef.map(
+    plot_df['opacity'] = plot_df.impact_norm.map(
         lambda x: 1 if (x > 1.5) or (x < -0.5) else 0.6
     )
     
@@ -196,7 +196,7 @@ def hex_to_rgba(hex_color, alpha=None):
     else:
         return f"rgb({rgb[0]}, {rgb[1]}, {rgb[2]})"
 
-def plot_conversion_waterfall(rate_before, rate_after, df):
+def plot_conversion_waterfall(rate_before, rate_after, df, add_other = True):
     """
     Creates a waterfall chart showing contribution of dimension effects to conversion change.
 
@@ -222,11 +222,12 @@ def plot_conversion_waterfall(rate_before, rate_after, df):
     base = rate_before
     total_effect = sum(effects)
     remaining_effect = (rate_after - rate_before) - total_effect
-    
-    if remaining_effect >= 0.1: 
-        dimensions.append('remaining effects')
-        effects.append(remaining_effect) 
-    total_effect = sum(effects)
+
+    if add_other: 
+        if remaining_effect >= 0.1: 
+            dimensions.append('remaining effects')
+            effects.append(remaining_effect) 
+        total_effect = sum(effects)
 
     # Add starting point
     x = ["Before"] + dimensions + ["After"]
@@ -284,22 +285,22 @@ def calculate_simple_growth_metrics(stats_df):
     print('Metric change: %.2f -> %.2f (%.2f%%)' % (before, after, 100*(after - before)/before))
 
     # Estimating impact of each segment
-    stats_df['diff_abs'] = stats_df.after - stats_df.before
-    stats_df['diff_rate'] = (100*stats_df.diff_abs/stats_df.before).map(lambda x: round(x, 2))
-    stats_df['share_in_diff'] = (100*stats_df.diff_abs / stats_df.diff_abs.sum()).map(lambda x: round(x, 2))
-    stats_df['share_before'] = (100* stats_df.before / stats_df.before.sum()).map(lambda x: round(x, 2))
-    stats_df['impact_coef'] = (stats_df.share_in_diff/stats_df.share_before).map(lambda x: round(x, 2))
-    stats_df['abs_impact_coef'] = stats_df.impact_coef.map(abs)
+    stats_df['difference'] = stats_df.after - stats_df.before
+    stats_df['difference_rate'] = (100*stats_df.difference/stats_df.before).map(lambda x: round(x, 2))
+    stats_df['impact'] = (100*stats_df.difference / stats_df.difference.sum()).map(lambda x: round(x, 2))
+    stats_df['segment_share_before'] = (100* stats_df.before / stats_df.before.sum()).map(lambda x: round(x, 2))
+    stats_df['impact_norm'] = (stats_df.impact/stats_df.segment_share_before).map(lambda x: round(x, 2))
+    # stats_df['abs_impact_norm'] = stats_df.impact_norm.map(abs)
 
     # Sorting based on the impact normed on the size
-    stats_df = stats_df.sort_values('abs_impact_coef', ascending = False)
-    stats_df = stats_df.drop('abs_impact_coef', axis = 1)
+    # stats_df = stats_df.sort_values('abs_impact_norm', ascending = False)
+    # stats_df = stats_df.drop('abs_impact_norm', axis = 1)
 
     # Creating visualisations
     create_parallel_coordinates_chart(stats_df.reset_index(), stats_df.index.name)
-    create_share_vs_impact_chart(stats_df.reset_index(), stats_df.index.name, 'share_before', 'share_in_diff', )
+    create_share_vs_impact_chart(stats_df.reset_index(), stats_df.index.name, 'segment_share_before', 'impact')
     
-    return stats_df.sort_values('impact_coef', ascending = False)
+    return stats_df.sort_values('impact_norm', ascending = False)
 
 def calculate_conversion_effects(df, dimension, numerator_field1, denominator_field1, 
                        numerator_field2, denominator_field2):
@@ -324,49 +325,49 @@ def calculate_conversion_effects(df, dimension, numerator_field1, denominator_fi
     
     cmp_df = df.groupby(dimension)[[numerator_field1, denominator_field1, numerator_field2, denominator_field2]].sum()
     cmp_df = cmp_df.rename(columns = {
-        numerator_field1: 'j1', 
-        numerator_field2: 'j2',
-        denominator_field1: 'f1', 
-        denominator_field2: 'f2'
+        numerator_field1: 'c1', 
+        numerator_field2: 'c2',
+        denominator_field1: 't1', 
+        denominator_field2: 't2'
     })
     
-    cmp_df['prev_rate'] = cmp_df['j1']/cmp_df['f1']
-    cmp_df['curr_rate'] = cmp_df['j2']/cmp_df['f2']
+    cmp_df['conversion_before'] = cmp_df['c1']/cmp_df['t1']
+    cmp_df['conversion_after'] = cmp_df['c2']/cmp_df['t2']
     
-    y1 = cmp_df['j1'].sum()
-    a1 = cmp_df['f1'].sum()
-    y2 = cmp_df['j2'].sum()
-    a2 = cmp_df['f2'].sum()
+    C1 = cmp_df['c1'].sum()
+    T1 = cmp_df['t1'].sum()
+    C2 = cmp_df['c2'].sum()
+    T2 = cmp_df['t2'].sum()
 
-    print('previous success rate = %.2f' % (100*y1/a1))
-    print('current success rate = %.2f' % (100*y2/a2))
-    print('total success rate change = %.2f' % (100*(y2/a2 - y1/a1)))
+    print('conversion before = %.2f' % (100*C1/T1))
+    print('conversion after = %.2f' % (100*C2/T2))
+    print('total conversion change = %.2f' % (100*(C2/T2 - C1/T1)))
     
-    cmp_df['df'] = (a1*cmp_df.f2 - a2*cmp_df.f1)/(a2 - cmp_df.f2)
-    cmp_df['total_effect'] = (y1 - cmp_df.j1 + (cmp_df.f1 + cmp_df.df)*cmp_df.curr_rate)/(a1 + cmp_df.df) - y1/a1
-    cmp_df['mix_change_effect'] = (y1 + cmp_df.df*cmp_df.prev_rate)/(a1 + cmp_df.df) - y1/a1
-    cmp_df['conversion_change_effect'] = (cmp_df.f1*cmp_df.j2 - cmp_df.f2*cmp_df.j1)/(a1 * cmp_df.f2)
+    cmp_df['dt'] = (T1*cmp_df.t2 - T2*cmp_df.t1)/(T2 - cmp_df.t2)
+    cmp_df['total_effect'] = (C1 - cmp_df.c1 + (cmp_df.t1 + cmp_df.dt)*cmp_df.conversion_after)/(T1 + cmp_df.dt) - C1/T1
+    cmp_df['mix_change_effect'] = (C1 + cmp_df.dt*cmp_df.conversion_before)/(T1 + cmp_df.dt) - C1/T1
+    cmp_df['conversion_change_effect'] = (cmp_df.t1*cmp_df.c2 - cmp_df.t2*cmp_df.c1)/(T1 * cmp_df.t2)
     
-    for col in ['total_effect', 'mix_change_effect', 'conversion_change_effect', 'curr_rate', 'prev_rate']:
+    for col in ['total_effect', 'mix_change_effect', 'conversion_change_effect', 'conversion_before', 'conversion_after']:
         cmp_df[col] = 100*cmp_df[col]
         
-    cmp_df['success_rate_diff'] = cmp_df.curr_rate - cmp_df.prev_rate
-    cmp_df['prev_dim_share'] = 100*cmp_df.f1/a1
-    cmp_df['curr_dim_share'] = 100*cmp_df.f2/a2
-    for p in ['prev_dim_share', 'curr_dim_share', 'prev_rate', 'curr_rate', 'success_rate_diff',
+    cmp_df['conversion_diff'] = cmp_df.conversion_after - cmp_df.conversion_before
+    cmp_df['before_segment_share'] = 100*cmp_df.t1/T1
+    cmp_df['after_segment_share'] = 100*cmp_df.t2/T2
+    for p in ['before_segment_share', 'after_segment_share', 'conversion_before', 'conversion_after', 'conversion_diff',
                      'total_effect', 'mix_change_effect', 'conversion_change_effect']:
         cmp_df[p] = cmp_df[p].map(lambda x: round(x, 2))
-    cmp_df['total_effect_share'] = 100*cmp_df.total_effect/(100*(y2/a2 - y1/a1))
-    cmp_df['impact_coef'] = cmp_df.total_effect_share/cmp_df.prev_dim_share
+    cmp_df['total_effect_share'] = 100*cmp_df.total_effect/(100*(C2/T2 - C1/T1))
+    cmp_df['impact_norm'] = cmp_df.total_effect_share/cmp_df.before_segment_share
 
     # creating visualisations
-    create_share_vs_impact_chart(cmp_df.reset_index(), dimension, 'prev_dim_share', 'total_effect_share')
-    cmp_df = cmp_df[['f1', 'f2', 'prev_dim_share', 'curr_dim_share', 'prev_rate', 'curr_rate', 'success_rate_diff',
+    create_share_vs_impact_chart(cmp_df.reset_index(), dimension, 'before_segment_share', 'total_effect_share')
+    cmp_df = cmp_df[['t1', 't2', 'before_segment_share', 'after_segment_share', 'conversion_before', 'conversion_after', 'conversion_diff',
                      'total_effect', 'mix_change_effect', 'conversion_change_effect', 'total_effect_share']]
 
     # return cmp_df[['total_effect']].rename(columns = {'total_effect': 'effect'})
     plot_conversion_waterfall(
-        100*y1/a1, 100*y2/a2, cmp_df[['total_effect']].rename(columns = {'total_effect': 'effect'})
+        100*C1/T1, 100*C2/T2, cmp_df[['total_effect']].rename(columns = {'total_effect': 'effect'})
     )
 
     # putting together effects split by change of mix and conversion change
@@ -389,7 +390,8 @@ def calculate_conversion_effects(df, dimension, numerator_field1, denominator_fi
     effects_det_df = effects_det_df.sort_values('effect_abs', ascending = False) 
     top_effects_det_df = effects_det_df.head(5).drop('effect_abs', axis = 1)
     plot_conversion_waterfall(
-        100*y1/a1, 100*y2/a2, top_effects_det_df.set_index('segment')
+        100*C1/T1, 100*C2/T2, top_effects_det_df.set_index('segment'),
+        add_other = True
     )
-    return cmp_df
+    return cmp_df.rename(columns = {'t1': 'total_before', 't2': 'total_after'})
 
