@@ -1,0 +1,13 @@
+country	maturity	users_before	converted_users_before	users_after_scenario_1	converted_users_after_scenario_1	users_after_scenario_2	converted_users_after_scenario_2
+UK	new	8327	863	8733	2592	87318	16756
+UK	existing	18417	14154	18636	14246	18636	16125
+France	new	3621	177	3675	943	3675	477
+France	existing	9750	7693	9633	7652	9633	8675
+Germany	new	2452	162	2507	640	2507	409
+Germany	existing	6462	3958	6427	3970	6427	4666
+Italy	new	2949	301	2923	883	2923	592
+Italy	existing	3736	2523	3492	2335	3492	2656
+Spain	new	1322	172	1315	423	1315	322
+Spain	existing	4026	2658	4137	2749	4137	3078
+other	new	11085	645	10867	2677	10867	1723
+other	existing	24068	20204	24209	20185	24209	22840
