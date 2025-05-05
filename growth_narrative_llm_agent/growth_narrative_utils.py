@@ -86,7 +86,7 @@ def create_share_vs_impact_chart(df, dimension, share_field, impact_field):
     fig.show()
 
 def create_parallel_coordinates_chart(df, dimension, before_field='before', 
-                                      after_field='after', impact_norm_field = 'impact_norm'):
+                                      after_field='after', impact_norm_field = 'impact_norm', metric_name = '', show_mean = False):
     """
     Creates an interactive parallel coordinates chart using Plotly
     
@@ -105,41 +105,46 @@ def create_parallel_coordinates_chart(df, dimension, before_field='before',
     """
     # Create a copy of the dataframe for manipulation
     plot_df = df.copy()
+    plot_df = plot_df.sort_values(impact_norm_field, ascending = False)
     
     # Define color mapping for params
     dimensions = plot_df[dimension].unique()
-    colorscale = px.colors.qualitative.D3
+    if df.shape[0] <= 10:
+        colorscale = px.colors.qualitative.D3
+    else:
+        colorscale = px.colors.qualitative.Dark24
     colors = [colorscale[i % len(colorscale)] for i in range(len(dimensions))]
     color_map = dict(zip(dimensions, colors))
     plot_df['color'] = plot_df[dimension].map(color_map)
     
     # Create accents on meaningful changes using line width and opacity
-    plot_df['line_width'] = plot_df.impact_norm.map(
+    plot_df['line_width'] = plot_df[impact_norm_field].map(
         lambda x: 4 if (x > 1.5) or (x < -0.5) else 2
     )
-    plot_df['opacity'] = plot_df.impact_norm.map(
+    plot_df['opacity'] = plot_df[impact_norm_field].map(
         lambda x: 1 if (x > 1.5) or (x < -0.5) else 0.6
     )
     
     # Create the figure
     fig = go.Figure()
-    
-    # Calculate mean values for reference line
-    mean_before = plot_df[before_field].mean()
-    mean_after = plot_df[after_field].mean()
-    
-    # Add mean reference line
-    fig.add_trace(
-        go.Scatter(
-            x=['BEFORE', 'AFTER'],
-            y=[mean_before, mean_after],
-            mode='lines',
-            line=dict(color='gray', width=1.5, dash='dash'),
-            opacity=0.7,
-            name='Average',
-            showlegend=False # remove from legend
+
+    if show_mean:
+        # Calculate mean values for reference line
+        mean_before = plot_df[before_field].mean()
+        mean_after = plot_df[after_field].mean()
+        
+        # Add mean reference line
+        fig.add_trace(
+            go.Scatter(
+                x=['BEFORE', 'AFTER'],
+                y=[mean_before, mean_after],
+                mode='lines',
+                line=dict(color='gray', width=1.5, dash='dash'),
+                opacity=0.7,
+                name='Average',
+                showlegend=False # remove from legend
+            )
         )
-    )
     
     # Add lines for each parameter value
     for idx, row in plot_df.iterrows():
@@ -159,8 +164,12 @@ def create_parallel_coordinates_chart(df, dimension, before_field='before',
         )
     
     # Update layout
+    if metric_name != '':
+        metric_title = ', ' + metric_name
+    else: 
+        metric_title = ''
     fig.update_layout(
-        title= '<b>Metric change explained:</b> before vs after',
+        title= '<b>Metric change explained:</b> before vs after' + metric_title,
         xaxis=dict(
             showgrid=False,
             tickfont=dict(size=12, weight='bold')
@@ -212,6 +221,7 @@ def plot_conversion_waterfall(rate_before, rate_after, df, add_other = True):
 
     plot_df = df.copy()
     plot_df = plot_df[plot_df.effect != 0] # filtering out segments without effect
+    plot_df = plot_df.sort_values('effect', ascending = False)
     colorscale = px.colors.qualitative.D3
 
     # Build the waterfall steps
@@ -224,7 +234,7 @@ def plot_conversion_waterfall(rate_before, rate_after, df, add_other = True):
     remaining_effect = (rate_after - rate_before) - total_effect
 
     if add_other: 
-        if remaining_effect >= 0.1: 
+        if abs(remaining_effect) >= 0.1: 
             dimensions.append('remaining effects')
             effects.append(remaining_effect) 
         total_effect = sum(effects)
@@ -357,13 +367,14 @@ def calculate_conversion_effects(df, dimension, numerator_field1, denominator_fi
     for p in ['before_segment_share', 'after_segment_share', 'conversion_before', 'conversion_after', 'conversion_diff',
                      'total_effect', 'mix_change_effect', 'conversion_change_effect']:
         cmp_df[p] = cmp_df[p].map(lambda x: round(x, 2))
-    cmp_df['total_effect_share'] = 100*cmp_df.total_effect/(100*(C2/T2 - C1/T1))
+    cmp_df['total_effect_share'] = (100*cmp_df.total_effect/(100*(C2/T2 - C1/T1))).map(lambda x: round(x, 2))
     cmp_df['impact_norm'] = cmp_df.total_effect_share/cmp_df.before_segment_share
 
     # creating visualisations
     create_share_vs_impact_chart(cmp_df.reset_index(), dimension, 'before_segment_share', 'total_effect_share')
-    cmp_df = cmp_df[['t1', 't2', 'before_segment_share', 'after_segment_share', 'conversion_before', 'conversion_after', 'conversion_diff',
-                     'total_effect', 'mix_change_effect', 'conversion_change_effect', 'total_effect_share']]
+    cmp_df = cmp_df[['before_segment_share', 'after_segment_share', 'conversion_before', 'conversion_after', 'conversion_diff',
+                     'total_effect', 'mix_change_effect', 'conversion_change_effect', 'total_effect_share', 'impact_norm']]
+    cmp_df = cmp_df.sort_values('total_effect', ascending = False)
 
     # return cmp_df[['total_effect']].rename(columns = {'total_effect': 'effect'})
     plot_conversion_waterfall(
@@ -393,5 +404,14 @@ def calculate_conversion_effects(df, dimension, numerator_field1, denominator_fi
         100*C1/T1, 100*C2/T2, top_effects_det_df.set_index('segment'),
         add_other = True
     )
-    return cmp_df.rename(columns = {'t1': 'total_before', 't2': 'total_after'})
+
+    create_parallel_coordinates_chart(cmp_df.reset_index(), dimension, before_field='before_segment_share', 
+                                      after_field='after_segment_share', impact_norm_field = 'impact_norm', metric_name = 'share of segment',
+                                     show_mean = False)
+    create_parallel_coordinates_chart(cmp_df.reset_index(), dimension, before_field='conversion_before', 
+                                      after_field='conversion_after', impact_norm_field = 'impact_norm', metric_name = 'conversion', 
+                                      show_mean = False)
+    return cmp_df.rename(columns = {'before_segment_share': 'before_seg_share', 'after_segment_share': 'after_seg_share', 
+                                   'conversion_before': 'conv_before', 'conversion_after': 'conv_after',
+                                   'conversion_diff': 'conv_diff', 'conversion_change_effect': 'conv_change_effect'}).drop('impact_norm', axis = 1)
 
