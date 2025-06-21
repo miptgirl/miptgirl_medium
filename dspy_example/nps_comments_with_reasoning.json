@@ -1,0 +1,527 @@
+[
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Absolutely frustrated! Every time I find something I love, it's sold out in my size. What's the point of having a wishlist if nothing is ever available?",
+    "reasoning": "Customer explicitly mentions products being 'sold out in my size' and questions the utility of a wishlist when items are unavailable, indicating chronic stock issues."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "Your search function is terrible. I typed 'red lipstick' and got foundation results. How am I supposed to find anything on this site?",
+    "reasoning": "Customer describes a malfunctioning search feature that returns irrelevant results (foundation instead of lipstick), making product discovery difficult."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "The foundation shade looked completely different online vs what I received. This is the third time this has happened - I'm done with CosmoBrand.",
+    "reasoning": "Customer reports a significant discrepancy between online product appearance and actual received item, indicating inaccurate visual representation."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "I had 500 points and couldn't figure out how to use them. Your loyalty program is unnecessarily complicated and customer service couldn't even explain it properly.",
+    "reasoning": "Customer has accumulated points but cannot understand how to redeem them, and even customer service cannot provide clear guidance, indicating a confusing system."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Mobile app crashes every time I try to checkout. I've lost my cart contents multiple times. This is unacceptable in 2025.",
+    "reasoning": "Customer reports consistent app crashes during checkout process, causing loss of cart data - clear technical malfunction."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "My shade is ALWAYS out of stock. I've been trying to reorder my foundation for 3 weeks now. Time to find a new brand that actually keeps products in stock.",
+    "reasoning": "Customer emphasizes chronic unavailability of their specific shade and mentions switching brands due to persistent stock issues."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "The filters don't work properly. I select 'cruelty-free' and still get products that aren't. Your product categorization is a mess.",
+    "reasoning": "Customer describes non-functional filtering system that doesn't properly categorize products, making it difficult to find items matching specific criteria."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Ordered a 'berry' lip color that arrived as bright orange. The photos on your site are completely misleading. Very disappointed.",
+    "reasoning": "Customer received a product that doesn't match the described color ('berry' vs 'bright orange'), indicating misleading product photography or descriptions."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support"],
+    "comment": "Waited 4 days for a response to my email, only to get a generic copy-paste reply that didn't address my issue at all. Terrible service.",
+    "reasoning": "Customer experienced both slow response time (4 days) and received an unhelpful generic response, indicating poor customer service quality."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Promo code worked at checkout but didn't apply the discount. Had to contact support multiple times to get it sorted. Your site has serious technical issues.",
+    "reasoning": "Customer reports a technical malfunction where promotional codes appear to work but don't actually apply discounts, requiring multiple support contacts."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Been waiting 6 weeks for a restock notification on my usual concealer shade. This happens with every product I want to repurchase.",
+    "reasoning": "Customer has been waiting for restock notifications for an extended period and mentions this is a recurring issue with multiple products."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "Thought I qualified for free shipping with my membership but got charged anyway. Your terms and conditions are confusing and misleading.",
+    "reasoning": "Customer believed they met membership criteria for a benefit but was still charged, indicating unclear or misleading program terms."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping"],
+    "comment": "Paid for express shipping and it took 2 weeks to arrive. Customer service just kept giving me tracking updates that didn't match reality.",
+    "reasoning": "Customer paid for expedited service but experienced significantly delayed delivery with inaccurate tracking information."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "Can't find products by ingredient list. As someone with sensitive skin, this makes shopping here impossible. Your search needs major improvements.",
+    "reasoning": "Customer cannot locate products using ingredient-based search, which is essential for their skin sensitivity needs, indicating inadequate search functionality."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "The eyeshadow palette colors look nothing like the swatches on your website. This is false advertising at this point.",
+    "reasoning": "Customer reports significant visual discrepancy between website swatches and actual product colors, calling it 'false advertising'."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Cart keeps emptying itself when I switch between pages. I've had to start over 5 times trying to place one order.",
+    "reasoning": "Customer experiences persistent technical issue where shopping cart contents are lost during navigation, requiring multiple restart attempts."
+  },
+  {
+    "topics": ["Damaged or Incorrect Items"],
+    "comment": "Received a completely shattered compact. Packaging was fine, so this was clearly a quality control issue. Very disappointing.",
+    "reasoning": "Customer received a damaged product despite intact outer packaging, indicating a quality control failure during manufacturing or initial packaging."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Your shade range is pathetic. As a POC, I can never find anything that matches my skin tone. Do better.",
+    "reasoning": "Customer from an underrepresented demographic cannot find suitable shade matches, indicating insufficient product range diversity."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support"],
+    "comment": "Live chat agent kept asking me to repeat information I'd already provided. Felt like they weren't even reading my messages.",
+    "reasoning": "Customer experienced ineffective support interaction where agent wasn't properly processing provided information, indicating poor service quality."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "Missed out on a 30% off sale because I didn't know I needed to activate my membership discount separately. Your system is needlessly complex.",
+    "reasoning": "Customer lost savings opportunity due to unclear system requirements for combining membership benefits with promotions."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "Product recommendations are completely off. I buy skincare and you keep showing me hair products. Your algorithm needs work.",
+    "reasoning": "Customer receives irrelevant product suggestions that don't match their purchase history or preferences, indicating poor recommendation system."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping"],
+    "comment": "International shipping to Canada took over a month. For the prices you charge, this is completely unacceptable.",
+    "reasoning": "Customer experienced extremely delayed international shipping (over a month) which they consider unreasonable given the premium pricing."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Desktop site won't let me complete checkout - button just spins endlessly. Had to use a different browser entirely.",
+    "reasoning": "Customer cannot complete purchase due to non-functional checkout button, requiring browser switching as a workaround."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Product description said 'long-lasting' but the lipstick barely stayed on for an hour. Complete misrepresentation.",
+    "reasoning": "Customer received a product that doesn't perform as advertised ('long-lasting' vs 'barely stayed on for an hour'), indicating false performance claims."
+  },
+  {
+    "topics": ["Complicated Returns or Exchanges"],
+    "comment": "Return process requires 5 different steps and approval from customer service. Just wanted to exchange a wrong shade - shouldn't be this hard.",
+    "reasoning": "Customer finds the return process overly complex with multiple steps and approval requirements for a simple shade exchange."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Popular items sell out instantly and take months to restock. Your inventory management is terrible.",
+    "reasoning": "Customer observes pattern of rapid sellouts followed by extended restock periods, indicating poor inventory planning and management."
+  },
+  {
+    "topics": ["Customs and Import Charges"],
+    "comment": "Got hit with unexpected customs fees that doubled my order cost. Should have been disclosed before checkout.",
+    "reasoning": "Customer faced surprise additional charges for international shipping that weren't communicated upfront, significantly increasing their total cost."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "Site navigation is confusing. Took me 20 minutes to find the moisturizer section. Needs a complete UX overhaul.",
+    "reasoning": "Customer spent excessive time locating a basic product category, indicating poor website structure and user experience design."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "Points expired without warning. Nowhere on the site does it clearly state the expiration policy. Lost $50 worth of rewards.",
+    "reasoning": "Customer lost significant reward value due to unexplained point expiration with no clear communication of expiration policies."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Payment processing fails randomly. Sometimes works, sometimes doesn't. Very frustrating shopping experience.",
+    "reasoning": "Customer experiences inconsistent payment processing functionality, creating an unreliable checkout experience."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Mascara was supposed to be waterproof but smudged immediately in light rain. Product claims are unreliable.",
+    "reasoning": "Customer purchased a waterproof product that failed to perform as advertised under mild conditions, indicating false product claims."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support"],
+    "comment": "Support team doesn't seem trained on your own products. Asked about an ingredient and they had no clue.",
+    "reasoning": "Customer encountered support staff who lacked basic product knowledge, indicating inadequate training or generic support approach."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "XS sizes are always sold out. Feels like you only stock for average sizes and ignore petite customers.",
+    "reasoning": "Customer from a specific size demographic consistently cannot find products in their size, indicating inadequate inventory allocation for smaller sizes."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping"],
+    "comment": "Package got lost twice and customer service acted like it was my fault. Terrible logistics management.",
+    "reasoning": "Customer experienced multiple shipping failures with poor support response, indicating unreliable logistics and inadequate customer service attitude."
+  },
+  {
+    "topics": ["Damaged or Incorrect Items"],
+    "comment": "Ordered nude lipstick, received bright red. Quality control is non-existent. This is basic order fulfillment.",
+    "reasoning": "Customer received completely wrong product (nude vs bright red lipstick), indicating failure in order fulfillment and quality control processes."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "Search results are completely random. Looking for 'foundation' brings up nail polish. Makes no sense.",
+    "reasoning": "Customer receives completely irrelevant search results (nail polish instead of foundation), indicating broken search algorithm."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Mobile site constantly redirects to desktop version which doesn't work on phones. Technical incompetence.",
+    "reasoning": "Customer experiences forced redirection to a non-mobile-optimized version, creating unusable mobile experience due to technical issues."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "Spent $200 expecting to hit VIP status but apparently I needed to spend it in one order, not cumulative. Rules are unclear.",
+    "reasoning": "Customer misunderstood VIP qualification requirements due to unclear communication about spending thresholds and order requirements."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Serum texture was completely different from description. Said lightweight, received thick cream. Very misleading.",
+    "reasoning": "Customer received a product with opposite texture characteristics from what was described ('lightweight' vs 'thick cream'), indicating misleading descriptions."
+  },
+  {
+    "topics": ["Complicated Returns or Exchanges"],
+    "comment": "Have to pay return shipping for defective products. This should be covered by the company, not the customer.",
+    "reasoning": "Customer is required to pay return costs for faulty products, indicating an unreasonable return policy that burdens customers for company quality issues."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "New collection launched but half the shades were already sold out on day one. Poor stock planning.",
+    "reasoning": "Customer observes immediate sellout of new products on launch day, indicating insufficient initial inventory planning for anticipated demand."
+  },
+  {
+    "topics": ["Customs and Import Charges"],
+    "comment": "Shipping to UK resulted in unexpected VAT charges. Website should calculate total cost including taxes upfront.",
+    "reasoning": "Customer faced surprise tax charges for international shipping that weren't disclosed during checkout, indicating lack of upfront tax calculation."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support"],
+    "comment": "Submitted a complaint 2 weeks ago and still no response. Customer service is completely overwhelmed or just ignoring customers.",
+    "reasoning": "Customer has waited two weeks without any response to their complaint, indicating severely delayed or non-existent customer service response."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "Product pages don't show compatible items or suggestions. Shopping here feels like wandering in the dark.",
+    "reasoning": "Customer cannot find related or complementary products, indicating lack of helpful product recommendations and poor discovery features."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Checkout process times out frequently, losing all my information. Have to start over each time.",
+    "reasoning": "Customer experiences session timeouts during checkout that erase entered information, requiring complete restart due to technical issues."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping"],
+    "comment": "Standard shipping took 3 weeks within the same country. Amazon delivers in 2 days - your logistics are stuck in the past.",
+    "reasoning": "Customer experienced extremely slow domestic shipping (3 weeks) and unfavorably compares it to faster competitor services, indicating poor logistics performance."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Bronzer shade appeared warm-toned online but arrived cool-toned. Photography and color accuracy are terrible.",
+    "reasoning": "Customer received a product with opposite undertone characteristics from what was shown online, indicating inaccurate color representation in photos."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Plus sizes are rarely available and when they are, there's no size variety. Feels discriminatory.",
+    "reasoning": "Customer from plus-size demographic finds limited availability and variety in their size range, indicating inadequate inventory for larger sizes."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "Birthday discount didn't work during checkout. Support said it expired but I never received an expiration notice.",
+    "reasoning": "Customer's birthday benefit failed to work due to unexplained expiration without proper notification, indicating poor communication of program terms."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Site crashes during every major sale. Can't handle traffic spikes which defeats the purpose of having promotions.",
+    "reasoning": "Customer experiences website failures during high-traffic promotional events, indicating technical infrastructure cannot handle peak loads."
+  },
+  {
+    "topics": ["Damaged or Incorrect Items"],
+    "comment": "Palette arrived with 3 broken shades. Packaging was intact so this happened before shipping. Poor quality control.",
+    "reasoning": "Customer received damaged product despite intact shipping packaging, indicating manufacturing or pre-shipping quality control failures."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "Can't sort by price or customer ratings. Basic e-commerce features are missing from your site.",
+    "reasoning": "Customer cannot use standard e-commerce sorting functions (price, ratings), indicating missing basic website functionality for product discovery."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support"],
+    "comment": "Chat bot is useless and getting to a human takes forever. When you finally do, they can't help with anything complex.",
+    "reasoning": "Customer experiences ineffective automated support and long wait times for human agents who then cannot resolve complex issues."
+  },
+  {
+    "topics": ["Complicated Returns or Exchanges"],
+    "comment": "Return window is only 14 days but shipping takes 10 days. Barely have time to test products before return period expires.",
+    "reasoning": "Customer has insufficient time to evaluate products due to slow shipping consuming most of the return window, creating an unreasonably tight timeline."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Medium shades are always out but you have plenty of light and dark. Your stocking algorithm needs work.",
+    "reasoning": "Customer observes consistent unavailability of medium shades while other ranges remain in stock, indicating poor inventory distribution across shade ranges."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping"],
+    "comment": "Expedited shipping cost extra but arrived later than standard shipping from other brands. Complete waste of money.",
+    "reasoning": "Customer paid premium for faster shipping but still received slower service than competitors' standard shipping, indicating poor value and service."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Blush intensity in photos vs reality is completely different. What looks subtle online is clown-like in person.",
+    "reasoning": "Customer received a product with dramatically different color intensity than shown online ('subtle' vs 'clown-like'), indicating misleading photography."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Wishlist items disappear randomly. Can't keep track of products I want to purchase later.",
+    "reasoning": "Customer experiences data loss in wishlist functionality, indicating technical issues with saved item persistence."
+  },
+  {
+    "topics": ["Customs and Import Charges"],
+    "comment": "Order got held at customs for weeks because of incorrect paperwork from your end. Completely avoidable delay.",
+    "reasoning": "Customer's international order was delayed due to company errors in customs documentation, indicating poor international shipping processes."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "Triple points promotion didn't apply to my order. Fine print is buried so deep you need a magnifying glass to find exclusions.",
+    "reasoning": "Customer's promotional points didn't apply due to hidden exclusions in hard-to-find terms, indicating deliberately obscured program limitations."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "No way to filter by skin type or concerns. For a beauty brand, this is a fundamental failure.",
+    "reasoning": "Customer cannot search by essential beauty criteria (skin type, concerns), indicating missing core functionality expected from a beauty retailer."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support"],
+    "comment": "Support keeps closing my tickets without resolution. Have to keep reopening the same issue multiple times.",
+    "reasoning": "Customer experiences premature ticket closures without problem resolution, requiring repeated contact attempts for the same unresolved issue."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Password reset emails never arrive. Can't access my account and customer service can't help without security verification.",
+    "reasoning": "Customer cannot access their account due to non-functioning password reset system, creating a circular problem that support cannot resolve."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Sample sizes are never available when I want to try before buying full size. Forces risky purchases.",
+    "reasoning": "Customer cannot access trial sizes to test products before committing to full purchases, indicating inadequate sample inventory for risk reduction."
+  },
+  {
+    "topics": ["Damaged or Incorrect Items"],
+    "comment": "Liquid foundation leaked all over other products during shipping. Poor packaging design ruined my entire order.",
+    "reasoning": "Customer's order was damaged due to inadequate packaging that allowed liquid products to leak and contaminate other items."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping"],
+    "comment": "Tracking information is never accurate. Package shows as delivered but arrives 3 days later.",
+    "reasoning": "Customer receives consistently inaccurate tracking updates that don't reflect actual delivery status, indicating unreliable logistics tracking systems."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Concealer coverage was described as full but barely covers anything. Product performance claims are exaggerated.",
+    "reasoning": "Customer received a product that significantly underperforms compared to advertised coverage level ('full' vs 'barely covers'), indicating exaggerated claims."
+  },
+  {
+    "topics": ["Complicated Returns or Exchanges"],
+    "comment": "Need original packaging to return but your packaging is designed to be opened destructively. Catch-22 situation.",
+    "reasoning": "Customer faces impossible return requirements where packaging must be intact but is designed to be destroyed upon opening, creating an unreasonable policy conflict."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "Member-exclusive early access didn't work for my account. Support said I'm not eligible but never explained why.",
+    "reasoning": "Customer's membership benefits failed to work with no clear explanation of eligibility criteria, indicating poor communication of program requirements."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "New arrivals section hasn't been updated in months. How am I supposed to discover your latest products?",
+    "reasoning": "Customer cannot find new products due to outdated 'new arrivals' section, indicating poor maintenance of product discovery features."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Product reviews don't load half the time. Can't make informed decisions without seeing other customers' experiences.",
+    "reasoning": "Customer cannot access review content due to technical loading issues, preventing informed purchase decisions."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Restock notifications never work. Sign up to be notified but never receive emails when items come back.",
+    "reasoning": "Customer's restock notification system fails to function, leaving them unable to know when desired out-of-stock items become available again."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support"],
+    "comment": "Phone support has 45+ minute wait times. By the time someone answers, I've forgotten why I called.",
+    "reasoning": "Customer experiences extremely long phone support wait times (45+ minutes) that make the service impractical to use."
+  },
+  {
+    "topics": ["Customs and Import Charges"],
+    "comment": "Charged duties on a return shipment. Having to pay to send back your defective product is insulting.",
+    "reasoning": "Customer faces additional customs charges when returning defective products internationally, creating unfair financial burden for company quality issues."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping"],
+    "comment": "Rural delivery takes twice as long as promised. Your shipping partners clearly don't prioritize smaller locations.",
+    "reasoning": "Customer in rural location experiences significantly delayed shipping compared to promises, indicating inadequate logistics coverage for non-urban areas."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Skin tone in model photos doesn't match mine but product was recommended for my complexion. Very misleading marketing.",
+    "reasoning": "Customer received product recommendations based on misleading model representation that doesn't accurately represent their skin tone, indicating deceptive marketing."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "App notifications for sales never work. Miss out on deals because your push notifications are broken.",
+    "reasoning": "Customer cannot receive promotional notifications due to non-functioning push notification system, causing them to miss sales opportunities."
+  },
+  {
+    "topics": ["Difficult Product Discovery"],
+    "comment": "Trending section shows the same products for months. Algorithm seems completely static and unhelpful.",
+    "reasoning": "Customer observes no changes in trending product recommendations over months, indicating a non-functional or stagnant recommendation algorithm."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems"],
+    "comment": "Stacked a member discount with a promo code but only one applied. Rules about combining offers are unclear.",
+    "reasoning": "Customer expected to use multiple discounts together but only one worked, indicating unclear policies about discount combination rules."
+  },
+  {
+    "topics": ["Damaged or Incorrect Items"],
+    "comment": "Pressed powder arrived completely pulverized. This keeps happening - you need better protective packaging.",
+    "reasoning": "Customer repeatedly receives damaged pressed powder products, indicating systemic packaging inadequacy for fragile cosmetics during shipping."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability"],
+    "comment": "Travel sizes sell out faster than full sizes but aren't restocked as frequently. Poor inventory balance.",
+    "reasoning": "Customer observes travel sizes have higher demand but lower restock frequency compared to full sizes, indicating poor inventory management across size variants."
+  },
+  {
+    "topics": ["Complicated Returns or Exchanges"],
+    "comment": "Exchange process requires me to place a new order and wait for refund. Why can't you just swap the items directly?",
+    "reasoning": "Customer finds the exchange process unnecessarily complex, requiring separate purchase and refund rather than direct item swap, indicating inefficient return procedures."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support"],
+    "comment": "Social media team responds faster than official customer service. That's backwards and unprofessional.",
+    "reasoning": "Customer receives faster responses through social media than official support channels, indicating misaligned customer service priorities and resource allocation."
+  },
+  {
+    "topics": ["Website or App Bugs"],
+    "comment": "Saved payment methods keep getting deleted. Have to re-enter card details for every single order.",
+    "reasoning": "Customer cannot maintain saved payment information due to technical issues, forcing repeated manual entry and creating checkout friction."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping"],
+    "comment": "Premium shipping costs more than the product but still takes a week. What exactly am I paying premium for?",
+    "reasoning": "Customer paid high premium shipping costs but still experienced slow delivery (one week), questioning the value proposition of expensive shipping options."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos"],
+    "comment": "Shimmer eyeshadow looked subtle online but it's pure glitter bomb. Completely unusable for everyday wear.",
+    "reasoning": "Customer received a product with dramatically different intensity than shown online ('subtle' vs 'glitter bomb'), making it unsuitable for intended use."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability", "Confusing Loyalty or Discount Systems"],
+    "comment": "My VIP early access to new shades is useless because everything sells out before I can use my member discount. Poor coordination between teams.",
+    "reasoning": "Customer has VIP access but cannot utilize member discounts due to rapid sellouts, indicating both inventory issues and poorly coordinated loyalty program timing."
+  },
+  {
+    "topics": ["Difficult Product Discovery", "Website or App Bugs"],
+    "comment": "Search function crashes when I try to use multiple filters. Can't find anything specific on this broken site.",
+    "reasoning": "Customer cannot use advanced search features due to technical crashes when applying multiple filters, combining search functionality problems with technical bugs."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos", "Damaged or Incorrect Items"],
+    "comment": "Ordered matte lipstick but received glossy formula, and it was already used! Quality control and accuracy are both terrible.",
+    "reasoning": "Customer received wrong product formula (matte vs glossy) that was also previously used, indicating both product description accuracy issues and quality control failures."
+  },
+  {
+    "topics": ["Unresponsive or Generic Customer Support", "Complicated Returns or Exchanges"],
+    "comment": "Support won't process my return because they claim I'm past the deadline, but they took 5 days to respond to my initial request. Circular logic.",
+    "reasoning": "Customer's return is denied due to deadline expiry caused by support's own slow response time, combining poor support responsiveness with inflexible return policies."
+  },
+  {
+    "topics": ["Website or App Bugs", "Slow or Unreliable Shipping"],
+    "comment": "Order confirmation email never arrived, so I placed the order twice. Now I have duplicates and your shipping is too slow to cancel the second order.",
+    "reasoning": "Customer received duplicate orders due to missing confirmation emails (technical bug) and cannot cancel due to slow shipping processes, combining technical and logistics issues."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability", "Difficult Product Discovery"],
+    "comment": "Can't filter by available sizes only, so I waste time browsing sold-out items. Your site shows me what I can't buy.",
+    "reasoning": "Customer cannot efficiently find available products in their size due to lack of availability filtering, combining inventory shortage issues with poor search functionality."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems", "Website or App Bugs"],
+    "comment": "Points balance shows different amounts on mobile vs desktop. Can't trust your system to track rewards properly.",
+    "reasoning": "Customer sees inconsistent loyalty point balances across platforms, indicating both technical synchronization issues and unreliable loyalty system tracking."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos", "Unresponsive or Generic Customer Support"],
+    "comment": "Foundation oxidized to orange but support insists it's 'normal color variation.' Photos on site don't show this happening.",
+    "reasoning": "Customer experienced significant color change not shown in product photos, and support dismissed the concern as normal, combining misleading imagery with poor customer service."
+  },
+  {
+    "topics": ["Customs and Import Charges", "Slow or Unreliable Shipping"],
+    "comment": "International order took 6 weeks and came with surprise fees that weren't disclosed. Shipping experience is awful for overseas customers.",
+    "reasoning": "Customer faced both extremely long international delivery times and unexpected charges not disclosed upfront, combining shipping delays with customs charge issues."
+  },
+  {
+    "topics": ["Damaged or Incorrect Items", "Complicated Returns or Exchanges"],
+    "comment": "Broken compact arrived but return process requires photos, receipts, and manager approval. Just send me a replacement - it's obviously defective.",
+    "reasoning": "Customer received damaged product but faces complex return requirements including documentation and approvals for an obviously defective item, combining quality issues with overly complicated return processes."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability", "Inaccurate Product Descriptions or Photos"],
+    "comment": "Shade matching tool recommended a color that's permanently out of stock. Why suggest unavailable products?",
+    "reasoning": "Customer received product recommendations for unavailable items from the shade matching system, combining inventory availability issues with inaccurate or outdated recommendation tools."
+  },
+  {
+    "topics": ["Difficult Product Discovery", "Confusing Loyalty or Discount Systems"],
+    "comment": "Member-exclusive products are impossible to find on the site. If I can't locate them, what's the point of VIP access?",
+    "reasoning": "Customer cannot find VIP-exclusive products due to poor site organization, combining product discovery problems with unclear loyalty program implementation."
+  },
+  {
+    "topics": ["Website or App Bugs", "Unresponsive or Generic Customer Support"],
+    "comment": "App keeps logging me out mid-checkout. Support says it's my phone's fault but it only happens on your app.",
+    "reasoning": "Customer experiences technical issues with app session management during checkout, and support provides unhelpful blame-shifting response, combining technical bugs with poor customer service."
+  },
+  {
+    "topics": ["Slow or Unreliable Shipping", "Damaged or Incorrect Items"],
+    "comment": "Package arrived late and half the products were missing. Your logistics are completely broken.",
+    "reasoning": "Customer experienced both delayed delivery and incomplete order fulfillment, indicating systemic failures in both shipping timing and order accuracy."
+  },
+  {
+    "topics": ["Inaccurate Product Descriptions or Photos", "Customs and Import Charges"],
+    "comment": "Product weight was wrong on customs forms, causing additional fees. Even your international documentation is inaccurate.",
+    "reasoning": "Customer faced unexpected customs charges due to incorrect product weight information on shipping documents, combining product description inaccuracy with customs documentation errors."
+  },
+  {
+    "topics": ["Confusing Loyalty or Discount Systems", "Complicated Returns or Exchanges"],
+    "comment": "Can't use reward points on sale items, and can't return items bought with points. Your policies are designed to trap customers.",
+    "reasoning": "Customer faces restrictive policies that limit both point usage and return options, combining confusing loyalty program rules with complicated return restrictions."
+  },
+  {
+    "topics": ["Limited Size or Shade Availability", "Website or App Bugs", "Unresponsive or Generic Customer Support"],
+    "comment": "Restock notification system is broken, customer service can't fix it, and my shade has been out of stock for 2 months. Triple failure.",
+    "reasoning": "Customer experiences persistent stock unavailability, non-functional notification system, and ineffective customer support, representing failures across inventory, technical systems, and service."
+  },
+  {
+    "topics": ["Difficult Product Discovery", "Inaccurate Product Descriptions or Photos", "Slow or Unreliable Shipping"],
+    "comment": "Spent forever finding a product, description was wrong, and shipping took 3 weeks. Every aspect of shopping here is problematic.",
+    "reasoning": "Customer experienced problems across the entire shopping journey: difficulty finding products, misleading descriptions, and slow delivery, indicating systemic failures across multiple touchpoints."
+  },
+  {
+    "topics": ["Website or App Bugs", "Confusing Loyalty or Discount Systems", "Damaged or Incorrect Items"],
+    "comment": "Loyalty points didn't apply due to site glitch, and when the wrong item arrived, I lost the points entirely. System is completely unreliable.",
+    "reasoning": "Customer lost loyalty points due to technical issues during checkout and couldn't recover them when receiving incorrect items, combining technical bugs with inflexible loyalty policies and order fulfillment errors."
+  }
+]
