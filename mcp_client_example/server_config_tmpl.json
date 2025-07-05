@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "analyst_toolkit": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/path/to/github/mcp-analyst-toolkit/src/mcp_server",
+        "run",
+        "server.py"
+      ],
+      "env": {
+          "GITHUB_TOKEN": "github_token_placeholder"
+      }
+    }
+}
+}
