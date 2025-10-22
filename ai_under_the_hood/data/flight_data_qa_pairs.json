@@ -1,0 +1,82 @@
+[
+  {
+    "question": "How many flights were in 2024?",
+    "sql": "select count() from flight_data where year = 2024 format TabSeparatedWithNames"
+  },
+  {
+    "question": "From which airport were the most flights departing in July 2024?",
+    "sql": "select origin, count() as flight_count from flight_data where toStartOfMonth(fl_date) = '2024-07-01' group by origin order by flight_count desc limit 1 format TabSeparatedWithNames"
+  },
+  {
+    "question": "What route on average took the longest time in 2024?",
+    "sql": "select concat(origin, ' - ', dest) as route, avg(actual_elapsed_time) as avg_elapsed_time from flight_data where year = 2024 group by route order by avg_elapsed_time desc limit 1 format TabSeparatedWithNames"
+  },
+  {
+    "question": "In 2024, what percentage of time all airplanes spent in the air?",
+    "sql": "select (sum(air_time) / sum(actual_elapsed_time)) * 100 as percentage_in_air from flight_data format TabSeparatedWithNames"
+  },
+  {
+    "question": "Which airline had the highest average departure delay in 2024?",
+    "sql": "select op_unique_carrier, avg(dep_delay) as avg_dep_delay from flight_data where year = 2024 group by op_unique_carrier order by avg_dep_delay desc limit 1 format TabSeparatedWithNames"
+  },
+  {
+    "question": "Which airline had the highest rate of cancellations in 2024?",
+    "sql": "select op_unique_carrier, (sum(cancelled) / count()) * 100 as cancellation_rate from flight_data where year = 2024 group by op_unique_carrier order by cancellation_rate desc limit 1 format TabSeparatedWithNames"
+  },
+  {
+    "question": "Are delays different on weekends compared to weekdays?",
+    "sql": "select if(day_of_week in (6,7), 'Weekend', 'Weekday') as day_type, avg(arr_delay) as avg_arr_delay from flight_data where year = 2024 group by day_type order by avg_arr_delay desc format TabSeparatedWithNames"
+  },
+  {
+    "question": "I'm flying from LAX to SFO, I supposed to arrive at 12:00, but I have a very important meeting so I must leave airport at 12:20 max. Based on historical data, what is the probability that my flight will be delayed and I won't make it to my meeting on time?",
+    "sql": "select (countIf(arr_delay > 20) / count()) * 100 as delay_probability from flight_data where origin = 'LAX' and dest = 'SFO' format TabSeparatedWithNames"
+  },
+  {
+    "question": "Are flights late more often than being early (not taking into account time difference less than 10 mins)?",
+    "sql": "select multiIf(arr_delay > 10, 'Late', arr_delay < -10, 'Early', 'On Time') as status, count() as count from flight_data group by status order by count desc format TabSeparatedWithNames"
+  },
+  {
+    "question": "In case there were delay > 15 mins on departure, what is the probability that arrival would be on time?",
+    "sql": "select (countIf(arr_delay <= 0) / count()) * 100 as on_time_arrival_probability from flight_data where dep_delay > 15 format TabSeparatedWithNames"
+  },
+  {
+    "question": "What was the highest speed in mph?",
+    "sql": "select max(distance / (air_time / 60)) as max_speed from flight_data where air_time > 0 format TabSeparatedWithNames"
+  },
+  {
+    "question": "Are there any discrepancies with the distance between two airports in data? Meaning cases when distance is different for the route (we should take into account both A-B and B-A routes).",
+    "sql": "select if(origin < dest, concat(origin, '-', dest), concat(dest, '-', origin)) as route, count(distinct distance) as distance_variants from flight_data group by route having distance_variants > 1 order by distance_variants desc format TabSeparatedWithNames"
+  },
+  {
+    "question": "What are top 5 biggest airlines by number of flights in 2024?",
+    "sql": "select op_unique_carrier, count() as flight_count from flight_data where year = 2024 group by op_unique_carrier order by flight_count desc limit 5 format TabSeparatedWithNames"
+  },
+  {
+    "question": "Are departure delays more common in the morning (6am-12pm) or in the evening (6pm-12am)?",
+    "sql": "select multiIf(crs_dep_time >= 600 and crs_dep_time < 1200, 'Morning', crs_dep_time >= 1800 and crs_dep_time < 2400, 'Evening', 'Other') as time_of_day, avg(dep_delay) as avg_dep_delay from flight_data where year = 2024 group by time_of_day order by avg_dep_delay desc format TabSeparatedWithNames"
+  },
+  {
+    "question": "Are weather delays more common in summer or winter?",
+    "sql": "select if(month in (6,7,8), 'Summer', 'Winter') as season, avg(weather_delay) as avg_weather_delay from flight_data where year = 2024 and month in (6,7,8,12,1,2) group by season order by avg_weather_delay desc format TabSeparatedWithNames"
+  },
+  {
+    "question": "Which airline has the fastest planes on average?",
+    "sql": "select op_unique_carrier, avg(distance / (air_time / 60)) as avg_speed from flight_data where air_time > 0 group by op_unique_carrier order by avg_speed desc format TabSeparatedWithNames"
+  },
+  {
+    "question": "Are cancellations more often on Christmas (24-26 December) vs non-holiday days in December?",
+    "sql": "select multiIf(fl_date in ('2024-12-24', '2024-12-25', '2024-12-26'), 'Holiday', 'Non-Holiday') as day_type, (sum(cancelled) / count()) * 100 as cancellation_rate from flight_data where year = 2024 and month = 12 group by day_type order by cancellation_rate desc format TabSeparatedWithNames"
+  },
+  {
+    "question": "Are diversions more common then cancellations?",
+    "sql": "select (sum(diverted) / count()) * 100 as diversion_rate, (sum(cancelled) / count()) * 100 as cancellation_rate from flight_data format TabSeparatedWithNames"
+  },
+  {
+    "question": "How often are flights departing early (more than 10 minutes before scheduled time)?",
+    "sql": "select (countIf(dep_delay < -10) / count()) * 100 as early_departure_rate from flight_data format TabSeparatedWithNames"
+  },
+  {
+    "question": "What is the average taxi out time for flights departing from JFK airport?",
+    "sql": "select avg(taxi_out) as avg_taxi_out_time from flight_data where origin = 'JFK' and taxi_out is not null format TabSeparatedWithNames"
+  }
+]
