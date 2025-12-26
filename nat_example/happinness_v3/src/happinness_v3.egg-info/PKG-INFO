@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: happinness_v3
+Version: 0.1.0
+Summary: Custom NeMo Agent Toolkit Workflow
+Classifier: Programming Language :: Python
+Requires-Python: <3.14,>=3.11
+Requires-Dist: nvidia-nat[langchain]~=1.3
+Requires-Dist: langchain<0.4.0,>=0.3.27
+Requires-Dist: langchain-core<0.4.0,>=0.3.75
+Requires-Dist: langchain-anthropic<1.0.0,>=0.3.0
+Requires-Dist: numpy>=2.3

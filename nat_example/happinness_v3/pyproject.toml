@@ -1,0 +1,21 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools >= 64"]
+
+[project]
+name = "happinness_v3"
+version = "0.1.0"
+dependencies = [
+  "nvidia-nat[langchain]~=1.3",
+  "langchain>=0.3.27,<0.4.0",
+  "langchain-core>=0.3.75,<0.4.0",
+  "langchain-anthropic>=0.3.0,<1.0.0",
+  "numpy>=2.3",
+]
+requires-python = ">=3.11,<3.14"
+description = "Custom NeMo Agent Toolkit Workflow"
+classifiers = ["Programming Language :: Python"]
+
+
+[project.entry-points.'nat.components']
+happinness_v1 = "happinness_v3.register"

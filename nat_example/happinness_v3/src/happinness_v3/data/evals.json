@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "question": "In what country was the happiness score highest in 2021?",
+    "answer": "Finland"
+  }, 
+  {
+    "id": "2",
+    "question": "What contributed most to the happiness score in 2024?",
+    "answer": "Social Support"
+  }, 
+  {
+    "id": "3",
+    "question": "How UK's rank changed from 2019 to 2024?",
+    "answer": "The UK's rank dropped from 13th in 2019 to 23rd in 2024."
+  },
+  {
+    "id": "4",
+    "question": "Are people in France happier than in Germany based on the latest report?",
+    "answer": "No, Germany is at 22nd place in 2024 while France is at 33rd place."
+  },
+  {
+    "id": "5",
+    "question": "How much in percents are people in Poland happier in 2024 compared to 2019?",
+    "answer": "Happiness in Poland increased by 7.9% from 2019 to 2024. It was 6.1863 in 2019 and 6.6730 in 2024."
+  }
+]
