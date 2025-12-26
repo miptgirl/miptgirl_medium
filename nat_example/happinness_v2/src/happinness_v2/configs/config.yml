@@ -1,0 +1,28 @@
+functions:
+  country_stats:
+    _type: happinness_v2/country_stats
+  year_stats:
+    _type: happinness_v2/year_stats
+  calculator_agent:
+    _type: happinness_v2/calculator_agent
+
+llms:
+  chat_llm:
+    _type: litellm
+    model_name: anthropic/claude-sonnet-4-5-20250929
+    api_key: $ANTHROPIC_API_KEY
+    temperature: 0.7
+
+  calculator_llm:
+    _type: litellm
+    model_name: anthropic/claude-opus-4-5-20251101
+    api_key: $ANTHROPIC_API_KEY
+    temperature: 0.7
+
+workflow:
+  _type: react_agent
+  llm_name: chat_llm
+  tool_names: [country_stats, year_stats, calculator_agent]
+  verbose: true
+  max_iterations: 5 
+  parse_agent_response_max_retries: 2

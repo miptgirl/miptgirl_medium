@@ -1,0 +1,2 @@
+[nat.components]
+happinness_v1 = happinness_v2.register
