@@ -1,10 +1,10 @@
 functions:
   country_stats:
-    _type: happinness_v2/country_stats
+    _type: happiness_v2/country_stats
   year_stats:
-    _type: happinness_v2/year_stats
+    _type: happiness_v2/year_stats
   calculator_agent:
-    _type: happinness_v2/calculator_agent
+    _type: happiness_v2/calculator_agent
 
 llms:
   chat_llm:

@@ -9,10 +9,10 @@ from nat.data_models.function import FunctionBaseConfig
 from nat.builder.framework_enum import LLMFrameworkEnum
 
 # Import our standalone tools
-from happinness_v3.utils.happiness_stats import load_data, get_country_stats, get_year_stats
+from happiness_v2.utils.happiness_stats import load_data, get_country_stats, get_year_stats
 
 # Import calculator agent
-from happinness_v3.utils.calculator_agent import create_calculator_agent, calculate_with_agent
+from happiness_v2.utils.calculator_agent import create_calculator_agent, calculate_with_agent
 
 # 1. Input schemas: tell LLM what each tool expects
 class CountryStatsInput(BaseModel):
@@ -52,7 +52,7 @@ async def country_stats_tool(config: CountryStatsConfig, builder: Builder):
 
     async def _wrapper(country: str) -> str:
         result = get_country_stats(df, country)
-        return result.to_string(index=False)
+        return result
 
     yield FunctionInfo.from_fn(
         _wrapper,

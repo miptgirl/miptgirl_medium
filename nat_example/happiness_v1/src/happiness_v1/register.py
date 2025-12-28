@@ -8,7 +8,7 @@ from nat.cli.register_workflow import register_function
 from nat.data_models.function import FunctionBaseConfig
 
 # Import our standalone tools
-from happinness_v1.utils.happiness_stats import load_data, get_country_stats, get_year_stats
+from happiness_v1.utils.happiness_stats import load_data, get_country_stats, get_year_stats
 
 # 1. Input schemas: tell LLM what each tool expects
 class CountryStatsInput(BaseModel):

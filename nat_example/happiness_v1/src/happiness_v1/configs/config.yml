@@ -1,8 +1,8 @@
 functions:
   country_stats:
-    _type: happinness_v1/country_stats
+    _type: happiness_v1/country_stats
   year_stats:
-    _type: happinness_v1/year_stats
+    _type: happiness_v1/year_stats
 
 llms:
   chat_llm:
