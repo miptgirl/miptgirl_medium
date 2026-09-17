@@ -1,0 +1,202 @@
+record_id,model,label,confidence,latency_s,input_tokens,output_tokens,error,gold,correct,text
+0,jev-latest,change_pin,1.0,0.63,1039,826,,change_pin,True,Is it possible for me to change my PIN number?
+1,jev-latest,transfer_timing,0.84,0.72,1057,827,,balance_not_updated_after_bank_transfer,False,"How long does a transfer from a UK account take? I just made one and it doesn't seem to be working, wondering if everything is okay"
+2,jev-latest,declined_card_payment,1.0,0.72,1041,828,,declined_transfer,False,Why am I getting declines when trying to make a purchase online?
+3,jev-latest,pending_card_payment,0.42,0.71,1038,827,,extra_charge_on_statement,False,What is the $1 transaction on my account?
+4,jev-latest,top_up_by_card_charge,0.86,0.72,1036,829,,top_up_by_card_charge,True,How much does top up fees cost?
+5,jev-latest,country_support,0.51,0.62,1040,826,,country_support,True,I live in the EU - can I get a card?
+6,jev-latest,top_up_failed,1.0,0.63,1036,827,,top_up_failed,True,Why did my top-up not work?
+7,jev-latest,balance_not_updated_after_bank_transfer,0.42,0.71,1044,830,,balance_not_updated_after_cheque_or_cash_deposit,False,Why is my money not in my account. I have already sent it out.
+8,jev-latest,verify_my_identity,0.89,0.75,1039,827,,verify_my_identity,True,Let me know what the steps for the identity checks are
+9,jev-latest,top_up_limits,0.97,0.75,1038,827,,automatic_top_up,False,In what increments can I top-up my card?
+10,jev-latest,automatic_top_up,1.0,0.73,1036,827,,automatic_top_up,True,When do i activate auto top-up?
+11,jev-latest,wrong_exchange_rate_for_cash_withdrawal,0.99,0.77,1042,833,,wrong_exchange_rate_for_cash_withdrawal,True,The exchange rate was wrong in the foreign country I got cash in.
+12,jev-latest,pending_transfer,0.87,0.64,1037,826,,pending_transfer,True,I am still waiting for a transfer to show
+13,jev-latest,exchange_rate,1.0,0.66,1035,826,,exchange_rate,True,How is the exchange rate calculated?
+14,jev-latest,card_payment_fee_charged,0.99,0.64,1048,830,,card_payment_fee_charged,True,"There was an extra fee when I paid with my card, why was i charged this extra fee?"
+15,jev-latest,top_up_failed,0.71,0.66,1056,827,,top_up_failed,True,My credit card seems to have been declined for top up. Why is it not going through? Can you tell me what's going on?
+16,jev-latest,pending_transfer,0.37,0.68,1039,826,,pending_transfer,True,I need to know why a money transfer is available.
+17,jev-latest,get_disposable_virtual_card,0.66,0.73,1037,830,,disposable_card_limits,False,I must make several disposable cards every day.
+18,jev-latest,card_linking,1.0,0.68,1038,827,,card_linking,True,What do I do to link my new card?
+19,jev-latest,pending_card_payment,1.0,0.63,1039,827,,pending_card_payment,True,Why is their a charge pending on my card still?
+20,jev-latest,receiving_money,0.45,0.62,1037,827,,cash_withdrawal_not_recognised,False,Why is there extra cash in my account?
+21,jev-latest,request_refund,1.0,0.66,1037,827,,request_refund,True,Can I get a refund on an item?
+22,jev-latest,verify_source_of_funds,0.98,0.67,1039,829,,verify_source_of_funds,True,How can I tell the source for my available funds?
+23,jev-latest,supported_cards_and_currencies,0.99,0.69,1036,830,,supported_cards_and_currencies,True,Do you accept all cards and currencies?
+24,jev-latest,transaction_charged_twice,0.9,0.65,1082,830,,transaction_charged_twice,True,"Looks like my card payment was duplicated after all. I went to pay at the store earlier, got declined once, second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and clearly was declined?"
+25,jev-latest,cash_withdrawal_charge,0.7,0.62,1041,830,,cash_withdrawal_charge,True,I noticed a different charge while I was taking my money out.
+26,jev-latest,transaction_charged_twice,0.92,0.78,1086,830,,reverted_card_payment?,False,"I've got a problem - I bought something with my card one or two weeks ago, but now exact same amount of the purchase is showing up in my account. I like more money in my account, but this is too good to be true. Can you tell me what's happening?"
+27,jev-latest,change_pin,0.91,0.67,1038,826,,change_pin,True,What cash machines will let me change my PIN?
+28,jev-latest,card_arrival,0.98,0.67,1035,827,,card_arrival,True,I haven't received my card.
+29,jev-latest,getting_virtual_card,0.97,0.66,1034,827,,getting_virtual_card,True,Where is my virtual card?
+30,jev-latest,transfer_fee_charged,1.0,0.61,1044,829,,transfer_fee_charged,True,I did a transfer and I was charged a fee that shouldn't be there!
+31,jev-latest,card_delivery_estimate,0.99,0.85,1039,828,,card_delivery_estimate,True,When can I expect my new card to get here?
+32,jev-latest,get_physical_card,0.76,0.71,1041,828,,country_support,False,How do I get a card if I live in the US?
+33,jev-latest,pending_cash_withdrawal,0.94,0.58,1067,830,,pending_cash_withdrawal,True,"My account says there are pending funds right now from withdrawing from an ATM, but my card was declined and I never took out any money. When will that money be deposited back into my account?"
+34,jev-latest,pending_transfer,0.46,0.64,1050,826,,pending_cash_withdrawal,False,I didn't receive my money earlier and it says the transaction is still in progress. Can you fix it?
+35,jev-latest,declined_card_payment,0.92,0.63,1066,828,,reverted_card_payment?,False,I am not able to purchase anything online! I have been using my card on multiple sites over a period of two weeks and none of the payments have gone through. Why is this happening?
+36,jev-latest,contactless_not_working,1.0,0.65,1045,831,,contactless_not_working,True,How come when I tried to pay contactless at the bus it didnt work?
+37,jev-latest,exchange_charge,0.99,0.63,1038,826,,exchange_charge,True,What kind of costs are involved for exchanging currency?
+38,jev-latest,virtual_card_not_working,0.99,0.63,1040,830,,virtual_card_not_working,True,Is there a reason why my virtual card won't work?
+39,jev-latest,failed_transfer,0.99,0.61,1054,826,,failed_transfer,True,"Hi there, I've tried to make a transfer 5 different times and its not working. Is your system down or something?"
+40,jev-latest,get_disposable_virtual_card,0.71,0.65,1038,830,,disposable_card_limits,False,I need to make several disposable cards per day.
+41,jev-latest,verify_source_of_funds,0.94,0.61,1041,829,,verify_source_of_funds,True,Can you tell me how to tell where my funds come from?
+42,jev-latest,automatic_top_up,1.0,0.59,1038,827,,automatic_top_up,True,I can't find the auto-top up option.
+43,jev-latest,exchange_charge,1.0,0.65,1036,826,,exchange_charge,True,What fee will be charged for exchanges?
+44,jev-latest,card_delivery_estimate,0.96,0.6,1043,828,,card_delivery_estimate,True,How long does it take for something to be delivered to the U.S?
+45,jev-latest,apple_pay_or_google_pay,0.82,0.58,1036,829,,apple_pay_or_google_pay,True,Is top-up possible with Apple Pay?
+46,jev-latest,why_verify_identity,0.93,0.75,1036,827,,verify_my_identity,False,why do I have to show my ID
+47,jev-latest,apple_pay_or_google_pay,0.98,0.64,1037,829,,apple_pay_or_google_pay,True,I cannot get my google pay to work.
+48,jev-latest,declined_card_payment,0.58,0.62,1054,828,,reverted_card_payment?,False,Can you tell me why my card isn't letting me make purchases online? It's been 2 weeks I've been trying.
+49,jev-latest,verify_my_identity,0.92,0.77,1036,827,,verify_my_identity,True,How can I prove I am me?
+50,jev-latest,top_up_failed,0.98,0.68,1041,827,,pending_top_up,False,What do I do if my top-up has not gone through?
+51,jev-latest,change_pin,1.0,0.66,1038,826,,change_pin,True,Can my PIN be changed in any cash machine?
+52,jev-latest,receiving_money,0.45,0.66,1038,827,,receiving_money,True,Can I get paid for this in another currency?
+53,jev-latest,transfer_into_account,0.71,0.66,1038,827,,transfer_into_account,True,Can you please explain the topping up transfer process?
+54,jev-latest,get_disposable_virtual_card,0.98,0.61,1035,830,,get_disposable_virtual_card,True,Please tell me about disposable cards.
+55,jev-latest,wrong_amount_of_cash_received,0.76,0.65,1065,829,,wrong_amount_of_cash_received,True,I'm at the ATM right now and it only allowed me to withdraw 10 pounds instead of my requested 30. What's going on? How can I fix this?
+56,jev-latest,exchange_rate,0.46,0.78,1037,826,,card_payment_wrong_exchange_rate,False,I want to change the wrong exchange rate.
+57,jev-latest,transfer_not_received_by_recipient,0.73,0.7,1041,831,,transfer_not_received_by_recipient,True,Why hasn't a transaction I did to my friend arrived yet?
+58,jev-latest,card_not_working,0.73,0.6,1040,829,,declined_card_payment,False,I could not get my card to work at a shop.
+59,jev-latest,age_limit,1.0,0.65,1040,826,,age_limit,True,Would it be possible to open up an account for children?
+60,jev-latest,card_arrival,0.95,0.69,1036,827,,card_arrival,True,My new card hasn't came in.
+61,jev-latest,get_physical_card,0.95,0.62,1034,828,,order_physical_card,False,Can I get an actual card
+62,jev-latest,card_swallowed,0.98,0.68,1041,828,,card_swallowed,True,How do I get a new card as your machine swallowed mine!
+63,jev-latest,getting_spare_card,0.99,0.6,1037,828,,getting_spare_card,True,Is it possible to have a second card?
+64,jev-latest,get_disposable_virtual_card,0.82,0.63,1035,830,,get_disposable_virtual_card,True,What do the disposable cards do?
+65,jev-latest,card_arrival,0.61,0.69,1040,827,,card_arrival,True,I would like to track the card you sent to me.
+66,jev-latest,wrong_amount_of_cash_received,1.0,0.69,1061,829,,wrong_amount_of_cash_received,True,"Hi, I used an ATM today to take money out of my account, but the amount it gave me is not the amount I requested. What should I do?"
+67,jev-latest,order_physical_card,0.65,0.64,1037,828,,card_about_to_expire,False,Is ordering a new card from China available?
+68,jev-latest,balance_not_updated_after_cheque_or_cash_deposit,0.98,0.64,1043,835,,balance_not_updated_after_cheque_or_cash_deposit,True,I made a check and cash deposit that wasn't credited to my account.
+69,jev-latest,terminate_account,1.0,0.68,1035,826,,terminate_account,True,How can I close my account?
+70,jev-latest,order_physical_card,0.85,0.65,1040,828,,card_about_to_expire,False,Where can I order a card when I am in China?
+71,jev-latest,exchange_rate,1.0,0.67,1035,826,,exchange_rate,True,What factors effect the exchange rate?
+72,jev-latest,card_not_working,0.95,0.68,1038,829,,card_not_working,True,My card stopped working after multiple transactions. Why?
+73,jev-latest,wrong_amount_of_cash_received,1.0,0.59,1040,829,,wrong_amount_of_cash_received,True,I asked for cash but I did not receive all the funds
+74,jev-latest,extra_charge_on_statement,0.93,0.68,1043,828,,extra_charge_on_statement,True,"There must have been a mistake, why was I charged an extra pound?"
+75,jev-latest,compromised_card,0.92,0.8,1041,828,,compromised_card,True,What do I do if I think someone has used my card?
+76,jev-latest,edit_personal_details,1.0,0.65,1036,829,,edit_personal_details,True,How do I input a new address?
+77,jev-latest,declined_cash_withdrawal,0.99,0.63,1054,831,,declined_cash_withdrawal,True,The ATM keeps declining my Transaction . I tried two different ATMs already Would you please check if everything is okay with my account?
+78,jev-latest,card_linking,0.89,0.66,1043,827,,card_linking,True,I found my card again. Can I put it back into the app?
+79,jev-latest,top_up_by_cash_or_cheque,1.0,0.79,1043,831,,top_up_by_cash_or_cheque,True,Do you have any options to top up with a cheque on my account?
+80,jev-latest,visa_or_mastercard,0.99,0.57,1038,829,,visa_or_mastercard,True,"Given a choice, I'd rather have Mastercard."
+81,jev-latest,verify_source_of_funds,0.94,0.65,1039,829,,verify_source_of_funds,True,Is there a way to lookup where funds came from?
+82,jev-latest,card_payment_fee_charged,0.62,0.62,1042,830,,card_payment_fee_charged,True,Can you explain why I was charged extra when I used the card?
+83,jev-latest,verify_top_up,0.74,0.65,1041,827,,verify_top_up,True,I need help finding the verification code on the top up card.
+84,jev-latest,transfer_fee_charged,1.0,0.63,1040,829,,transfer_fee_charged,True,Why was I charged this extra fee while doing a transfer?
+85,jev-latest,top_up_by_cash_or_cheque,0.83,0.76,1038,831,,transfer_into_account,False,How do I transfer cash my into my account?
+86,jev-latest,verify_my_identity,0.84,0.72,1037,827,,verify_my_identity,True,What do I need in regards to identification?
+87,jev-latest,receiving_money,0.83,0.62,1038,827,,receiving_money,True,Can I receive money in a different countries money?
+88,jev-latest,topping_up_by_card,0.56,0.71,1036,830,,topping_up_by_card,True,Can anyone else top-up for me?
+89,jev-latest,reverted_card_payment?,0.88,0.59,1041,830,,reverted_card_payment?,True,How come the money from the merchant appeared back into my account?
+90,jev-latest,transfer_into_account,0.79,0.6,1035,827,,top_up_by_bank_transfer_charge,False,Can I transfer using SWIFT?
+91,jev-latest,transaction_charged_twice,1.0,0.77,1036,830,,transaction_charged_twice,True,Why is there a payment showing twice?
+92,jev-latest,reverted_card_payment?,0.95,0.75,1043,830,,reverted_card_payment?,True,Why did the funds for one of my purchase come back to my account?
+93,jev-latest,pending_transfer,1.0,0.57,1035,826,,pending_transfer,True,How come I have pending transfers?
+94,jev-latest,card_arrival,0.85,0.67,1040,827,,card_arrival,True,Is there a reason my new card hasn't arrived yet?
+95,jev-latest,age_limit,1.0,0.78,1037,826,,age_limit,True,What is the youngest age for an account?
+96,jev-latest,atm_support,0.83,0.78,1037,826,,atm_support,True,Do I have to use bank approved ATM's
+97,jev-latest,card_arrival,0.55,0.67,1048,827,,card_arrival,True,What do I need to do to get my new card which I have requested 2 weeks ago?
+98,jev-latest,apple_pay_or_google_pay,0.98,0.62,1038,829,,apple_pay_or_google_pay,True,I can't get google pay to work right.
+99,jev-latest,declined_card_payment,0.46,0.58,1033,828,,reverted_card_payment?,False,My card payment's cancelled
+100,jev-latest,automatic_top_up,1.0,0.59,1044,827,,automatic_top_up,True,If I don't have much money in the account can I auto top-up?
+101,jev-latest,direct_debit_payment_not_recognised,1.0,0.61,1039,832,,direct_debit_payment_not_recognised,True,There is a direct debit transaction that I did not authorize
+102,jev-latest,cancel_transfer,0.67,0.66,1053,826,,request_refund,False,"I just bought an item and would like to stop payment, is this possible?  The item has not been received yet."
+103,jev-latest,pending_top_up,1.0,0.6,1063,827,,pending_top_up,True,Please sort your top up! My top up has been pending for an hour already. Can you please make it go through as soon as possible. I really need the money.
+104,jev-latest,wrong_amount_of_cash_received,1.0,0.63,1042,829,,wrong_amount_of_cash_received,True,The ATM is messed up. It gave me less than I wanted.
+105,jev-latest,declined_cash_withdrawal,0.99,0.68,1038,831,,declined_cash_withdrawal,True,Why was my cash withdrawal cancelled at the ATM?
+106,jev-latest,card_arrival,0.58,0.6,1035,827,,order_physical_card,False,Where are the cards transported to?
+107,jev-latest,card_about_to_expire,1.0,0.6,1040,829,,card_about_to_expire,True,How do I replace a card that's going to expire?
+108,jev-latest,wrong_amount_of_cash_received,1.0,0.72,1072,829,,wrong_amount_of_cash_received,True,"Hey I am standing in front of an ATM here, it only gave me 10 pounds even though I wanted to withdraw 30! Seems like the app has 30 pounds, what do I do??"
+109,jev-latest,verify_top_up,0.62,0.66,1037,827,,verify_top_up,True,Is the verification number on the top up card
+110,jev-latest,cash_withdrawal_not_recognised,1.0,0.77,1040,833,,cash_withdrawal_not_recognised,True,There is a cash withdrawl I don't remember.
+111,jev-latest,pending_transfer,0.84,0.71,1038,826,,pending_transfer,True,When will my transfer move from pending to confirmed?
+112,jev-latest,card_payment_not_recognised,0.87,0.59,1036,830,,card_payment_not_recognised,True,why do I have an unknown payment?
+113,jev-latest,age_limit,1.0,0.6,1046,826,,age_limit,True,I have kids and I'm curious at what age could they start to use your service.
+114,jev-latest,transaction_charged_twice,0.92,0.58,1081,830,,transaction_charged_twice,True,"Looks like my card payment was duplicated after all. I went to pay at the store earlier, got declined once,second time it works. App still stays pending for one of the payments. Can you please remove one of them as it's wrong and was declined?"
+115,jev-latest,lost_or_stolen_phone,1.0,0.67,1040,829,,lost_or_stolen_phone,True,"My phone got stolen, how can I use the app?"
+116,jev-latest,transaction_charged_twice,1.0,0.68,1044,830,,transaction_charged_twice,True,"I was charged twice for a restaurant, can you take the second charge off?"
+117,jev-latest,transfer_timing,0.9,0.65,1040,827,,transfer_timing,True,When can I expect the transfer to arrive in my account?
+118,jev-latest,transfer_not_received_by_recipient,0.77,0.71,1041,831,,transfer_not_received_by_recipient,True,Why hasn't the transaction I did to my friend arrived yet?
+119,jev-latest,country_support,0.84,0.6,1043,826,,country_support,True,Can I have a card even if I am not living in the UK?
+120,jev-latest,transaction_charged_twice,1.0,0.75,1036,830,,transaction_charged_twice,True,My account is showing a double charge.
+121,jev-latest,balance_not_updated_after_cheque_or_cash_deposit,0.99,0.62,1044,835,,balance_not_updated_after_cheque_or_cash_deposit,True,I made a check deposit but the cash hasn't arrived in my account yet.
+122,jev-latest,reverted_card_payment?,0.6,0.59,1037,830,,reverted_card_payment?,True,I received a returned payment that I made.
+123,jev-latest,extra_charge_on_statement,0.95,0.77,1043,828,,extra_charge_on_statement,True,There is an extra small charge on my card! What do I do?
+124,jev-latest,card_acceptance,0.98,0.65,1037,828,,card_acceptance,True,What businesses can I use this card with?
+125,jev-latest,card_acceptance,0.92,0.75,1039,828,,card_acceptance,True,Are there any places that won't take my card?
+126,jev-latest,cancel_transfer,0.96,0.6,1053,826,,cancel_transfer,True,I need to cancel my recent transfer as soon as possible. I made an error there. Please help before it goes through.
+127,jev-latest,fiat_currency_support,0.59,0.67,1043,828,,receiving_money,False,My salary is deposited in GBP. Do I need to choose the currency?
+128,jev-latest,balance_not_updated_after_cheque_or_cash_deposit,0.88,0.69,1044,835,,balance_not_updated_after_cheque_or_cash_deposit,True,The cast deposit from a week ago still is not in my account. Why?
+129,jev-latest,top_up_by_card_charge,0.99,0.61,1039,829,,top_up_by_card_charge,True,Are there fees for adding money with an International card?
+130,jev-latest,getting_virtual_card,0.97,0.61,1044,827,,getting_virtual_card,True,I'm interested in getting a virtual card.  How do I get one?
+131,jev-latest,automatic_top_up,1.0,0.65,1045,827,,automatic_top_up,True,Can I set it up to add money every few days automatically while I am traveling?
+132,jev-latest,declined_transfer,0.89,0.65,1044,827,,declined_transfer,True,I have transfered to my account before but it is being declined now?
+133,jev-latest,top_up_by_card_charge,1.0,0.63,1038,829,,top_up_by_card_charge,True,what is the fee for topping up by card?
+134,jev-latest,declined_cash_withdrawal,0.63,0.62,1055,831,,declined_cash_withdrawal,True,This is the first time I've tried to get my money out of an ATM and it didn't work. Please give me my money
+135,jev-latest,transfer_timing,0.76,0.74,1084,827,,pending_transfer,False,"It seems like I have been waiting forever for this international transfer. Why is it taking so long? C'mon, it's 2018, things happen at a click of a button. All of the account information is correct, so how long will this take?"
+136,jev-latest,compromised_card,0.92,0.71,1043,828,,compromised_card,True,There is unusual activity on my account and I believe someone took my card.
+137,jev-latest,cash_withdrawal_charge,1.0,0.57,1037,830,,cash_withdrawal_charge,True,The bank charged me fees for withdrawing cash!
+138,jev-latest,age_limit,1.0,0.64,1036,826,,age_limit,True,What are the age requirements for service?
+139,jev-latest,change_pin,1.0,0.62,1042,826,,change_pin,True,Do I have to go to an actual bank to change my PIN?
+140,jev-latest,extra_charge_on_statement,0.89,0.76,1045,828,,card_payment_fee_charged,False,When do you charge fees on accounts? I just saw a charge on my statement.
+141,jev-latest,card_arrival,0.65,0.69,1042,827,,get_physical_card,False,My card arrived but I don't know how to get my PIN.
+142,jev-latest,declined_card_payment,0.77,0.72,1048,828,,declined_card_payment,True,Why won't you accept my payment? I keep trying with this card and it's not working.
+143,jev-latest,exchange_charge,0.59,0.76,1035,826,,exchange_charge,True,is there a frequent currency discount?
+144,jev-latest,getting_spare_card,1.0,0.62,1039,828,,getting_spare_card,True,I want a backup second card. Is this possible?
+145,jev-latest,disposable_card_limits,1.0,0.62,1040,829,,disposable_card_limits,True,How many active transactions can I make with a disposable card?
+146,jev-latest,pending_transfer,0.4,0.65,1043,826,,pending_card_payment,False,It looks like a payment I've made hasn't made it through yet.
+147,jev-latest,automatic_top_up,1.0,0.58,1037,827,,automatic_top_up,True,Is it possible to do auto top up?
+148,jev-latest,lost_or_stolen_card,1.0,0.67,1040,829,,lost_or_stolen_card,True,I have lost my card! What is my next step?
+149,jev-latest,getting_virtual_card,0.95,0.65,1036,827,,getting_virtual_card,True,Can you give me a virtual card?
+150,jev-latest,wrong_amount_of_cash_received,1.0,0.7,1040,829,,wrong_amount_of_cash_received,True,i asked for 100 only got 80
+151,jev-latest,verify_my_identity,0.78,0.64,1036,827,,verify_my_identity,True,How do I complete the ID check?
+152,jev-latest,receiving_money,0.84,0.7,1038,827,,receiving_money,True,How can I receive my salary in another currency?
+153,jev-latest,transaction_charged_twice,1.0,0.64,1085,830,,transaction_charged_twice,True,"Hey there, I just went through my most recent credit card payments and I notice the same charge for a restaurant was processed twice. There was only one meal at this place, so I would like one of the charges to be reversed and my money to be put back in the account."
+154,jev-latest,card_payment_not_recognised,0.85,0.68,1049,830,,card_payment_not_recognised,True,I just checked my account on the App and there is a payment on there that I did not make.
+155,jev-latest,exchange_via_app,1.0,0.75,1037,828,,exchange_via_app,True,Can I use this app to exchange currencies?
+156,jev-latest,country_support,0.99,0.62,1037,826,,country_support,True,What countries can I use the card in?
+157,jev-latest,top_up_by_cash_or_cheque,1.0,0.61,1039,831,,top_up_by_cash_or_cheque,True,Can cash be used in physical locations to top up?
+158,jev-latest,declined_cash_withdrawal,1.0,0.92,1041,831,,declined_cash_withdrawal,True,"I tried to withdraw cash and got declined, why is that?"
+159,jev-latest,visa_or_mastercard,1.0,0.6,1035,829,,visa_or_mastercard,True,Do I get Visa or Mastercard?
+160,jev-latest,top_up_reverted,0.83,0.79,1057,829,,top_up_reverted,True,"I attempted to complete a topup, and I thought all was well, but now the money is gone again. Has there been a glitch?"
+161,jev-latest,card_acceptance,0.66,0.65,1045,828,,visa_or_mastercard,False,If I can't choose my card type will I be able to use it everywhere?
+162,jev-latest,pending_transfer,1.0,0.64,1034,826,,pending_transfer,True,there is a transfer pending.
+163,jev-latest,activate_my_card,1.0,0.6,1038,827,,activate_my_card,True,Can I get some help activating my new card?
+164,jev-latest,failed_transfer,0.99,0.69,1054,826,,failed_transfer,True,I really need some help to understand why my transfer keeps failing. I'm trying to send money to a friend. Please help.
+165,jev-latest,transfer_fee_charged,0.85,0.67,1077,829,,transfer_fee_charged,True,During the last month I used this account to make payments for my place abroad. I noticed the fees have increased and I wonder why. Shouldn't frequent users have less fees as incentive to keep using instead of increasing them out of nowhere?
+166,jev-latest,wrong_amount_of_cash_received,1.0,0.76,1042,829,,wrong_amount_of_cash_received,True,Why didn't I receive the right amount of cash at the ATM?
+167,jev-latest,reverted_card_payment?,1.0,0.73,1043,830,,reverted_card_payment?,True,I was checking my statement and I think one of my card payments has reverted
+168,jev-latest,beneficiary_not_allowed,0.7,0.62,1033,828,,beneficiary_not_allowed,True,beneficiary transfer problems?
+169,jev-latest,disposable_card_limits,0.97,0.65,1035,829,,disposable_card_limits,True,Whats the maximum disposable virtual cards?
+170,jev-latest,exchange_via_app,0.74,0.65,1037,828,,exchange_via_app,True,Can this app exchange American and English currency?
+171,jev-latest,card_payment_fee_charged,0.44,0.72,1067,830,,card_payment_fee_charged,True,Let me know when you charge extra for payments please. I just checked the app earlier when I saw that there was an additional fee on one of the payments that I wasn't warned about before.
+172,jev-latest,cancel_transfer,0.99,0.67,1037,826,,cancel_transfer,True,How do I go about cancelling a transaction?
+173,jev-latest,card_payment_not_recognised,0.6,0.68,1037,830,,card_payment_not_recognised,True,I see a strange payment in my account.
+174,jev-latest,verify_my_identity,0.49,0.58,1037,827,,unable_to_verify_identity,False,I'm still waiting on my identity verification.
+175,jev-latest,pending_card_payment,0.85,0.67,1062,827,,extra_charge_on_statement,False,There is a pending payment on my account that is very strange. I don't remember making this and it won't go away. Can you help me figure this out?
+176,jev-latest,automatic_top_up,1.0,0.69,1044,827,,automatic_top_up,True,I would like to top up my account automatically. How do I do that?
+177,jev-latest,top_up_by_cash_or_cheque,0.98,0.62,1045,831,,top_up_by_cash_or_cheque,True,i have been trying to top up my account with a check but it won't work
+178,jev-latest,activate_my_card,1.0,0.72,1036,827,,activate_my_card,True,I am having trouble activating my card.
+179,jev-latest,verify_my_identity,0.79,0.78,1036,827,,why_verify_identity,False,how do I speed up identity verification?
+180,jev-latest,transfer_timing,0.53,0.65,1046,827,,balance_not_updated_after_bank_transfer,False,How long do I need to wait to see an update after I make a bank transfer?
+181,jev-latest,card_payment_wrong_exchange_rate,0.72,0.63,1055,829,,card_payment_wrong_exchange_rate,True,"I  have been charged more than I should for the presents I bought  when abroad, the problem seems to be the exchange rate."
+182,jev-latest,cash_withdrawal_charge,0.99,0.59,1038,830,,cash_withdrawal_charge,True,Is the fee with my cash withdrawal a mistake?
+183,jev-latest,card_arrival,0.92,0.67,1046,827,,card_arrival,True,"I have not received my card and it's been a week, what do I do?"
+184,jev-latest,card_payment_not_recognised,0.55,0.59,1070,830,,compromised_card,False,Please tell me how you can stop unauthorized payments from being made on my card since on this bill I see that this has happened. There are transactions that I never made from a place I've never been to.
+185,jev-latest,cash_withdrawal_charge,0.99,0.79,1044,830,,cash_withdrawal_charge,True,"I am not supposed to be charged a cash withdrawal fee, but I was."
+186,jev-latest,exchange_rate,1.0,0.68,1034,826,,exchange_rate,True,What are you exchange rates?
+187,jev-latest,declined_cash_withdrawal,1.0,0.78,1036,831,,declined_cash_withdrawal,True,Why are my withdrawals suddenly being declined?
+188,jev-latest,wrong_amount_of_cash_received,0.66,0.77,1044,829,,wrong_amount_of_cash_received,True,The ATM didn't give me what I asked for but my balance says it did
+189,jev-latest,why_verify_identity,0.98,0.79,1039,827,,why_verify_identity,True,What's the reason for needing to verify my identity?
+190,jev-latest,exchange_rate,1.0,0.68,1036,826,,exchange_rate,True,How can I find your exchange rates?
+191,jev-latest,reverted_card_payment?,0.9,0.76,1041,830,,reverted_card_payment?,True,I had a payment reverted and would like to figure out why.
+192,jev-latest,top_up_limits,1.0,0.75,1039,827,,top_up_limits,True,Can I use as many top-ups as I want?
+193,jev-latest,declined_cash_withdrawal,0.97,0.63,1035,831,,declined_cash_withdrawal,True,Why was my ATM withdrawal cancelled?
+194,jev-latest,order_physical_card,0.45,0.64,1041,828,,card_about_to_expire,False,I'm in China and need a new card. Please help.
+195,jev-latest,unable_to_verify_identity,0.53,0.78,1064,828,,failed_transfer,False,"I have made 5 attempts to make a very standard survey, yet I can't get it to work. What is the problem? Is there an issue related to your system?"
+196,jev-latest,Refund_not_showing_up,1.0,0.78,1045,831,,Refund_not_showing_up,True,"I have received my statement but I do not see my refund, why is that?"
+197,jev-latest,extra_charge_on_statement,0.6,0.68,1056,828,,extra_charge_on_statement,True,"I looked at my statement, and there is a charge for 1£ that I don't recognize.  Why is it on there?"
+198,jev-latest,card_linking,0.79,0.77,1045,827,,card_linking,True,"My new card isn't in my app, how do I get it in there?"
+199,jev-latest,disposable_card_limits,0.83,0.68,1037,829,,disposable_card_limits,True,What are the guidelines for the disposable cards?
+200,jev-latest,card_payment_not_recognised,1.0,0.63,1046,830,,card_payment_not_recognised,True,I just looked over my statement and I don't recognize the name of a card payment.
