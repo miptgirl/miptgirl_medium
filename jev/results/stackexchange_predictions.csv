@@ -1,1517 +1,841 @@
-record_id,model,label,confidence,latency_s,input_tokens,output_tokens,error,gold,correct,text
-84,jev-latest,ai,0.71,0.75,488,130,,ai,True,"How much computing power does it cost to run GPT-3?
-I know it cost around $4.3 million dollars to train, but how much computing power does it cost to run the finished program? IBM Watson chatbot AI only costs a few cents per chat message to use, OpeenAI Five seemed to run on a single gaming PC setup. So I'm wondering how much computing power does it need to run the finished ai program.
-"
-54,jev-latest,ai,0.88,0.76,460,130,,ai,True,"What's the definition of ""singularity"" in the context of neural networks?
-The paper Skip connections eliminate singularities explains the use of skip connections to break the singularity in deep networks, but I have not fully understood what a singularity is.
-Any easy-understanding explanation?
-"
-71,jev-latest,ai,0.74,0.68,515,130,,ai,True,"Maximum number of neurons in a layer given number of neurons in previous layer
-Consider an extremely complicated feed-forward neural network training example but with no need of computational efficiency or limiting of processing time. 
-What is the maximum number of hidden neurons h that a hidden layer should possess to detect all unique features/ correlations between input data from the previous layer which has n nodes?
-In other words if we wanted to create a neural network with a large number of neurons in a hidden layer, what is the maximum neuron count possible that helps the network train (give n neurons are in the previous layer)?
-"
-46,jev-latest,datascience,0.86,0.68,525,133,,ai,False,"Are there tabular datasets where deep neural networks outperform traditional methods?
-Are there (complex) tabular datasets where deep neural networks (e.g. more than 3 layers) outperform traditional methods such as XGBoost by a large margin?
-I'd prefer tabular datasets rather than image datasets, since most image dataset are either too simple that even XGBoost can perform well (e.g. MNIST), or too difficult for XGBoost that its performance is too low (e.g. almost any dataset that is more complex than CIFAR10; please correct me if I'm wrong).
-"
-45,jev-latest,ai,0.95,0.68,456,130,,ai,True,"Current research on indoor localization and navigation in changing environment?
-I'm trying to get up to speed on the latest research regarding indoor localization, scene classification, navigation in changing environment, etc.
-Any advice would be appreciated, but I'm especially interested in recent research papers from vetted sources.  
-"
-40,jev-latest,ai,0.9,0.72,446,130,,ai,True,"What is geometric deep learning?
-What is geometric deep learning (GDL)?
-Here are a few sub-questions
-
-How is it different from deep learning?
-Why do we need GDL?
-What are some applications of GDL?
-
-"
-23,jev-latest,ai,0.6,0.67,467,130,,ai,True,"What are bottleneck features?
-In the blog post Building powerful image classification models using very little data, bottleneck features are mentioned. What are the bottleneck features? Do they change with the architecture that is used? Are they the final output of convolutional layers before the fully-connected layer? Why are they called so?
-"
-81,jev-latest,ai,0.9,0.92,554,130,,ai,True,"Is it possible to make a neural network to solve this ""reaction time test""?
-I'm thinking about writing an essay on the comparison between the human nervous system (reaction time) and a neural network that does the same reaction time test. I am very new in this area, so I was wondering if I can build a neural network that can perform a test like this: https://humanbenchmark.com/tests/reactiontime
-I just wanted to know how I should approach this problem, and what would be the best way to compare it to the human nervous system.
-I have thought about maybe using an image classification neural network, and have it looks for different colors and such, but not too sure about its technical aspects as of yet. Any help is appreciated.
-"
-11,jev-latest,ai,0.83,1.03,467,130,,ai,True,"Is there any deep learning object detection algorithms that can work without bounding boxes annotated data?
-For example Haar Cascade can be trained using only positive and negative examples, you don't need any bounding box annotations. But it not a deep learning approach.
-Another example can be the most straight forward Image recognition model + sliding window. But it is very slow
-"
-1,jev-latest,ai,0.94,0.77,531,130,,ai,True,"Does learning content from additional encyclopedias consume much less amount of storage?
-Complex AI that learns lexical-semantic content and its meaning (such as collection of words, their structure and dependencies) such as Watson takes terabytes of disk space.
-Lets assume DeepQA-like AI consumed whole Wikipedia of size 10G which took the same amount of structured and unstructured stored content.
-Will learning another 10G of different encyclopedia (different topics in the same language) take the same amount of data? Or will the AI reuse the existing structured and take less than half (like 1/10 of it) additional space?
-"
-19,jev-latest,datascience,0.94,0.76,493,133,,ai,False,"How to deal with very, very small time-series?
-I have an ensemble of 231 time series, the largest among them being 14 lines long. The task at hand is to try to predict these time-series. But I'm finding this difficult due to the very small size of the data. Any suggestions about what algorithm to use? I'm thinking about going for a hidden markov model, but I don't know if that's a wise choice.
-"
-31,jev-latest,ai,0.73,0.67,572,130,,ai,True,"When should you not use the bias in a layer?
-I'm not really that experienced with deep learning, and I've been looking at research code (mostly PyTorch) for deep neural networks, specifically GANs, and, in many cases, I see the authors setting bias=False in some layers without much justification. This isn't usually done in a long stack of layers that have a similar purpose, but mostly in unique layers like the initial linear layer after a conditioning vector, or certain layers in an attention architecture.
-I imagined there must be a strategy to this, but most articles online seem to confirm my initial perception that bias is a good thing to have available for training in pretty much every layer.
-Is there a specific optimization / theoretical reason to turn off biases in specific layers in a network? How can I choose when to do it when designing my own architecture?
-"
-74,jev-latest,ai,0.56,0.73,538,130,,ai,True,"What's the best way to feed stories to a neural network?
-I'm trying to train a model that would generate stories. I have a dataset of 2000 stories prepared. They are tokenized and one-hot encoded. I can't load them all at once as a one big dataset, because of memory limits.
-What would be the best way to fit my network so that i can reset the states after each story?
-I tried doing it in a nested for loop (for epoch/for story: model.fit) but it's working really slow cause it takes 3 seconds to fit a single story but almost 10 to load the next file and setup model.fit again.
-"
-34,jev-latest,ai,0.88,0.7,532,130,,ai,True,"experiences on using genetic algorithms as a way to improve neural networks?
-I wonder if there is research, patents, or libraries using Genetic algorithms (GA) to improve Neural Networks. I don't find anything in the subject. For example:
-
-use GA to find better parameters in a NN. So the chromosome will be [learning rate, activation function, layers number, layers size, dropout factor] and the fit function minimize computational cost to reach NN 95% accuracy.
-use GA to mix your NN input data and generate new data to adjust.
-use GA to mix several small NN, different types, and find the perfect mix for better predictions.
-
-"
-91,jev-latest,ai,0.88,0.59,592,130,,ai,True,"How to properly resume training of deep Q-learning network?
-I'm currently training a deep q-learning network. Due to resource limitations, I am not able to train the model to the desired performance in one go. So what I'm doing now is training the model for a certain number of episodes and save the resultant model. Later, I will load up the previously saved model and resume training.
-However, what I'm noticing is that when training resumes, the average rewards goes back to very low again, compared to what it achieved at the end of the previous training session. What I'm currently doing is to load up the previously saved model into the prediction and target models, and I keep all hyperparameters unchanged.
-
-Is this behaviour expected?
-If not, how do I properly resume training of a deep q-learning
-network?
-Do I start off with the epsilon value at the end of the
-previous session, currently I reinitialize that as well?
-
-"
-5,jev-latest,ai,0.93,0.73,533,130,,ai,True,"Why is exploitation necessary during training?
-I have read many blog articles making all kinds of broad analogies to explain the exploration/exploitation trade-off. However, I still can't fully grasp it. On an extremely abstract level, I understand why you would want to ""try new things to gain information"", but then I don't understand why you would want to ""exploit"" in training. It seems as though it would be better to keep trying as many things as possible to gain the most information.
-What is the value of exploitation during training? Intuitively, I would think you would only want to explore during ""training"" and only exploit in ""testing"".
-"
-77,jev-latest,datascience,0.8,0.72,542,133,,ai,False,"What does ""Clustering features based on their values across objects rather than clustering objects ($X^T$ rather than$ X$)"" mean?
-In an ML book, it is said that:
-""Similarly, clustering is a
-popular choice for feature selection in classification-clustering features based on
-their values across objects rather than clustering objects ($X^T$ rather tahn $X$). In
-this instance, K should be chosen to give the best classification performance""
-What does ""Clustering features based on
-their values across objects rather than clustering objects ($X^T$ rather than $X$)"" mean? This part is not clear to me and I need a good explanation.
-"
-78,jev-latest,ai,0.63,0.87,456,130,,ai,True,"How much is currently invested in artificial general intelligence research and development?
-How much is currently invested in artificial general intelligence research and development worldwide?
-Feel free to add company or VC names, but this is not the point. The point is to get an idea of the economics around artificial general intelligence.
-"
-13,jev-latest,ai,0.95,0.62,575,130,,ai,True,"Is there a logical method of deducing an optimal batch size when training a Deep Q-learning agent with experience replay?
-I am training an RL agent using Deep-Q learning with experience replay. At each frame, I am currently sampling 32 random transitions from a queue which stores a maximum of 20000 and training as described in the Atari with Deep RL paper. All is working fine, but I was wondering whether there is any logical way to select the proper batch size for training, or if simply using a grid search is best. At the moment, I’m simply using 32, for its small enough that I can render the gameplay throughout training at a stunning rate of 0.5fps. However, I’m wondering how much of an effect batch size has, and if there is any criteria we could generalize across all Deep Q-learning tasks.
-"
-32,jev-latest,ai,0.98,0.61,557,130,,ai,True,"What should be saved in SARSA prioritized sweeping?
-In the book ""Reinforcement Learning: An Introduction"", by Sutton and Barto, they provided the ""Q-learning prioritized sweeping"" algorithm, in which the model saves the next state and the immediate reward, for each state and action, that is, $Model(S_{t},A_{t}) \leftarrow S_{t+1}, R_{t+1}$. 
-If we want to use ""SARSA prioritized sweeping"", should we save ""next state, immediate reward, and next action"", that is, $Model(S_{t},A_{t}) \leftarrow  S_{t+1}, R_{t+1}, A_{t+1}$?
-"
-280,jev-latest,astronomy,1.0,0.63,489,131,,astronomy,True,"If we lived in a multiverse, what would our universe most likely then be named?
-We live in the Milky Way Galaxy, but we don't just call it ""The Galaxy"", because we know there are multiple different galaxies. So if we lived in a multiverse, it wouldn't make much sense to keep calling our universe ""The Universe"".
-How are names for things like this created, and what would a likely name for our universe be?
-"
-238,jev-latest,astronomy,1.0,0.69,539,131,,astronomy,True,"Why is it so difficult to believe that the Sun once had a companion star
-If the Sun once had an older companion star that exploded 5 billion years ago it could surely explain many things about the solar system. Such as why so many planets have hot cores that are cooling. Also why the planets formed at the same time.
-Ok perhaps explode is wrong. What if the companion star became a Red giant and then shed its outer layer. What was left could have ended up as a white dwarf or even a brown dwarf. If the distance between the stars was great enough it could have wandered off. If instead it was again captured by the remaining star it could now be either Neptune or Uranus.
-"
-266,jev-latest,astronomy,1.0,0.75,482,131,,astronomy,True,"Why are gravitational perturbations stronger at larger semi-major axes?
-Why are mechanisms such as the Kozai-Lidov effect more prominent at at large semi-major axes?
-If we had a binary system of a primary and secondary body, with the third perturber as the Sun. Why is it that the secondary feels more perturbations from the gravitational influence of the sun the further away it is from the primary?
-"
-255,jev-latest,astronomy,0.98,0.78,514,131,,astronomy,True,"What kind of star would allow for life like our Sun/Earth and then go nova?
-In the Star Trek Prime Universe, Star Trek:  The Original Series, the home stars of the Fabrini, Platoans and Sarpeidons went nova, while in Star Trek:  The Next Generation one of the stars in the Bynar system (which might have been a multiple system) went supernova.
-What type of star would allow sentient life to evolve to an advanced level, roughly to the same as twenty-first century Earth, and then go nova.
-"
-216,jev-latest,astronomy,1.0,0.66,504,131,,astronomy,True,"Attachment for viewing the sun with a telescope
-In 2016 I got to see the transit of Mercury thanks to a group of volunteer astronomers. The astronomer had a device attached to the telescope eyepiece that allowed the light to project onto frosted glass.
-I’d like to get such a device for my own telescope for viewing the next two solar eclipses, but I don’t know what this device is called. I’ve Googled various things, but I’ve had no luck.
-"
-221,jev-latest,astronomy,1.0,0.64,439,131,,astronomy,True,"How should I draw the horizon on a sky map?
-Is there any way of drawing the horizon on sky maps similar to the one attached?
-
-This is the complete chart in Stellarium:
-
-"
-300,jev-latest,astronomy,1.0,0.64,518,131,,astronomy,True,"Degrees of freedom in restricted circular coplanar three body problem
-How many degrees of freedom does a mechanical system consisting of three bodies, the Sun, Jupiter and an asteroid, have in the restricted circular coplanar problem of the three bodies?
-I know that if we consider the three bodies as material points, each will have three degrees of freedom, so the system will have 9. However, if the three bodies are forced to remain in the same orbital plane, it would mean that each to have 2 degrees of freedom? So the system will have 6 degrees of freedom in total?
-"
-226,jev-latest,astronomy,1.0,0.7,490,131,,astronomy,True,"On what scale does the universe expand?
-According to the theory (or my understanding of it), the universe is not only expanding, but speeding up.
-If the galaxies are moving apart, are the solar systems within them also moving apart from one another (& the planets within them), if they are, won't the Sun be moving away from the Earth?
-Does the expansion of the universe occur at all scales or just large (inter-galactic) scales?
-"
-257,jev-latest,astronomy,1.0,0.63,533,131,,astronomy,True,"Is nuclear pasta or neutron star crust iron stable outside of neutron stars?
-When neutron stars collide, they crash into and kill each other in a kilonova explosion, which blasts a lot of their material into space. A huge amount of neutronium, neutron star stuff, is suddenly no longer in the high pressure of the star, and instantly expands explosively into normal matter. In other words, thou shalt not have isolated teaspoons of neutronium. But is the same true for the crust, made of a form of highly compressed iron called nuclear pasta, 10 billion times stronger than steel? Is the crust material of neutron stars stable outside of neutron stars?
-"
-218,jev-latest,astronomy,1.0,0.78,426,131,,astronomy,True,"Why was Uranus named what it was?
-Why was Uranus named what it was, and who came up with the name?
-"
-260,jev-latest,astronomy,1.0,0.68,504,131,,astronomy,True,"What stabilizes rings or accretion disks?
-We think, more or less, that our Moon was formed from an accretion disk caused by a Mars-sized impactor. Cool. 
-Tidal forces can break apart a moon, causing rings. 
-Ashes to ashes, dust to dust: the moon came from an orbiting debris disk and may return to an orbiting debris disk someday.
-What determines whether an accretion disk or ring system will form moons vs. remain as stable rings? 
-"
-294,jev-latest,astronomy,1.0,0.61,500,131,,astronomy,True,"What's the farthest object as determined only by parallax?
-I'm wondering what the farthest object we know of, as measured only by parallax methods, from either earth or satellite based telescopes, and at either visible light or radio wavelengths.
-Basically, if we had no other way of measuring distances,
- what would be the farthest object we knew about? I'm guessing this measurement would probably be one from Gaia, it being the latest telescope to measure such things TTBOMK. 
-"
-288,jev-latest,astronomy,1.0,0.65,497,131,,astronomy,True,"Provided a relative flux v/s wavelength plot, how can I calculate the radial velocity of an exoplanet?
-I imagine the relativistic version of the Doppler effect would be appropriate but I'm not entirely sure since flux is a measure of intensity. Alternatively, where could I find redshift data for exoplanets? I can only get my hands on Echelle grating spectra which is admittedly a little difficult to understand. Any help is appreciated. Thank you!
-"
-267,jev-latest,astronomy,1.0,0.65,500,131,,astronomy,True,"What it the outer part of the sun, that we see with our eyes, called?
-When we look at the sun with our eyes it seems much larger than it actually is. When we use a solar filter we are seeing what the sun actually is.
-So, what is the name of the thing the solar filter is eliminating? The larger glare part.
-And, why does this happen? Why do we see this light that makes the sun appear bigger and not the smaller circle that is actually the sun?
-
-
-"
-256,jev-latest,astronomy,1.0,0.59,558,131,,astronomy,True,"Why did Chandrasekhar use 2.5 for molecular weight in 1931?
-I understand that the history of the Chandrasekhar limit is complicated (see, for example, Edmund C. Stoner and the Discovery of the Maximum Mass of White Dwarfs, Michael Nauenberg, JHA 39:297, 2008 / PDF) but what puzzles me is the physics rather than the history. In his 1931 paper (The Maximum Mass Of Ideal White Dwarfs, ApJ 74:81), Chandrasekhar used a value of 2.5 for mean molecular mass. Why? I thought that it is 2.0 for metals and much less for hydrogen and helium.
-"
-274,jev-latest,astronomy,1.0,0.76,546,131,,astronomy,True,"Could Eris have a permanent atmosphere?
-In Wikipedia they write that Eris has an atmosphere when around perihelion (close to the Sun) which collapses when Eris moves away from the Sun. So it behaves similar to a comet's tail. However, they thought the same of Pluto's atmosphere, and the information on Wikipedia is from prior to the New Horizons Pluto flyby which proved that Pluto has a permanent atmosphere.
-Could they be wrong on Eris too or does Eris really go far enough from the Sun so that its atmosphere collapses? It is possible that they are right with Eris for its aphelion is about twice as far as Pluto's, but are we sure about its atmosphere?
-"
-240,jev-latest,astronomy,1.0,0.65,575,131,,astronomy,True,"How long can the comet C/2020 F3 (NEOWISE) will observed with the naked eye or small optics?
-In the answer to the question
-Where should I be looking to see Neowise in southern Sweden?
-there is a picture with the comet positions till 30 July. In other sources I saw similar pictures also with 30 July as a last day. Will it be visible a couple days (or a week) after? Or it is totally unclear at now?
-I live in a big city with a lot of ground light sources and high buildings and conditions for observations is not always acceptable. I have saw the comet about 19-20 July both with naked eye and with the 20x...50x monocular. And the next favourable period of observations begins about 27 July.
-Thanks in advance.
-"
-231,jev-latest,astronomy,1.0,0.59,491,131,,astronomy,True,"Are there neutron stars whose magnetic axis and rotating axis are the same, and if so what will happen?
-I know that there's probably a higher chance of having a neutron star that has its magnetic axis inclined to the rotational axis rather than having it perfectly aligned. 
-If they are not aligned, the neutron star will create beams of radiation that sweep through space like the beams of light from a lighthouse. But what will happen if they were to be aligned?
-"
-217,jev-latest,astronomy,1.0,0.98,437,131,,astronomy,True,"What causes a neutron star to become a pulsar?
-Leading on from this pulsar question, what criteria/processes make neutron stars become pulsars, do all neutron stars become pulsars?
-"
-250,jev-latest,astronomy,1.0,0.7,442,131,,astronomy,True,"Is there any way to separate astronomical and instrumental objects?
-Here is an image of hcg79 taken from APO. I'm just curious if there is any way to separate astronomical and instrumental features in this picture?
-
-
-
-"
-749,jev-latest,bicycles,1.0,0.75,542,132,,bicycles,True,"Tektro RL 340 brake levers cannot find tightening bolt to keep shifter secure
-I have this bike from Decathlon, but the right shifter started to come loose and drop down, so I have unwound the bar tape and proceeded to move it back up. 
-But unlike my old shifters there is no bolt to tighten it up! I have looked everywhere on it, but cannot see it, it seems that is only held in securely by the bar tape. Is there a way to make this more secure? As at the moment it is still moving around.
-It has Tektro RL 340 brake levers, not sure if I am doing something wrong.
-"
-729,jev-latest,bicycles,1.0,0.7,575,132,,bicycles,True,"Gears on a singlespeed frame
-I'm building a new bike and have ridden a frame which feels (and looks) amazing. I'm dead set on buying it but it's a single speed frame. Ideally I would like gears at the rear. It has a dropout which can house a derailleur but there are no cable stops on the frame. It has been suggested a just run the cable straight into the derailleur and should work. 
-Has anyone ever tried/seen this setup?
-EDIT:
-In response to some of the comments, this is the frame in question;
-
-It's a great ride and I'm really struggling to find anything that rides anywhere close it, hence my attempt at finding a solution. It may turn out that I do need to choose another frame, but I wanted to explore all options before going back to the drawing board.
-"
-786,jev-latest,bicycles,1.0,0.6,567,132,,bicycles,True,"Cassette, chainring, chain compatibility
-I've taken on trying to nurse my husband's bike back to life. 
-It is a 2012 Specialize Venge with Dura-Ace Di2 (very old version); Specialized pro FACT carbon chain rings, Ultegra 10-speed cassette.
-It was ""repaired"" by someone who changed the front chainrings to something that, with a little reading, is incompatible and incorrectly fitted and hasn't worked well since. It also has new Ultegra cassette. I've decided to change chainrings to the Praxis Works Buzz, I now have a couple of questions 
-
-Will the Ultegra cassette work with the Praxis chainrings? 
-If yes, will an Ultegra chain be okay or should I use the Dura ace?
-
-"
-784,jev-latest,bicycles,1.0,0.63,475,132,,bicycles,True,"Do pedal-driven bicycles exist that can handle highway commutes?
-Do pedal-driven bi/tricycles exist which can be driven at highway speeds without fuel or electric drive assistance?
-Assisted brakes, steering, lights, and amenities such as climate control or navigation are valid addons as long as the drive system is manually operated. Drive assistance must be limited to gearing (and perhaps flywheels.)
-"
-715,jev-latest,bicycles,1.0,0.61,527,132,,bicycles,True,"Is it rude to take the lane, then filter when encountering congestion?
-In the city I live in, there's a lot of two lane roads. 
-I feel much more comfortable taking the lane, as to not have a car come up from behind and clip me while overtaking. 
-However, when I encounter congestion ahead, I can safely ride between cars, (because I'm the one judging the spacing). 
-This seems rude to be riding in a way that I'm not allowing people to overtake me (unless using a different lane to), but then allowing myself to overtake others. Are there any etiquette guidelines concerning this technique?
-"
-710,jev-latest,bicycles,1.0,0.63,468,132,,bicycles,True,"Why is my stem shim angled?
-This is what my stem shim looks like:
-
-Why is it angled like that? Does it have a purpose?
-I lowered my handlebars and with that angle it looks hideous. The stem sticks out over the spacers now. When it was at the top with no spacers below it looked fine.
-"
-743,jev-latest,bicycles,1.0,0.68,495,132,,bicycles,True,"Is my old bike safe?
-The old bike is a Cannondale R-600 purchased in 1999. 
-
-Original key components. Frame, fork. (Aluminum frame, carbon fork)
-Ridden for several thousand miles. 
-Well maintained. (Various parts have been replaced and upgraded over time.)
-A few visible minor dings here and there.
-
-Question: Is the frame/fork safe? I can sell it or trash it. 
-"
-722,jev-latest,bicycles,0.99,0.74,449,132,,bicycles,True,"Identify the bike/frame NS alike?
-I got this bike, but I doubt it is NS bike since only Movement or Decade could be similar, but still there are differences.
-
-Edit: Yes bike was painted and its just a NS sticker
-"
-776,jev-latest,bicycles,1.0,0.61,442,132,,bicycles,True,"Would a Linus Roadster work on an off-road country environment?
-Would a bicycle like a Linus Roadster Classic handle well on an off-road country environment or would you recommend a mountain bike for this?
-"
-794,jev-latest,bicycles,1.0,0.78,519,132,,bicycles,True,"Gear keeps falling back to gear 6
-So basically I fell off my bike and my chain fell of but as soon as I put the chain back on and thought it was perfect I noticed it stayed in gear 6 even if the numbers changed to for example gear 4 it was still on gear 6 so then I put my bike upside down so I could get to the chain easier and then when I put the chain on the gear 5 as soon as I put my hand on the pedal and started pedalling it dropped back into gear 6. What do I do to stop this?
-"
-745,jev-latest,bicycles,1.0,0.64,482,132,,bicycles,True,"Wheel, tube and tires
-My wheel shows ETRO 622 * 19. The tire on it is 700*38c. I want to change tire and tube such that the bike becomes capable for 50% road bike and 50% off road. What size of tires and tube should i choose? Also, is it actually possible to do so or not?
-"
-727,jev-latest,bicycles,1.0,0.6,510,132,,bicycles,True,"Does (square-taper) BB spindle length affect Q factor?
-I am having knee and ankle trouble on my commuting bike (1993 Specialized mtb) and this has a 73mm BB with a spindle length I haven't measured but there is space between crankarm and frame.
-I wanted to lower the Q factor and thinking that lowering the spindle length will be the easiest way - but does it actually affect the Q factor? As the cranks sit at the widest point which isn't necessarily related to the overall length. 
-"
-761,jev-latest,bicycles,1.0,0.79,559,132,,bicycles,True,"Where to get tiny tyres (~12 inch)
-I have a small Japanese (Nippon) fold-up bike and I need new tyres and tubes (road/commuting).   The wheels are about 12"" diameter*.  Where would I find replacements please (preferably by web/post), London. 
-
-I'm not entirely sure how to measure them, the outside diameter is 13 and a quarter inches; the rim diameter is 10.5 inches. Tyre width is 1 and a quarter inch.  
-
-(It also says ""1.4 x 1.50""; ""Ornate"" and a max pressure in pascals on the side of the tyre). Picture: https://i.stack.imgur.com/cbobd.jpg  Some parallax 
-"
-713,jev-latest,bicycles,1.0,0.67,474,132,,bicycles,True,"Lost power when chain is not lubricated properly
-Does anybody know how much power is lost when the chain is not lubricated properly? I drive a rather heavy bike and experienced that when the chain is not lubricated it definitely has an effect. Can anyone give an estimate in percentages about the amount of power lost due to a non-lubricated chain. 
-"
-721,jev-latest,bicycles,1.0,0.63,448,132,,bicycles,True,"Shimano Deore Squeaking Sound
-Any suggestions on how to reduce/eliminate the squeaking sound on my Shimano V-brakes? I dont remember doing anything, i just wipe my bike and rims every after ride. 
-"
-747,jev-latest,bicycles,1.0,0.7,450,132,,bicycles,True,"Identify my bike
-How do I find out what my mountain bike is? I bought this mountain bike frame from a friend about a year ago. He told me that it is a specialized frame but I can't find it anywhere on the internet.
-
-
-"
-746,jev-latest,bicycles,1.0,0.7,485,132,,bicycles,True,"Shimano BB: add grease over threadlock?
-The dealer manual for the Shimano BBR60 bottom bracket says to grease the threads of the cups before inserting. But I noticed that the threads have some kind of grey threadlock compound applied to them. It seems strange to put grease over threadlock since that would defeat the purpose of threadlock. Is that really what I'm supposed to do?
-"
-741,jev-latest,bicycles,1.0,0.68,482,132,,bicycles,True,"Will hydraulic brakes work with vertical underseat recumbent handlebars?
-I have this type of recumbent. I want to upgrade to hydraulic brakes, but every bike shop warns me about the issues that will come from attaching the brake levers in a vertical position. They say that it will catch air very quickly. Do I  have any options? Maybe there is special brakes for this type of situation?
-
-"
-714,jev-latest,bicycles,1.0,0.65,517,132,,bicycles,True,"Using turbo trainer with solid axles
-I just bought the In'ride 100 without checking if it fits my bicycle. My Triban 100 bicycle has solid axles and plain axle nuts.  Now  I want to know if it's possible to attach a quick release to a Triban 100 and steps to do it if possible. 
-Also is it possible to attach the rear wheel to the trainer without the quick release,  I have already tried with the rear wheel as it is now... And it doesn't sit on the trainer well. 
-"
-762,jev-latest,bicycles,1.0,0.79,555,132,,bicycles,True,"Brake pads destroying wheels
-Today I braked my bicycle from 50 km/h with my front rim brake and  heard a really nasty sound coming from the braking surface of the wheel, and I saw some metal shavings as well. 
-The brake has been randomly making these noises for a little while, but this is the first time I've seen shavings.  The brake pads and rims are about two months old.
-Do you think my wheel is toasted or my brake pads are too hard?
-
-I have rim brakes. It has been happening for a while, randomly but just the sound, never seen the metal shavings flying from my rim. And yeah, the brake shoes are like 2 months old, as well as the rim.
-The rim is aluminium.
-"
-599,jev-latest,bioinformatics,1.0,0.72,605,133,,bioinformatics,True,"What are the coordinates of the extended major histocompatibility complex (xMHC) in GRCh38?
-Is there an accepted boundary of the extended major histocompatibility complex (xMHC) in human? Specifically, I am interested in the boundary coordinates for Genome Reference Consortium Human Build 38 (GRCh38 / hg38).
-I'd like to use these coordinates to query MyGene.info to retrieve a list of genes in the xMHC. For example, King et al 2019 used the following definition:
-
-we excluded drugs with nonhuman or xMHC gene targets. We considered xMHC to include HIST1H2AA and KIFC1 and all genes between them (Chromosome 6 25.7 Mb-33.4 Mb).
-
-But I was curious whether there was an authoritative definition of the xMHC region in humans that would specify down the the base pair rather than just megabase pair.
-"
-505,jev-latest,bioinformatics,1.0,0.69,494,133,,bioinformatics,True,"Can I change the name of file features.tsv to genes.tsv
-it is said that the features.tsv from Cell Ranger v3 is analogous to the genes.tsv from Cell Ranger v2. So can I change the file name to genes.tsv for Seurat to read it? I know that Seurat has the update version 3 that can read the features.tsv, and I would like to use the old version. So if I change the file name, did it cause any problem?
-"
-534,jev-latest,bioinformatics,1.0,0.6,537,133,,bioinformatics,True,"Analysis of 4665 proteins in String database
-Background I have a data set of 4665 proteins from Phytophthora cactorum and want to analyze them in the String database as other database does not have Phytophthora cactorum for GO or KEGG analysis. The String database states I can upload a maximum of 2000 proteins at once.
-Thus I subset my data into 3 sets and upload. However, it gives/risks statistically biased analysis.
-Question Is there any possibility I can analyze all of my 4665 protein sequences at once?
-Looking forward for the help.
-Best regards,
-Bikal
-"
-562,jev-latest,bioinformatics,1.0,0.79,484,133,,bioinformatics,True,"Seurat - single cell analysis
-I have been doing single cell analysis based on seurat and I realized after each clustering and reclustering when I run SCTransform, in my code there is vars.to.regress = percent.mt and I was running this everytime. I removed MT- contaminated cells before.
-My clustering seems fine though.
-Do you think this is very critical thing and I have to analyze everything from scratch?
-"
-594,jev-latest,bioinformatics,0.97,0.78,558,133,,bioinformatics,True,"Best data repository to publish a large 'plotly' table containing all annotations on a transcriptome?
-I am not sure whether this is the best SE community for this question. 
-I want to publish a transcriptome paper, along with interactive materials enabling readers to peruse the data behind the discussion. The R package 'plotly' enables rendering online-publishable tables that can be filtered & searched for specific entries. 
-I would like to publish such a table as supplementary to a paper (e.g. preprint version) however usually data repositories allow for uploading files and text. 
-Would anyone here know an official data repository with a format such that would enable publishing online an interactive table? 
-A good example of such a table is given here.
-Thanks in advance.
-"
-585,jev-latest,bioinformatics,1.0,0.78,588,133,,bioinformatics,True,"Energy error margin for protein structures
-I would like to know the acceptable error margin for the lowest free energy of a protein. In other words, say, both Group A and B have determined the lowest free energy of the same protein in their respective labs. What is an appropriate error margin so that I can compare these two results?
-I just came across this article.
-Now let me quote the following from the article.
-
-Note that we generally require predictions to be within 1 kcal/mol to
-be useful, since 1.4 kcal/mol equates to a 10-fold difference in
-binding affinity.
-
-Can we use this 1 kcal/mol as the acceptable error margin?
-Edited:
-from *(lehninger principles of biochemistry) and Is Kd (the dissociation constant) for a given protein-ligand pair directly correlated to binding affinity (kcal/mol, Rosetta Energy Units, etc.)?
-
-"
-552,jev-latest,bioinformatics,1.0,0.76,600,133,,bioinformatics,True,"variant visualisation of VCF files for 30+ samples
-I am relatively new to genome analysis and would like to compare 30+ vcf files, 1 sample per file. After filtering there are about ~20 variants per vcf file.
-I would like to evaluate to mutational landscape between samples and for each sample as well.
-One option that I found is a mutation heatmap where each row is a sample and each column a position in the genome. Is this the preferred way of displaying this type of information and how would I include gene information?
-At this point I am interested in getting an overview first of the affected positions and then dig deeper using e.g. zygosity.
-Thank you very much for helping out!
-2nd edit
-I would also like to evaluate if there is a bias towards certain genes. For example are certain oncogenes mutated more frequently in this cohort or is the accumulation random and unique within each sample?
-Best,
-M
-"
-595,jev-latest,bioinformatics,0.99,0.64,487,133,,bioinformatics,True,"Can Bioinformatics be used in developing a marketable product?
-As we all know computer science, electrical engineering, etc. knowhows can be used in developing software and electronics/electrical products that can be sold to end-users (B2C).
-Can bioinformatics be used to develop such products other than drug discovery?
-Or, is it just about scientific/academic research meant for B2B clients?
-"
-511,jev-latest,bioinformatics,1.0,0.64,550,133,,bioinformatics,True,"GenomicsDB and recalibration recommended for cohort of mixed exome (GATK)
-We have a cohort of around 3k exomes, most of them from different capture kits, such as Agilent v6, v8, Nextera, Twist, Clinical Research exome and many others. Right now we are creating genome db on a per chromosome basis and combining the vcf.
-We were wondering the following questions -
-
-Will the mix of capture kits introduce more false positive variant calls in the recalibration step
-
-If we restrict the genomics DB to only include regions covered by capture kit, will we see a performance boost (Ex. instead of entire chr2, we restrict it to regions covered by all capture kits).
-
-
-"
-589,jev-latest,bioinformatics,1.0,0.62,457,133,,bioinformatics,True,"How to get the number of complete phage genomes available on ncbi?
-I am looking to establish the total number of complete phage genomes available on NCBI.
-I am not looking for any specific type, but want to understand the total diversity available.
-How can I perform the search?
-"
-510,jev-latest,bioinformatics,1.0,0.69,499,133,,bioinformatics,True,"Combine structures in the same session - PyMOL
-I'm a student currently looking at antibody responses against a viral target protein of interest.
-I have my own, annotated PyMOL session of my protein and I also have .pdbs of crystallised antibody structures that bind to this protein and rougly know whereabouts it binds. I would like to know if it is possible to combine these two structures into a single session to observe or at least overlay the two structures together. Many thanks!
-"
-555,jev-latest,bioinformatics,1.0,0.65,506,133,,bioinformatics,True,"Using information criteria weights to create consensus tree
-While I am familiar with calculating information criteria for various ml models of a multiple sequence alignment, I am not aware of how to use the derived weights to create a tree that combines multiple models weighted accordingly.
-Thus, I have X trees, computed by multiple different models on the same alignment. Each has an associated BIC. BICs can be converted to weights. I wish to average the trees according to the BIC derived weights.
-I would prefer to be able to do this with R.
-"
-557,jev-latest,bioinformatics,1.0,0.59,558,133,,bioinformatics,True,"Error filtering SNPs with Plink
-Im trying to filter SNPs using PLINK with this command. Also, the .map and .ped files were converted to a plink format from a vcf file (python executable.py --input allindividuals.vcf)
-plink --ped allindividuals.ped --map allindividuals.map --allow-extra-chr --indep-pairwise 50 10 0.1
-
-but at the time I count the SNPs in the file plink.prune.in it has only 15 SNPs and in the file plink.prune.out it remains millions of them. In addition, when I change the parameters, the result is the same, no matter how many times I change it.
-"
-573,jev-latest,bioinformatics,1.0,0.65,478,133,,bioinformatics,True,"How to convert vcf to tbed/tfam and again convert it back to tbed/tfam to vcf using plink
-When converting vcf to tbed/tfam format, I am getting error like
-unrecognized flag<'--transpose'>
-
-Code I used:
-plink2 --vcf sample_vcf_file.vcf --recode --transpose --out outputfile
-
-"
-575,jev-latest,bioinformatics,1.0,0.61,439,133,,bioinformatics,True,"Protein-Protein Simulation using Gromacs
-Can we do protein-protein simulation through Gromacs? if yes, can anyone teach me the correct procedure to get this done.
-Thank you,
-"
-543,jev-latest,bioinformatics,1.0,0.71,512,133,,bioinformatics,True,"Using cellranger for non-10x data
-I'm trying to use cellranger to mkfastq and then count and aggregate single-cell data. This data was not generated using 10x Genomics RNASeq. 
-When I run count, cellranger fails to auto id the chemistry and crashes out. Is it possible to wrangle the data into the cellranger method or should I look elsewhere. I'd ideally like to use the same method for all my single-cell data but not all of it is 10x.
-"
-545,jev-latest,bioinformatics,0.97,0.66,548,133,,bioinformatics,True,"Understanding some of the computational bottlenecks of Covid-19 research
-I am a researcher in high-performance computing (with very little bioinformatics background), and I am trying to understand what are the current biggest computational bottlenecks of software used for research on the topic of Covid-19 (testing, vaccine development, drug identification, etc...). 
-I know this is a very broad question, but I am looking for the biggest common denominators. Said differently, if you could pick a few operations / algorithms / data structures to speed up Covid-19 research and they would magically run 1000 times faster, what would they be?
-Note: links to books, papers, and scientific literature are very welcomed.
-"
-515,jev-latest,bioinformatics,0.85,0.64,495,133,,bioinformatics,True,"Is there a way to import tables in PubMed Central to MySQL or other Relational databases?
-I need to use these PMC tables from the medical journals for the purpose of integrating the data with a decision-making software. Though, I can see that one can access full-text for an article from PMC here (which includes the article table), but is there a way to extract the table from this XML document and export it to a local MySQL database or any other relational database?
-"
-582,jev-latest,bioinformatics,1.0,0.8,528,133,,bioinformatics,True,"How about BioMoose?
-This is a silly post, but hope it makes a point. We have BioPerl (which never impressed me, in fact there isn't even a BioPerl tag), BioPython (which admittedly is impressive), and even now BioRust. 
-Why not BioMoose? 
-Moose is Perl5s answer to objects and is really impressive in its simplicity and ease of use. Before Moose Perl5 objects, were/are, how can I say, make evolutionary chaos theory look hip and relevant. Moose changed that completely, but stacking Moose code into BioPerl is never gonna work.
-"
-512,jev-latest,bioinformatics,1.0,0.65,481,133,,bioinformatics,True,"Display a score or graph to visualize the degree of conservation of each residue from alignment data
-I would like to display a score or graph to visualize the degree of conservation of each residue from the amino acid alignment data.
-If possible, I'd like to extract the parts of the game that scored above a certain level.
-Is there a tool or source code (python) to do that?
-Sorry for my bad English ...
-"
-1095,jev-latest,chess,1.0,0.71,459,131,,chess,True,"Comparing ELO ratings between different countries
-I've noticed (empirically) that American players tend to be weaker than Israeli players with comparable non-international ratings. Is there a tool for converting one country's Elo rating to that of another? Or of otherwise verifying this claim?
-"
-1041,jev-latest,chess,1.0,0.67,479,131,,chess,True,"why was en passant introduced?
-pawns have only one privilage and that is to move 2 squares as their first move. So why was that too taken away?
-at final moment of game when we try to save our pawns to revive a queen and opposition have its pawn in my half,I cannot move ahead because of this rule.
-please give me explanation on why is this rule introduced at all?
-"
-1007,jev-latest,chess,1.0,0.67,498,131,,chess,True,"Solving a problem from a Jan Prezewoznik book
-The following position is White to move:
-[fen ""1Q5r/1p2kppp/1q2b3/r1p3P1/p2pB3/P2P3P/1PP1P3/1KR2R2 w - - 0 1""]
-
-I'm a newbie in chess and I want to know, how to solve this problem in a quick way.
-"
-1027,jev-latest,chess,1.0,0.57,446,131,,chess,True,"When does the middlegame end and the endgame begin?
-Is there any specific point where the middle-game ends and end-game begins? E.g. after x number of pieces are exchanged, or say 40 moves, etc.
-"
-1078,jev-latest,chess,1.0,0.68,591,131,,chess,True,"Why the ratings used for different time controls are different?
-The FIDE assigns a player not one but three different ratings:
-
-For classical games featuring long time controls, that is, 90 minutes for the first 40 moves + 30 minutes for the rest of the game + 30 seconds increment from move one, the players have a standard rating.
-For games played with a time control of 15 minutes + 10 seconds increment, the players have a rapid rating.
-For games played with a time control of 3 minutes + 2 seconds increment, the players have a blitz rating.
-
-A similar method for rating players is also implemented by many websites like Chess.com and the ICC. Why is this done? Wouldn't it be easier and more efficient to measure the global strength of a player to have only one rating?
-This question is based on one that was being closed because of being unclear what it was asking.
-"
-1069,jev-latest,chess,1.0,0.75,564,131,,chess,True,"Why would black resign in this situation?
-I was playing online with someone I do not know that is considerably better than me. I am still somewhat new and I can't figure out why they would resign after castling. What am I missing?
-[fen """"]
-1.e4 g6
-2.Nf3 Bg7
-3.d4 d6 
-4.Nc3 a6 
-5.Bf4 Nd7 
-6.Bc4 e6 
-7.O-O Ne7 
-8.Bg5 h6 
-9.Bxe7 Qxe7 
-10.Qd3 b6
-11.d5 e5 
-12.g4 Nc5 
-13.Qe3 Bxg4 
-14.h3 Bxh3 
-15.Rfe1 O-O 1-0
-
-"
-1100,jev-latest,chess,1.0,0.59,577,131,,chess,True,"Exercises for positional evaluation
-I would like to improve my position evaluation skills. And as we all know - there are tons of tactical exercises , endgames studies, etc. But when it comes to exercises for positional evaluation - well - things are getting complicated.
-So far I know these sources:
-- 'How to Reassess Your Chess' workbook
-- Aagard 'Positional Play' contains some exercises
-- Khmelnicky 100-exercises test book (but it contains all kinds of puzzles)
-I've read Dan Heisemann idea to work with complicated middlegame position and then process it with an engine. But IMHO it lacks clear plan presentation and overall view of what is going on the board. So my question is - can anyone point me to specialised book or webpage that contain more of position evaluation exercises with long descriptive answers? 
-"
-1075,jev-latest,chess,0.99,0.62,469,131,,chess,True,"Returning scores for all possible moves from a chess engine
-I am looking for a way to return scores for all possible moves from a chess engine (preferably, Stockfish).
-The UCI protocol does not seem to require it, but is seems like a useful feature to include.
-Are there any chess engines/extensions of UCI that implement that?
-"
-1025,jev-latest,chess,1.0,0.68,645,131,,chess,True,"Fastest way to parse a bitboard
-I am making a chess engine, and for now I’m working on the move generation. I’m using bitboards, and so for example my magic bit boards file for a knight on d4 is
-
-00000000
-00000000
-00101000
-01000100
-000N0000
-01000100
-00101000
-00000000
-Which is represented by some unsigned long long integer.
-
-I need this in a format where I can store the moves in a move list, and also make the move. E.g. {10,12,17,21,33,37,42,44}
-What would be the fastest way to get the indices of the “1” bits in the bitboard during runtime? Currently I isolate the least significant 1 bit with x &= -x, and then XOR the position until I get 0. But is there a faster way to do this?
-"
-1059,jev-latest,chess,1.0,0.78,500,131,,chess,True,"Promoting a pawn
-When a pawn reaches the opposing side it can be promoted. Given that the most advantageous choice of promotion is to a Queen I have 3 questions. 
-
-Does this mean that the newly promoted piece (e.g. Queen) stays on the opposing side and can attack from the rear?
-Does this mean (hypothetically) that there can be 3 Queens on the board?
-How does one represent the newly promoted Queen if there are still 2 on the board?
-
-"
-1011,jev-latest,chess,1.0,0.77,524,131,,chess,True,"Detailed Stockfish Evaluation Function
-Stockfish contains the nice 'eval' command that prints out the detailed score of its static evaluation function. It regards Mobility, Material, Bishop, Rooks, etc. However, I was wondering if there was any possibility to get even more detailed scores, like, for example the ones provided at https://hxim.github.io/Stockfish-Evaluation-Guide/
-Ideally, I am looking for a tool that takes as input an epd string and returns the evaluation scores for all the subterms listed in the above page (there should be about 100 of them).
-"
-1090,jev-latest,chess,1.0,0.76,506,131,,chess,True,"Brilliancy prizes
-Many times the annotations to an old game include the information that it won a brilliancy prize (I have even seen ""4th place brilliancy prizes""). I know there used to be money attached to these, so perhaps it was a means to make the tournament more attractive when the purses were not so big, and for patrons to play small-time sponsorship (put a small prize with your name instead of the full competition award).
-
-Are brilliancy prizes still awarded? If not, why?
-
-"
-1098,jev-latest,chess,1.0,0.73,483,131,,chess,True,"Fischer: 1. e4 ""Best by test""
-Fischer famously scribbled ""best by test"" on one of his score sheets after playing 1. e4.
-Yet when I look at chess.com's database of games, 1. d4 yields a larger win %age for while than does 1. e4.
-Was Fischer wrong?  If not, what changed to make this so?
-"
-1015,jev-latest,chess,1.0,0.61,452,131,,chess,True,"Is castling allowed in this position?
-[FEN ""8/8/b7/8/8/8/8/4K2R w - - 0 1 ""]
-
-In this case White hasn't moved his King yet. Is castling allowed?
-"
-1035,jev-latest,chess,1.0,0.63,512,131,,chess,True,"Chess Engine Opening book
-I'm trying to evaluate the differences between Opening books.
-For example: Have Fritz 12 Book and Rybka Aquarium (CTG format). For many of the standard openings. I've tried with at least main lines of
-a. QGD
-b. QGAcc
-c. Nimzo Qc2
-d. Caro Capablanca
-So far I couldn't find any differences between these 2 and have gone as deep as 17–20 moves in some lines. How do these two contrast?
-"
-1043,jev-latest,chess,1.0,0.76,524,131,,chess,True,"What motivated Kasparov's comments on the Anand-Gelfand match?
-I was watching an interview with Kasparov which occurred before the Anand-Gelfand match was played, and he said:
-
-""Nobody should be offended, it is just a fact, but it's the first time in a long period of time that a World Championship match, with the official champion and official challenger, doesn't have anything to do with fighting for the title of the strongest chess player on the planet.""
-
-Why exactly would he say that?  Was it just because Carlsen was not playing, or are there deeper reasons?
-"
-1003,jev-latest,chess,1.0,0.7,476,131,,chess,True,"Where can I get PGNs of FIDE rated tournaments?
-FIDE requires tournament organizers of high level tournaments (basically tournaments which are strong enough that norms can be won) to submit the pgn files of games played in the tournament to FIDE. Amongst other things this allows FIDE to check for cheating and other abnormalities.
-Where can I download such pgn files?
-"
-1018,jev-latest,chess,1.0,0.58,458,131,,chess,True,"Is it necessary to write your calculations?
-I have heard many times that while you're doing endgame studies,you should write your calculations,like candidate moves,variations.Is it really necessary?Can't i just check each variation one at a time in my head without having to write it down.
-"
-1050,jev-latest,chess,1.0,0.58,548,131,,chess,True,"Is there a concept of 'good' knight and 'bad' knight?
-We've all heard about the concepts of 'good' bishop and 'bad' bishop.
-[FEN ""r1bqk1nr/ppp2ppp/2np4/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 5""]
-
-In the position above, the white knight at f3 does not have access to either of the centre squares d4 or e5. Can this knight be considered a 'bad' knight? Is it best to have developed it to f3 or would e2 be a better square for this knight?
-"
-1020,jev-latest,chess,1.0,0.6,495,131,,chess,True,"What are these types of OTB events from the USCF?
-Looking into OTB tournaments, I see that the USCF allows you to filter searches for the following types:
-
-Heritage Event
-American Classic
-Grand Prix
-Enhanced Grand Prix
-Junior Grand Prix
-National Championship Event
-State Championship Event
-Regionals
-
-Some of these are self-evident, but what are ""Heritage,"" ""Classic,"" ""Grand Prix,"" and ""Enhanced"" types?
-"
-159,jev-latest,coffee,1.0,0.69,444,130,,coffee,True,"Americano, water before the shot?
-I was in a coffee shop the other day and noticed the barrista was pouring in the hot water before the espresso shot for my Americano. Is there a reason for this?
-"
-145,jev-latest,coffee,1.0,0.71,572,130,,coffee,True,"Is there a name for this Americano/Long Black Variation?
-I am quite sensitive to caffeine so when brewing espresso I want to extend the enjoyment of my drink. An americano to me is way too much water and I lose a lot of what I think makes an espresso amazing. No water added and I drink the coffee too quickly and find myself wanting another. This is my new recipe: to help extend my drink. I brew a standard double espresso of about 36-40g and add that same weight in water. If I made a 40g espresso I would add 40g more of water. I think of it like a cortado but instead of milk I use water. 
-I am wondering if this is an actual drink and if it has a name or if it is just some crazy successful experiment I made up. 
-"
-101,jev-latest,coffee,1.0,0.65,531,130,,coffee,True,"I like a really mild tasting coffee, not to bitter, a little bit sweet but not overly sweet, what beans have this kind of flavour
-My dad has a coffee bean roaster, so he buys green beans and roasts them himself , he really likes his coffee beans to have a strong flavour. I would like to find a green beans that are more mild in flavour, if it helps I drink my coffee as a latte. 
-So to be specific with my question. What region of the world produces coffee beans with a mild flavour, or even if u know an exact farm that produces mild tasting beans
-Thanks, I’m looking forward to your suggestions  
-"
-104,jev-latest,coffee,0.95,0.59,437,130,,coffee,True,"Will I be addicted to caffeine?
-If I drink coffee everyday, will I be addicted to it, or is it just a myth?
-Is there any risk to my own health due to caffeine?
-"
-132,jev-latest,coffee,1.0,0.59,493,130,,coffee,True,"How do I make an espresso shot in a moka pot?
-Ive tried brewing espresso in a moka pot but I end up making coffee that tastes like drip coffee. Not sure why, but is it because the water level in the moka pot (I fill it up just below the opening hole) is too much? I'd like to get the consistency of an espresso shot made by an espresso machine (thick and creamy). I've been following tutorials online but nothing changes!
-"
-163,jev-latest,coffee,1.0,0.99,502,130,,coffee,True,"Generating Crema with a manual machine
-I have a La Pavoni Pro, and noticed that I am a bit inconsistent with the crema. I have read this other post on crema and understand the freshness of the beans are the most important part, but I have noticed even with the same beans my crema is not the same. There are a lot of variables with the La Pavoni, tamp, grind, pull, temperature of the machine etc. What variables should I should focus on after considering the freshness of the beans?
-"
-138,jev-latest,coffee,1.0,0.71,446,130,,coffee,True,"How does coconut milk change the taste of coffee?
-My father bought coconut milk several days ago. So, I've been wondering: how does coconut milk change the taste of coffee?
-Is there a coffee variant which would taste awesome with it?
-"
-127,jev-latest,coffee,1.0,0.68,475,130,,coffee,True,"What is the next best milk substitute for a latte?
-I used to drink lattes every day and realized the milk (lactose) was making me feel bad. I'm looking for a good substitute that will steam well, taste good, and be nice for making latte art. What will get me closest? Soy milk? Lactaid? Unsweetened almond milk?
-"
-133,jev-latest,coffee,1.0,0.79,454,130,,coffee,True,"How are coffee beans differentiated?
-Tea grown in Sri Lanka is classified by elevation into high, mid and low grown tea. 
-
-High: rich in flavor 
-Mid: blend of flavor and aroma 
-Low: rich aroma
-
-Does coffee has such differentiation? If so what are they?
-"
-139,jev-latest,coffee,1.0,0.76,571,130,,coffee,True,"Aeropress: How to accent the caramel flavor and decrease the acidity of my beans (Burundi)?
-I recently bought some Full-City roasted Burundi Gaharo
-The flavor profile is:
-
-Strong caramel, tropic fruit juicy flavor, moderate body, great
-balance of sweetness and acidity and bitterness.
-
-Here are the brewing tips it came with:
-
-Using a siphon pot is recommended to accent the caramel
-feature of this bean.
-Medium Ground 1:15 beans/water ratio.
-High  temperature water recommended, just slightly lower than boil.
-
-I am instead using an Aeropress. How can I modify my brewing process to minimize the acidity while accentuating the caramel taste?
-I brewed once already with fine grounds, inverted and 3m total brew. The result was a big slap of the citrus flavor.
-"
-191,jev-latest,coffee,1.0,0.63,462,130,,coffee,True,"How and when is flavoured coffee flavoured?
-When you buy whole flavoured coffee beans, how have they been flavoured, and when in the process does this happen?
-For example, are the beans soaked, sprinkled; does it happen before or after roasting; etc.?
-"
-161,jev-latest,coffee,1.0,0.69,547,130,,coffee,True,"What is the clear plastic sticker on New England Coffee bags for?
-I got a couple bags of New England Coffee and noticed there is a clear plastic sticker with 9 holes in it on the front of each bag.  It seems like there are also small holes in the bag underneath that correspond to the holes in the sticker, but they are very small.  Also the sticker is very sticky (i.e. it is not meant to be removed).
-Does anyone know what purpose this serves?  Is it for freshness somehow?
-The sticker is always in the same place, and can be seen here if you zoom in and look closely.  It's Under the words ""Chocolate Cappuccino"", and its center is in the sky underneath.
-
-"
-197,jev-latest,coffee,0.97,0.67,476,130,,coffee,True,"How much time should I wait between drinking coffee?
-Whenever I drink the first coffee in the morning, initially I get energized from it. However if I go for a second one right after, or even wait a while, I don't get the same rush.
-How long should I wait between each coffee drink so I can get the same buzz? 
- Is there an equation for this?
-"
-193,jev-latest,coffee,1.0,0.59,499,130,,coffee,True,"How do I use the pre ground option on the Delonghi ESAM 3500?
-How do I use the pre-ground function on the Delonghi esam 3500. I know you first choose the button with the spoon icon, then use that same button again to choose strength of taste then add your pre-ground in the funnel on top but then what? When I hit any button with a cup I on it goes back to whole bean function and starts the grinder.
-"
-189,jev-latest,coffee,0.85,0.78,449,130,,coffee,True,"What's the history and content of Coffee Cantata from Johann Sebastian Bach?
-A few days ago, I have seen the title Coffee Cantata from Johann Sebastian Bach will be staged soon in the opera house. I wonder, what is this cantata about?
-"
-192,jev-latest,coffee,1.0,0.65,435,130,,coffee,True,"How do I use this Indian coffee maker?
-A friend gave me an Indian coffee maker, which looks like this:
-
-It did not come with instructions - how do I use it?
-"
-186,jev-latest,coffee,1.0,0.62,483,130,,coffee,True,"Is there any way to preserve roasted coffee beans?
-I know different people try different things to preserve roasted coffee beans, including freezing them or vacuum sealing them. But do any of these actually work? I have a very rare and expensive coffee bean that I'd like to take out once a month or so on special occasions, and I'm trying to see if there's anyway to do this without buying the coffee new every time.
-"
-142,jev-latest,coffee,1.0,0.6,467,130,,coffee,True,"How long will cold brew keep?
-After making a big batch of cold brew, I'd like to be able to keep it around for an extended period of time-- one month, let's say. Assuming I keep it in an airtight container in the refrigerator, how long will my batch of cold brew remain fresh, flavorful and bacteria-free?
-"
-156,jev-latest,coffee,0.91,0.61,538,130,,coffee,True,"How can I stay off coffee after I quit?
-I have quit drinking coffee many times, and it was never that difficult for me to do, but can never stay quit for more than about 3 or 4 weeks.
-I typically drink 3, homebrewed cups a day, and only put a small amount of half & half in it.
-I've been drinking coffee for over 10 years.
-My main problem here is that I don't feel quite right after I quit. This feeling does not seem to go away, so I always start again.
-How can I stay off coffee after I quit? And would I ever normalize, if so, how many weeks might it take?
-"
-106,jev-latest,coffee,1.0,0.81,430,130,,coffee,True,"Can I reuse grounds to make another espresso?
-I have this espresso/latte machine. How many times can I make a cup from the same espresso grounds?
-"
-1279,jev-latest,datascience,0.95,0.66,561,133,,datascience,True,"Creating a Feature to determine popularity
-I am building a recommendation system where I have multiple categories. I would like to  Know how popular a product is in each category. For that, I am considering probability as one factor. For example, I have 3 categories ($C1$,$C2$,$C3$) so, I am calculating:
-(Number of times a particular item in C1 is purchased)/total number of items purchased from C1)
-This gives me the probability of each item within a category. Apart from that, I am also trying to consider:
-(Total number of times an item has been purchased/total number of times it has been viewed)
-However, I do not understand how to use the purchase/view ratio with probability. Apart from that, what another factors can I conclude?
-"
-1269,jev-latest,ai,0.57,0.8,456,130,,datascience,False,"Zero-shot learning for tabular data?
-Can anyone point me to methods for zero-shot learning on tabular data? There is some very cool work being done for zero-shot learning on images and text, but I'm struggling to find work being done to extend these techniques to tabular data.
-"
-1252,jev-latest,datascience,0.99,0.61,476,133,,datascience,True,"Impact of marketing in Prophet seasonality calculation
-Is there a way to exclude the impact of marketing from my time-series, before Prophet decomposes into seasonality? I find that the seasonality generated by Prophet maybe incorrectly explaining some of the data that is actually explainable by marketing activity, but don't know if there is a provision to include marketing activity in Prophet.
-"
-1273,jev-latest,datascience,0.97,0.62,574,133,,datascience,True,"How do you describe the clusters created by k-means?
-I understand how the clustering algorithm k-means works and I can map any new point to any of the lusters using the predict function.
-What I want to understand is: how can I describe the clusters?
-For example, if I have three variables, x, y, and z, I would like to be able that, say, people in cluster 1 are those for which x is in between these values, unless y is that and then x is in between these other values, etc.
-I understand that, if you have hundreds of variables, this becomes very difficult, is there some kind of ""decision tree""-type of description I can use?
-Alternatively, is there a way to output what the function kmeans derived by the algorithm, which I will use to predict any new point, looks like?
-"
-1284,jev-latest,datascience,0.98,0.71,490,133,,datascience,True,"Difference between model score on test part and Kaggle public score
-I tested my CatBoostModel model on part of data and get 0.92 score, but Kaggle public score was 0.9. I found new hyperparameters via randomsearch, new model score was 0.925, but on Kaggle score fell to 0.88.
-What should I do to validate the model correctly?
-"
-1240,jev-latest,datascience,0.92,0.66,559,133,,datascience,True,"Cluster doc2vec using Affinity Propagation
-I want to cluster my document vectors (doc2vec) using affinity propagation.
-However, I am just confused if I should use cosine similarity or cosine distance to cluster my document vectors. Currently, I am using cosine similarity for my affinity propagation clustering. Thus, my first question is;
-Is it correct to use cosine similarity to cluster my doc2vec document vectors?
-Moreover, I would like to visualize my cluster results using t-sne. However, I saw that t-sne requires distance matrix as the input. Hence, my second question is;
-Is it correct to use distance matrix (cosine distance) for t-sne, while I use cosine similarity for clustering?
-If my code is required I can post it too.
-Please help me.
-"
-1293,jev-latest,datascience,0.94,0.67,501,133,,datascience,True,"Why it is recommended to use T SNE to reduce to 2-3 dims and not higher dim?
-
-According to wiki it is recommenced to use T-SNE to map to 2-3 dimensional.
-I can understand this , if we want to visualizing the data.
-If we want to reduce the number of features (i.e from 30 features to 5 dims), is it recommended to do this with T-SNE ? or we should use other dimensional reduction algorithm ?
-
-"
-1207,jev-latest,datascience,0.67,0.63,446,133,,datascience,True,"Reduce MNIST dataset
-I am working on the MNIST dataset. How I can reduce 50% of this data?
-(x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
-
-"
-1248,jev-latest,datascience,0.94,0.63,556,133,,datascience,True,"high precision and recall but low cross validated accuracy
-I'm using a random forest classifier (scikit learn). When I do a 5-fold cross validation, the average accuracy score is around 70%. However, when I look at precision_score and recall_score, they are both 1. Is that possible? If it's wrong, what could be the problem? Here is the code:
-clf = RandomForestClassifier(n_estimators=100) 
-clf.fit(X, Y.values.ravel())
-scores = cross_val_score(clf, X, Y.values.ravel(), cv=5, scoring=""accuracy"")
-Y_pred = clf.predict(X)
-precision = precision_score(Y, Y_pred)
-recall = recall_score(Y, Y_pred)
-
-"
-1249,jev-latest,datascience,0.95,0.62,485,133,,datascience,True,"How to compare Timeseries Sequences?
-I have multiple time series sequences and I want for each new time series to find the most alike old one.
-
-I found that I can use the sum of errors between points. Is this a good approach?
-Is there a way to be able to compare sequences with different lengths (maybe a sequence look like a subsequence of another sequence)?
-Will scaling the data before comparing make difference?
-
-"
-1202,jev-latest,datascience,1.0,0.66,541,133,,datascience,True,"Best way to narrow down a list and rank based on attributes?
-I have a mortgage/credit data set that contains a list of customers (600k rows) and has a 100 columns inclusive of the customer's general info (address, city, zipcode, etc), income, fico scores, number of current mortgages, mortgages in the past, aggregate mortgage amounts, number of bank card trades, etc. The data pertains to customers that are already good candidates to contact for issuing a credit product, however if one is to narrow down the list to 350K: 
-What would be the best method to rank the list to cut it down?
-PS Your insights are much appreciated.
-"
-1268,jev-latest,ai,0.58,0.68,481,130,,datascience,False,"Keras y-labels range between 0 and 1 instead of binary?
-I have X values and corresponding y-labels, until now I used to round my labels <0.5 to 0 and >0.5 to 1. Is it possible to use values between 0 and 1 for ""y train""? Using Keras and Tensorflow. Appreciate any suggestions.
-"
-1243,jev-latest,datascience,0.95,0.6,523,133,,datascience,True,"If I have negative and positive numbers for a feature, should MinMaxScaler be -1 to 1?
-I have a variable X with values ranging from -150 to 400. All the other variables in my training set are positive so I normalized them to be from 0 to 1, or they’re already binary, or they had a Gaussian distribution so I used StandardScaler.
-For this variable X with some negative values, is it important, generally, that I normalize them to -1 to 1 (due to the negative values) rather than 0 to 1?
-"
-1246,jev-latest,datascience,0.87,0.6,569,133,,datascience,True,"LSTM doesnt find finer dependencies than the Random Forest model
-I am currently implementing a forecasting model. The whole builds on a regression. The first model is an LSTM network based on Keras and the second a Random-Forest model based on sklearn.
-I use the same input values and target variables for both models. The forecasts of the LSTM network are closer to the actual observed values (better rmse and r2) (probably due to the memory / lookback), but the Random Forest model provides better altitudes and depths. It seems that the Random-Forest model has found better dependencies than the LSTM model.
-LSTM:
-
-Random-Forest:
-
-What is the best way for the LSTM model to understand finer dependencies? Should I use an ensemble or stack method from LSTM + RF? Does it make sense?
-"
-1251,jev-latest,datascience,0.92,0.78,446,133,,datascience,True,"Selecting threshold for F1 Score
-When selecting a probability threshold to maximize the F1 score prior to deploying a model (based on the precision-recall curve), should the threshold be selected based on the training or holdout dataset?
-"
-1234,jev-latest,datascience,0.85,0.6,492,133,,datascience,True,"How to convert Scikit Learn logistic regression model to TensorFlow
-I would like to use existing Scikit Learn LogisticRegression model in the BigQuery ML. However, BQ ML currently has a hard limit of 50 unique labels and my model needs to handle more than that. 
-BQ accepts TensorFlow models, which do not seem to have this limit.
-How can I convert existing Scikit logistic regression model to TensorFlow model?
-"
-1282,jev-latest,ai,0.57,0.66,501,130,,datascience,False,"Identifying software and version range in a sentence
-I have sentences similar to the following format 
-
-This vulnerability happened in Firefox 1.x before 1.8, Safari
-2.x before 2.8.
-
-Given the above sentence, I want to extract a dictionary
-{Firefox: 1.0-1.8, Safari: 2.0-2.8}
-
-Problem is how should I identify the version range with the software they belong to, using NLP techniques?
-"
-1266,jev-latest,ai,0.61,0.61,453,130,,datascience,False,"Mxnet model load with keras?
-I have an mxnet model for facerecognition that needs to be loaded in keras?
-Any idea how to load the JSON and params file in keras?
-Ref. Insightface model for facerecognition.
-"
-1222,jev-latest,datascience,0.98,0.61,570,133,,datascience,True,"Splitting CSV data with missing target variable using train_test_split in Python
-I have a dataset in CSV format that consists of a training dataset with around 300 instances and a test dataset with around 100 instances. The issue is that the target variable (the column we want to predict) is completely missing in the test dataset other than this column the two datasets have the same commun columns,  I want to split the data into ""X_train, X_test, y_train, y_test"" using the train_test_split function in Python's scikit-learn library.
-However, when I combine the two files and fill the missing target values using fillna, I'm concerned that it might alter the real results. What would be the best approach to handle this situation and split the data correctly while ensuring the integrity of the results.?
-"
-1299,jev-latest,datascience,0.98,0.8,513,133,,datascience,True,"How to optimize hyperparameters of Xgboost algorithm in multiple classes in R?
-My unbalanced dataset with 4 classes.  there is.  I want to use xgboost algorithm for classification.  But despite my research I couldn't find how to optimize hyperparameters for multiclass datasets.  Tutorials show these adjustments for dual classes.  I've seen a bayesian-based package for this in R, but it's also archived.  I wanted to try but I was unsuccessful.  Can you help me?
-"
-1181,jev-latest,economics,1.0,0.73,462,132,,economics,True,"Is the forex market a form of bartering?
-I had this showerthought that the forex market is pretty much currency bartering. The forex market seems to be different from commodity or stock markets in that you exchange one currency for another. How does the forex market resemble and differ from bartering?
-"
-1160,jev-latest,economics,1.0,0.73,597,132,,economics,True,"Piketty's explanation of elasticity of substitution (from his book Capital in the 21st century)
-I have some trouble following the explanation of the elasticity of substitution between capital and labor and its implications on p189.
-Take this part:
-
-The relevant question is whether the elasticity of substitution
-between labor and capital is greater or less than one. If the
-elasticity lies between zero and one, then an increase in the
-capital/income ratio β leads to a decrease in the marginal
-productivity of capital large enough that the capital share α = r × β
-decreases (assuming that the return on capital is determined by its
-marginal productivity).
-
-Specifically, when he talks about that elasticity, does he mean something like (dL/L)/(dK/K) with L for labor and K for capital? Assuming that, how exactly does a higher elasticity translate in a lower fall in marginal product of capital?
-Thanks
-"
-1107,jev-latest,economics,1.0,0.58,504,132,,economics,True,"Real and nominal value interpretation
-When price is deflated according to some base year, what does the real value mean? E.g. if we are deflating \$5.000 from year 2000 (base year, deflator=1) to 1980, using the CPI 1.6 from 1980, we get \$3.125. 
-Is this real value equivalent to $5.000 in 1980?
-"
-1113,jev-latest,economics,1.0,0.58,593,132,,economics,True,"Bargaining Theory: reading list
-I looked around in the forum but I have not found this question yet. I would like to approach the topic of bargaining models in the spirit of Rubinstein, Ariel. ""Perfect equilibrium in a bargaining model."" Econometrica: Journal of the Econometric Society (1982): 97-109.
-I have studied game theory but never actually worked with these kind of models (see for example: Chae, Suchan, and Paul Heidhues. ""Buyers' alliances for bargaining power."" Journal of Economics & Management Strategy 13.4 (2004): 731-754.)
-I have done some timid google scholar searches, but I have found so much material that I cannot skim it on my own. Could you suggest a reading list of the main references that are a must read for these kind of models?
-Thanks a lot.
-"
-1141,jev-latest,economics,0.82,0.67,541,132,,economics,True,"When do the sign and magnitude of coefficient of variable of interest matter if it is insignificant?
-I am wondering when the sign and magnitude of coefficients of a variable of interest matter if it is statistically insignificant. Normally, I am concerning a coefficient of variable if it is significant at 5% level or lower. I am wondering when we should care about the magnitude and sign of coefficient if it is insignificant? Saying for example, my variable of interest saying about the impact of anticorruption laws on asset growth in Difference - in -Difference setting.
-Please guide me to clarify my question more if it is not yet clear.
-Sorry @1muflon1 that I did not clarify my question that confused you
-"
-1109,jev-latest,economics,1.0,0.69,564,132,,economics,True,"Find equilibrium price using excess demand function
-Consider an economy with two agents. There are two goods, x and y. Agents' preferences are Leontif ones as follows:
-$u_1(x,y)=\min(x,4y)$ and $u_2(x,y)=\min(x,y)$.
-Initial endowment for 1 is (2,4), for 2 is (4,2)
-The problem asks me to use the excess demand function to find the equilibrium price and show that there are infinitely many equilibria with that price. The problem also asks what is the cause of such multiplicity of equilibria.
-I tried this many times, but I always get that the equilibirum price is (1,-1/2), which is impossible.
-Any help is appreciated.
-"
-1166,jev-latest,economics,1.0,0.73,484,132,,economics,True,"Why does equity have historically poor performance after rate cuts?
-I am struggling to understand why equity markets seem to suffer shortly after fed rate cuts. Here is a rather telling chart:
-
-Question
-Assuming not some kind of spurious relationship, what's the intuition behind the  connection between rate cuts and equity dropping?
-Maybe the rate cuts draws investors attention to the weakness of the macro conditions and makes them more risk-adverse?
-"
-1136,jev-latest,economics,1.0,0.59,465,132,,economics,True,"HANK model lecture notes + code
-Can someone recommand me good lecture notes to understand macroeconomic heterogenous agent models such as HANK models (not TANK models, I know how them). Also if you know where I could find some codes that develop macro heterogeneous models that would be great.
-Thnk you.
-"
-1142,jev-latest,economics,1.0,0.61,563,132,,economics,True,"Doraszelski and Jaumandreu (2018) Intuition
-Doraszelski and Jaumandreu (2018)  estimate a CES production function with two forms of productivity shocks (1) labor augmenting and (2) Hicks neutral. They claim that the increase in labor augmenting productivity is the reason that the labor share of income is falling. In their figure 1 they show the increase in labor augmenting productivity by industry and in figure 2 they show that in a hypothetical scenario without labor augmenting productivity that labor share would be higher.
-My intuition would be that labor augmenting productivity should increase the income share to laborers, but clearly that is wrong.
-Is there an intuitive explanation for the conclusion of this paper?
-"
-1116,jev-latest,economics,0.96,0.64,483,132,,economics,True,"Is there a source which informs the public of who is buying up newly issued U.S. Government debt?
-Is there a list somewhere of who is buying the newly issued debt that will finance the American Rescue Plan (the $1.8 trillion stimulus package signed recently)? Of course, I have an idea of who owns the current stock of US Government debt, but is there a source which provides information on who is currently buying?
-"
-1135,jev-latest,economics,1.0,0.59,455,132,,economics,True,"What is the difference between preferences lacking ""completeness"" and being indifferent?
-If two preferences are complete, at least one must have a relationship to the other.  If neither has a relationship, doesn't that mean that the consumer doesn't care which one he/she purchases?
-"
-1152,jev-latest,economics,1.0,0.64,497,132,,economics,True,"How to determine demand without the price of a good?
-If I have the utility function of an individual that exhibits perfect substitutes, think (U=ax+by), and I'm given the price of good x and the budget M, then how am I supposed to determine the demand for good Y if I don't have the price of good Y? 
-I know for Cobb-Douglas style utility functions the optimal choice of good Y is given by Y=BM/price of good Y
-"
-1191,jev-latest,economics,1.0,0.66,497,132,,economics,True,"How does the Fed supervise and regulate foreign branches of its member banks?
-https://youtu.be/dka4fHQI4ZQ?t=46
-According to the video, they say the Fed regulates and supervises foreign branches of its member banks, and I wanna know how the Fed does that. Does the Fed send their officials to each foreign branch to supervise them on-site, or does the Fed ask foreign branches of its member banks to send their financial statement reports regularly?
-"
-1129,jev-latest,economics,1.0,0.65,441,132,,economics,True,"How to incorporate hecksher ohlin model to uk leaving the single market
-How do incorporate the theories listed above , into a question regarding the UK exit from the EU and SEM and it’s outcome from this.
-"
-1188,jev-latest,economics,1.0,0.7,530,132,,economics,True,"Three stage two player signalling game, pooling equilbrium
-I am solving a three-stage game in which first the sender sends the signal, then the receiver acts based on the signal and finally, the sender moves again. The sender has two types high and low and the high type would like to pretend to be the low type. The last stage action of high or low type is already defined and is different for the agents. I am struggling with the pooling equilibrium. Since the last stage actions of the senders are different, the optimal pooling signal of them is different as well. How should I come up with the pooling equilibrium?
-Thank you very much
-"
-1161,jev-latest,economics,0.99,0.72,511,132,,economics,True,"CES function estimation
-For a paper I was using the micEconCES package to estimate the CES production function for a country at the aggregate. For a two-input function with capital and labour I used for the variables the Perpetual Inventory Method to construct aggregate capital, labour hours and GDP for output. I used methods provided in the package to do the estimation. But now I am kind of unsure, what I have to check the data for f.e. autocorrelation, multicollinearity etc. or do I even have to check for that?
-"
-1122,jev-latest,economics,1.0,0.71,547,132,,economics,True,"Pareto optimal and Walrasian equilibrium
-There are 100 units of good 1 and good 2 in a economy. Consumer 1 and consumer 2 have 50 units of each good. 
-Consumer 1 only wants good 1 whereas consumer 2 only wants good 2.
-Note: Neither of these are lexicographic preferences.
-Question: Find Walrasian equilibria
-Here is what I have reached:
-
-Can someone explain why red lines are WE..and why not F and G?
-And P is Pareto optimal I understand, but is it Walrasian equilibrium as well?
-Is every Walrasian equilibrium Pareto optimal and every Pareto optimal point Walrasian equilibrium?
-"
-1168,jev-latest,economics,1.0,0.68,611,132,,economics,True,"Is Dollarization a good decision for a small open economy with an economic cycle that weakly correlates with the anchor country?
-I have been reading the work of Alesina http://scholar.harvard.edu/files/alesina/files/dollarization.pdf, about the pros and cons of dollarization (i.e. adopting the currency of other country, say the dollar). It is not the case of the European Union by the way, here the small open economy completely gives up on having its own currency. 
-Countries like Panama, El Salvador, and Ecuador have adopted such monetary policy and have done well during expansionary part of the cycle. Now, most commodities prices, of which these countries depends are down, and evidence will be available of the costs of dollarization. However, here I ask about theoretical reasons of why this extreme fixed exchange rate is better with a flexible scheme. The trade-off is between stable and credible monetary policies and flexible possibly manipulable ones in countries with weak institutions. 
-"
-1190,jev-latest,economics,1.0,0.64,476,132,,economics,True,"The consideration of export in calculating national income
-Is export/imports a part of factor income i.e returns from the act of production? If not, then here is my counter argument.
-Export is the equivalent value which is added to the goods when it is undergoing production, and it is this value which is distributed to all the factor services.
-Could y’all please clear this anomaly.
-Thanks
-"
-1146,jev-latest,economics,1.0,0.8,565,132,,economics,True,"What is it about the money market safeguards that increase volatility?
-In recent coverage of the Fed's repo operation, I was struck by this line:
-
-It also indicated Wall Street is struggling to absorb record sales of
-  Treasury debt to fund a swelling U.S. budget deficit. What’s more,
-  many dealers have curtailed trading because of safeguards implemented
-  after the 2008 crisis, making these markets more prone to volatility.
-
-I do not find this so intuitive, because increasing volatility seems to be an unlikely policy objective in the context of other initiatives at the time (TARP et all.)
-Question
-I hope I did not over-simplify the matter, and I would like to understand what is the regulation the article refers to and what is the logic behind the perceived ""more prone to volatility?""
-"
-993,jev-latest,fitness,1.0,0.62,467,130,,fitness,True,"Aerobic on days before weight lifting
-I know the key behind weight lifting and strength training is giving your body time to rest, recover, and build muscle.  So you can't go back to gym or even biking the day after.
-What about the day before? Can I do heavy aerobic exercise on Monday and lift weights on Tuesday?
-"
-965,jev-latest,fitness,1.0,0.65,599,130,,fitness,True,"Are there any specific exercises that can reduce pain from kneeling?
-I know this question is the perfect setup for innuendo-laden comments, but it is a serious question, so please limit responses accordingly.
-There are at least a few activities where my natural inclination may be to kneel (e.g. sitting on the floor to play with my nieces/nephews, rotating tires on my car, working on appliances).
-It seems like children can sit on their knees all day long. However, any time I have seen anyone over the age of 20 get up from kneeling to talk/play with children on the floor (myself included), they say ""I'm not as young as I used to be"" implying some degree of stiffness/knee pain.
-Short of knee pads, is there an exercise or activity that can done to significantly improve the ability to kneel for extended periods of time without pain? Or, is this really just an unnatural position for humans that requires additional padding?
-"
-986,jev-latest,fitness,1.0,0.63,484,130,,fitness,True,"Workout routine
-I'm 330lbs and was thinking about starting to exercise first 1 time a week and as my body get used to it, Add more time to the week... for example if I make exercise Monday and get to 320 lbs and my body get stuck at 320lbs then I add a day to my routine, like saying Wednesday. Will it make a difference?
-"
-937,jev-latest,fitness,1.0,0.67,587,130,,fitness,True,"Advice on How to use Westside For Skinny Bastards
-So, I am currently using WS4SB3 and I have questions regarding the program.
-
-Do I have to use the conditioning or can I just use the programs for 4 days without conditioning?
-Can I modify the training program if I am not doing the conditioning part? I changed Jump Training to Squat for 3-4 of 8-12 Reps and I can see some good size gains on my quads.
-My goal in the gym is to become a better athlete, is this program suitable for me or not?
-
-Some prior information about me:
-Novice,haven't been serious or consistent with regards to tracking progress.
-
-Bench- 35+Weight of the Bar x 4 Reps
-Squat- 46 kg x 2 Reps
-OHP - 18.5 x 1 Rep
-
-"
-997,jev-latest,fitness,1.0,0.76,480,130,,fitness,True,"Is there a technical reason why small plates go on the outside of the collars?
-I see this a lot in olympic weightlifting. You'll have some full diameter plates, then the collar, and then some smaller, for example, unit 1kg plates on the outside. Is there a technical reason why this is done? That is, why not tighten it in with the collar?
-"
-911,jev-latest,fitness,1.0,0.65,465,130,,fitness,True,"Should you not work out within an hour of waking up?
-Is there any truth to the claim that you should wait (at least) an hour after you wake up, before you start a workout. I've heard something about ""the back is not lubricated enough before that"" but that doesn't make sense in my opinion.
-"
-983,jev-latest,fitness,1.0,0.76,559,130,,fitness,True,"Advice on finding a training partner
-I regularly workout on my own but on the occasions I workout with a training partner I find my motivation increases, my output increases and perhaps most importantly, my overall enjoyment increases.
-Jason Ferruggia (a world-renowned S&C coach) has always said that having a good training partner is one of the best things you can do to enhance your rate of progress. 
-With this in mind, how do you go about finding a training partner, if indeed you workout with a partner at all?
-
-Is it possible to walk into a gym and find people there?
-Is it possible to workout with friends? (Especially if you're there to exercise seriously, rather than catch up and chat)
-
-What experience do you have on finding a training partner?
-"
-974,jev-latest,fitness,1.0,0.76,436,130,,fitness,True,"Fitness measurement for appropriate heights?
-What is the general fitness measurement for biceps, chest, stomach, hip and soon on.
-And what weight is advisory for 180 cm?
-"
-920,jev-latest,fitness,1.0,0.66,451,130,,fitness,True,"Working abs after regular workout
-A guy in my gym suggested not to work for abs after regular/other body part workout. 
-Reason was that, if you do abs after regular workout, muscles get loose and your workout will go waste.
-How true it is?
-"
-931,jev-latest,fitness,1.0,0.7,455,130,,fitness,True,"Rumble Roller question
-Recently I bought a rumble roller.
-I use it primarily for Hamstring and Quads muscles.
-Is it safe to use it 3-4 times a week ?
-How much times a week it is recommended to use a rumble roller ?
-Thanks.
-"
-929,jev-latest,fitness,1.0,0.75,477,130,,fitness,True,"Identifying filling foods for cutting / fat loss
-I'm looking into reducing calorie intake for cutting while maintaining the feeling of satiety. How can one identify foods that are filling?
-NutritionData.Self.com has a useful ""Fullness factor"", but I don't see a way to sort by that.
-
-Any ideas or other web sites that may provide this data?
-"
-939,jev-latest,fitness,1.0,0.68,556,130,,fitness,True,"How much should I speed train (% of total mileage)
-How much should one speed train, in relation to my total mileage? Some resources (this one for instance) say that the amount of interval training should not exceed 7-15% of your total mileage. My question is: Is this also true for runners with very low mileage? 
-I'm currently training for a 6.5km (4miles) race. Due to my strength training schedule, I can only go running twice a week. I thought about doing interval training on Sunday and low intensity running on Thursday, but according to the above rule, this would be way to much interval training. Should I really be interval training only once every 4 weeks (which would be 12.5%)?
-"
-933,jev-latest,fitness,1.0,0.63,466,130,,fitness,True,"Getting dumbbells on knees for the dumbbell benchpress
-For doing dumbbell benchpress, I've figured one can simply farmers carry the dumbbells to the narrow end of the bench, but what is the proper form to get it up onto the knees for the position before kicking it back to the chest?
-"
-964,jev-latest,fitness,1.0,0.58,441,130,,fitness,True,"Do you burn fat directly if you only eat protein?
-If you only eat protein and workout with weightlifting, does your body burn fat for energy or digest your muscles or use the protein you’ve eaten?
-"
-960,jev-latest,fitness,1.0,0.62,478,130,,fitness,True,"Most accurate home body fat test?
-My girlfriend was looking at getting some body fat scales, but I told her these are inaccurate. 
-What is the best way to measure body fat at home?
-By best I'm looking for a trade off between accuracy and simplicity. I understand that the most accurate would likely be something like a full body scan but obviously that isn't practical to do at home. 
-"
-940,jev-latest,fitness,1.0,0.62,435,130,,fitness,True,"Which weight training exercise to do so I can grow my upper trapezius?
-My aim is to build my upper back so it looks like what highlighted in red in these pictures.
-
-
-"
-990,jev-latest,fitness,1.0,0.6,470,130,,fitness,True,"Crunches after a run?
-I go for a 5km before work 2-3 times a week, with a longer run at weekends. I was doing crunches and other weight based exercises on the off days, but have been advised to do it after my runs.
-My question is, why is this a better way to do it?
-"
-913,jev-latest,fitness,1.0,0.71,481,130,,fitness,True,"Will the push/pull machine at the gym cause imbalance?
-There is a machine at my gym that uses push on one arm and pull on the other. My concern is that one arm will have a bigger tricep than the other one and the other arm will have a bigger bicep than the other one, because of the different mechanisms being used at the same time. Is this going to cause imbalance?
-"
-969,jev-latest,fitness,1.0,0.58,456,130,,fitness,True,"Is warm up exercise necessary for load-bearing and high impact exercise?
-I am new to fitness and will be doing load-bearing and high-impact exercises. It necessary to do warm-up exercises before starting load-bearing and high-impact exercises? If yes, then why it is necessary?
-"
-973,jev-latest,fitness,1.0,0.64,558,130,,fitness,True,"Pain on Inside of Elbow after light impact
-I play Football, and while I was going to hit the ball, I bumped the receiver with my elbow while jumping up and reaching for the ball. The next play I was surprised that my elbow hurt quite badly whenever any pressure was put on it. After trying out a few things I have noticed that my elbow doesn't hurt at all when pulling, just when pushing, but even tiny amounts hurt (even putting on a seat belt).
-Does anyone have any ideas on what happened? I would really like to know whether it is safe to continuing practice or if I have to take a day or two off. If the only problem is pain, I can deal with that, but if I will make it worse, than I would love to know.
-"
-618,jev-latest,genai,0.75,0.81,472,131,,genai,True,"What do (parentheses) and [square brackets] do in image prompts?
-I've seen a number of prompts that put parentheses or square brackets around certain words/phrases. This seems to be used across multiple frontends (Automatic1111, ComfyUI, NovelAI, ...) and regardless of model. What does this syntax do?
-"
-677,jev-latest,ai,0.6,0.59,547,130,,genai,False,"To what extent do LLMs have grammar rules explicitly programmed?
-Is there typically any explicit programming in LLMs that dictates how to form a sentence? Where does the ""understanding"" come to with regards to references like ""rewrite last reply in 2 words""? How does the LLM ""know"" what is meant by ""rewrite""?
-How does the LLM produce a correct answer to ""What is the tallest mountain in US, respond in five words""?
-Is there another layer that parses the request to understand these meta instructions and instructs the token generating mechanism to stop after it generates 5 words, or is there pure statistics behind understanding what is meant by ""respond in five words"" to produce the expected result?
-"
-635,jev-latest,ai,0.54,0.69,597,130,,genai,False,"How to estimate GPU memory size and training time for fine tuning a LLM?
-Here is what I observed for fine tuning Flan-T5-base:
-GPU: 1 Nvidia V100 with 16 GB memory.
-Flan-T5-base model size: 990 MB.
-Script: deep-learning-pytorch-huggingface.
-Samsum train dataset size: 370 MB.
-Batch size: 8.
-==> This will use 16 GB GPU memory(obtained from nvidia-smi command) and take about 1.5 hr to finish training.
-Chnage to batch_size = 1.
-==> This will use 7 GB GPU memory and take about 7.5 hr to finish training.
-I would like to know if there is a rule of thumb which can be used to estimate GPU memory size and training time for fine tuning a LLM given GPU type and model, train data and batch sizes.
-"
-607,jev-latest,genai,0.88,0.72,523,131,,genai,True,"How to provide faces of public characters as a visual clue to Leonardo.ai?
-I am a beginner in generative prompting and I am experimenting with Leonardo.ai. I like it's photoreal and cinematic effect, but it does not support upload of an image as input, apparently.
-How can I use an image from a public character, as only a clue for facial traits?
-Perhaps, does leonardo support public images or public url?
-Additionally, could you please also let me understand how to provide a set of images (1 or a few more) to have the AI understand the facial traits and then generate a composition ?
-"
-616,jev-latest,ai,0.62,0.62,466,130,,genai,False,"What is the exact number of web pages used to train ChatGPT-3.5, and what methods are employed to filter out inaccurate information?
-What is the total number of web pages used to train ChatGPT-3.5, and what methods are employed to ensure the veracity of the vast data while filtering out inaccurate information?
-"
-668,jev-latest,ai,0.54,0.65,530,130,,genai,False,"Why does ChatGPT have a consistent paragraph length?
-I've noticed that when ChatGPT writes multiple paragraphs, the paragraphs have consistent lengths of roughly 200 characters. Often more than 100, and less than 400. I'm not sure if this is just a result of of the specific prompts that have been feeding the responses (I've been hunting ChatGPT answers on Stack Overflow). Why is ChatGPT like this? Did it learn this behaviour from a specific source / form of writing such as newspapers? (I've heard they have paragraph-length constraints)
-Please make your best effort to support your answer with relevant facts and references.
-"
-690,jev-latest,genai,0.49,0.63,564,131,,genai,True,"Easiest way to host your own LLM model from Huggingface?
-I’ve only used LLM API’s like OpenAI/Anthropic. How would I host my own model from somewhere like huggingface?
-https://huggingface.co/tiiuae/falcon-180B For example, if I wanted to host this model and try to use it like I would use the paid LLM API’s, would the best way to host it is host it on HuggingFace with their inference API or using Amazon Sagemaker?
-What is the easiest way to get started? What is the best way to host models like this at scale?
-What are the best “free” or open-source models that we should be trying as a drop-in replacement for general LLM API’s?
-"
-643,jev-latest,genai,0.52,0.66,449,131,,genai,True,"Can you have ChatGPT 4 ""explain"" how it generated an answer?
-While I understand that GPT-4 does not use logic in the same way that a human does, is there some way to have ChatGPT ""explain"" itself?
-"
-629,jev-latest,ai,0.56,0.67,529,130,,genai,False,"Data security in LLms
-I have question about data leak and security in LLms model. Suppose I want to build a chatbot based on LLM like gpt. I use the pre-trained GPT as a base model and I use in-context learning to ground the model for my private data. My questions is how can I make sure, that Model does not compromise my private data. GPT privacy terms mention they can use private data to train the model in future. How can I make sure that my private data is not in the future model training and there is no data leaks. Are there any methods which I can use to avoid potential data threats???
-"
-630,jev-latest,genai,0.52,0.78,483,131,,genai,True,"Will you be banned for ""Jailbreaking"" ChatGPT?
-I understand that people have been ""jailbreaking"" using different prompt injections etc.
-So my first question is: Does this break T&C and as a result could this lead to a ban?
-My second is: If you are a third party app developer and someone uses your app to do this, will OpenAI hold you responsible?
-"
-689,jev-latest,genai,0.52,0.73,533,131,,genai,True,"What are the State-of-the-Art open source alternatives to Stable Diffusion for Text-to-Image generation?
-I'm currently working on a project involving text-to-image generation, and I've been using the Stable Diffusion model. While this model has been performing well, I'm interested in exploring other state-of-the-art open source alternatives to diversify my approach and compare results.
-I'm particularly interested in models that have demonstrated strong performance in recent research and have an active community of developers. Ideally, these models should be relatively easy to use and have good documentation.
-Could anyone recommend some alternatives to Stable Diffusion for text-to-image generation?
-"
-678,jev-latest,genai,0.55,0.88,460,131,,genai,True,"Reducing the occurrence of taboo terms in LLM output
-What are some ways to reduce the occurrence of certain taboo or abusive terms in LLM responses? Assume I'm using Chat GPT, is there an established or empirically tested way to construct a preamble to avoid certain words or phrases?
-"
-625,jev-latest,genai,0.81,0.7,553,131,,genai,True,"How can I get leonardo.ai to draw a kite (bird) and not a kite (toy)?
-This is a kite:
-
-
-
-Since ""kite"" is more commonly used to refer to the light-weight toy flown in the sky, I can't think of how to ask leonardo.ai to draw a kite (the bird).  It seems hard (or maybe even impossible) to disambiguate the two.
-Question: How can I get leonardo.ai to draw a kite (bird) and not a kite (toy)?
-I tried kite (bird) but it interpreted (bird) using the bracket syntax.  I tried (kite bird), but it drew a kite (toy) in the shape of a multi-winged gull, with visible strings:
-
-
-
-"
-685,jev-latest,genai,0.79,0.68,540,131,,genai,True,"How to make the text-to-video generation keep some components the same throughout the video?
-I generated this below video from this website and converted it into a gif file and attached here.
-I would like to ask for a solution that can keep the armor and the headwear the same throughout the video. Right now, they are changing constantly. Some frames are acceptable, some are not. I don't really want any style of the components specifically. I just want them to be consistent.
-Prompt
-
-high quality, 1 girl, solo, anime, holy, knight, plate armor, wings, holding sword
-
-Result
-
-How to make the text-to-video generation keep some components the same throughout the video?
-"
-632,jev-latest,genai,0.6,0.58,438,131,,genai,True,"Can third-party ChatGPT plugins see requests we send to ChatGPT?
-Can third-party bots, apps, or plugins that rely on ChatGPT see which code/questions we send/ask to ChatGPT?
-"
-695,jev-latest,genai,0.5,0.79,534,131,,genai,True,"Is there a way I can get AI to generate Chinese reading materials, and track the number of characters I've read?
-For language learners, LLMs can be a great way to practice reading.  Recently, I've been getting ChatGPT to write articles at an appropriate level, and copy/paste them into a website called LanguageCrush because it can track how many words I've read.  However, I'm not a fan of such bookkeeping tasks, so I'm wondering if there's dedicated software for this task.
-Question: Is there a way I can get AI to generate Chinese reading materials, and track the number of characters I've read?
-"
-650,jev-latest,genai,0.57,0.77,482,131,,genai,True,"Can you search old ChatGPT conversation within the Web UI?
-Is there a way to search for data/information in my old ChatGPT conversation  within the web UI, all at once with a keyword etc. I understand that the current conversation can't look at data from the old ones. But is there a way I can search through the old conversation myself with keyword rather than having look through them one by one?
-"
-697,jev-latest,genai,0.72,0.62,579,131,,genai,True,"Is there a way to gauge how environmentally (un)friendly popular genAIs are?
-The environmentally conscious user may prefer a genAI which is less harmful to the environment, such as those with less CO₂ emissions.  I was reading How to Make Generative AI Greener which suggests server location is a big factor in whether or not a genAI uses green energy, and it explains how a large amount of the CO₂ emissions occur during training, so it's not easy for the typical user to determine which genAI is better environmentally.  So...
-Question: Is there a way to gauge how environmentally (un)friendly popular genAIs are?
-Maybe there are some kind of ""AI watch"" groups which rank genAIs according to their CO₂ emissions or other environmental factors.  Or maybe certain genAI companies publish environmental impact reports (perhaps as required by law).
-"
-628,jev-latest,genai,0.59,0.61,501,131,,genai,True,"Crafting a prompt to create an image from a specific angle in Stable Diffusion Automatic1111 web UI
-How should I go about crafting a prompt to generate an object viewed from a specific angle in Stable Diffusion using the Automatic1111 web UI?
-For example, if I wanted to generate an image of a bird flying upwards and away from the camera, viewed from the perspective of an observer on the ground. How would I craft the viewing angle of the prompt?
-"
-648,jev-latest,genai,0.78,0.57,494,131,,genai,True,"How does Google Generative Search Experience decide which question to answer?
-Examples below.
-The question:
-
-Why is my preview monitor blank in Premiere Pro?
-
-is answered by Google Generative Search Experience:
-
-However, the question
-
-How do I change the video width and height in Premiere Pro?"":
-
-is not answered by Google Generative Search Experience: https://i.stack.imgur.com/j9Zaz.png
-How does Google Generative Search Experience decide which question to answer?
-"
-1320,jev-latest,movies,1.0,0.62,477,130,,movies,True,"Why did they rob the French bank?
-I see why Tressler and Elkhorn were robbed and why Thaddeus was framed, but I don't get why a French bank was robbed. The only hint I got from the movie was ""they delivered the note"" and that makes no sense to me. Was Shrike French? And have I not been paying enough attention at all?
-"
-1349,jev-latest,movies,1.0,0.79,476,130,,movies,True,"Morse code from Empire of the Sun
-Empire of the Sun - excellent movie. In one scene the character played by Christian Bale, Jim signals to the invading Japanese Fleet with morse code. Shortly after they start firing at the building Jim signaled from. 
-What does he say? Is it morse code? If so what language it is? Japanese, Chinese or English?
-"
-1346,jev-latest,movies,1.0,0.77,459,130,,movies,True,"What was the purpose of 'Pursuit of Happyness'
-I heard that there was a history behind the movie 'Pursuit of Happyness', as this was the dream project of Will Smith.
-I loved that movie and want to know the story. Can anyone help me find it?
-"
-1303,jev-latest,movies,1.0,0.69,475,130,,movies,True,"Why is the film titled 'Frances Ha'?
-Why is the film titled 'Frances Ha'? Is there some symbolism to it? Sure, we see that she has to abbreviate her name to get her label to fit into the mailbox of her new apartment. But this scene occurs right at the end of the storyline rather than the beginning. What does this signify?
-"
-1309,jev-latest,movies,1.0,0.67,475,130,,movies,True,"Who was Kylo Ren fighting against in order to acquire the first location cube?
-In the initial fighting scene of Star Wars: The Rise of Skywalker, Kylo Ren (with his own contingent of Stormtroopers) were fighting a group of people in order to acquire the first location cube that would lead him to Palpatine.
-Who were those people he was fighting?
-"
-1301,jev-latest,movies,1.0,0.94,436,130,,movies,True,"Kill Bill colour changes to Black and White
-In the movie Kill Bill, why does the colour keep shifting from standard colour to black and white? Is it to keep the gross levels down?
-"
-1391,jev-latest,movies,1.0,0.76,466,130,,movies,True,"How does PK know better than Jaggu?
-In PK movie, PK knows about Jaggu's boyfriend that he didn't cheat/left her in Belgium. But PK only read the mind of Jaggu. PK didn't know about Tapasvi's lies. How does he know that Sarfaraz still loves Jaggu in the ending?
-"
-1357,jev-latest,movies,1.0,0.61,495,130,,movies,True,"What is the first instance of people filing a petition against casting a character?
-These days people are very serious about the live action adaptation of their favorite character from comic books or novels. Some fans even file online petitions to request a change in the character's casting. For example. these days Ben Affleck's casting is in the news due to a petition filed against him online.
-But my question is: what is the first occurrence of this kind of petition being filed against casting a character?
-"
-1393,jev-latest,movies,1.0,0.62,452,130,,movies,True,"Is it really Steve McQueen's car?
-In the movie Tower Heist, it was said a specific car belonging to Arthur Shaw is Steve McQueen's car. Now herein lies my doubt. Is it really his car? Can anybody provide any reference?!
-
-"
-1328,jev-latest,movies,1.0,0.73,515,130,,movies,True,"What was the need of all those magical tricks such as the rabbit trick or the bubble trick etc. on the second act in Now You See Me?
-In the second show, the one in New Orleans, of Now You See Me before the Four Horsemen reveal that they had given away the money of Arther Tressler to the victims of Katrina, the Four Horsemen did some magic tricks.
-These were the rabbit trick, the bubble trick etc. and they said that the tricks were connected.
-But how were those tricks connected or what was the purpose of those tricks?
-"
-1350,jev-latest,movies,1.0,0.59,480,130,,movies,True,"Was McMurphy a WW2 vet?
-I am wondering if Mac from 1975 One Flew Over the Cuckoo's Nest movie set in Sep.-Dec. of 1963 was a WW2 veteran? He was 38 years old, born in 1925. Was he a veteran of that war probably?(He wasn't really crazy, either)
-"
-1387,jev-latest,movies,1.0,0.96,597,130,,movies,True,"Why didn't X-24 regenerate?
-X-24 is a clone of Wolverine. Wolverine is basically immortal if not for long term Adamantium poisoning. Wolverine, in one timeline, has been shot in the head with Adamantium with only minor effects. In the source material, he's been reduced to a single cell and regenerated. He's been decapitated and dismembered. Even with Adamantium limiting his healing factor, he's the hardest sob to kill in any universe.
-So why does a single bullet shatter his head like that, killing X-24 instantly instead of regenerating? He should be able to regenerate in a few hours or days without a problem. After all, he has only been around and with Adamantium  for months or years, no where near as long as the original (50 years of Adamantium until death, roughly) so he shouldn't have a compromised healing factor. Has production explained the discrepancy?
-"
-1368,jev-latest,movies,1.0,0.62,598,130,,movies,True,"Why was ""The Most Terrible Time in my Life"" filmed in Taiwan?
-edit: I've just read that Silence (2016) was also filmed in Taiwan.
-
-A screen shot of the trailer of the film The Most Terrible Time of my Life (1993), (Japanese: Waga jinsei saiaku no toki, 我が人生最悪の時) starring Masatoshi Nagase, directed by Kaizô Hayashi (IMDB, Wikipeida, YouTube Trailer) shown below shows in the translated subtitles:
-
-Filmed on Location in Taiwan; A Japan-Taiwan co-Production
-
-Is there anywhere I can read further about this? Where was it filmed in Taiwan? Why was it filmed in Taiwan? The film is rich in visuals, Even the name Mike Hama (Mike Hammer) brings imagery.
-Was the filming in Taiwan for visual reasons, or business, production, or plot reasons?
-
-"
-1375,jev-latest,movies,1.0,0.74,503,130,,movies,True,"Once thanos comes to know about parallel universe , which means there is infinte resourse . Why he continous with his motive?
-Once Thanos comes to know about parallel universe after Nebula is caught , which means there is infinite amount of resources in this world. Which can be shared and current population can continue to survive.
-What still motivates him to kill half the universe? His point was to maintain balance.
-Now we just move resources across time lines and maintain the balance.
-Why he continues this motive?
-"
-1316,jev-latest,movies,0.82,0.58,531,130,,movies,True,"Why did it take a rocket to lift off the Earth but just shuttles to lift off the other planets?
-I remember gravity in both the planets in Interstellar being comparable to that of Earth's. 80% of Earth gravity in case of Mann's planet and 130% in case of Miller's planet. So, why did it take a rocket to lift off the Earth surface and get to the Endurance orbit, but just Ranger shuttles to lift off from Miller's & Mann's planet?
-I do see an explanation here
-But if that is the case, why use a rocket to lift off from earth?
-"
-1369,jev-latest,movies,1.0,0.62,494,130,,movies,True,"Why Daka attended ""Saints Among Us"" school project instead of hospital?
-In St. Vincent (2014), Daka who is pregnant Russian sex worker and close friend
-to Vincent. One day Daka's water got broke. On the way to hospital with Vincent. She visited ""Saints Among Us"" school project first to watch Oliver's speech instead of reaching hospital.
-
-Why she took risk in reaching ""Saints Among Us"" school project? 
-"
-1341,jev-latest,movies,1.0,0.7,507,130,,movies,True,"What does the monogram MCF stand for?
-In The Godfather II, before gunmen try and kill him, when Michael enters his bedroom and Kay wakes up, we can see that bed linen has a monogram ""mCf"" on it.
-
-My search shows that it could be standing for:
-
-Michael Corleone Francis (for the middle name).
-Michael Corleone Family.
-
-But I can't find any source providing reliable and undeniable evidence for a definitive answer.
-What does the MCF monogram stand for?
-"
-1365,jev-latest,movies,1.0,0.77,565,130,,movies,True,"Why do the protagonist plan to retrieve the original painting from the freeport in Tenet?
-In London, the Protagonist approaches Sator's estranged wife Kat, an art appraiser who falsely authenticated a forged Goya drawing. She tells him that Sator purchased the drawing from the forger, Arepo, and is using Kat's authentication as blackmail to control her in their relationship. The Protagonist and Neil plot to steal the drawing from a freeport storage facility at the Oslo Airport.
-If the whole reason for the protagonist to meet Kat was to get introduced to Sator, why do they plan such an elaborate plan to steal the original from the freeport? Why was it important at that point in the movie to free Kat fromSator's blackmail by procuring the original?
-"
-1321,jev-latest,movies,1.0,0.63,480,130,,movies,True,"From where did Zion get air?
-We have seen in the Matrix trilogy that Zion is a last city of humans, situated at Earth's core where it is still warm. 
-I believe they found a groundwater source, that's why they have a water purifying plant, but since there is no sign of vegetation above the ground or for that matter in Zion, where did it get its air supply ? 
-"
-1382,jev-latest,movies,1.0,0.78,533,130,,movies,True,"Was Mojo Jojo the first mad scientist chimpanzee?
-Essentially I'm trying to determine the earliest depiction of a chimpanzee as a Mad Scientist in film or television.  Mojo Jojo was a notorious and powerful mad scientist Chimpanzee from Powerpuff Girls.  
-I can't remember if any of the chimps on Lancelot Link, Secret Chimp were mad scientists. (Dr. Strangemind, for instance.)
-
-Regular scientist chimps would not qualify, but Bonobos are close enough genetically to be included under the ""chimp"" umbrella.  I'll also accept orangutans per their proud cinematic tradition.
-"
-310,jev-latest,pets,1.0,0.64,586,130,,pets,True,"Are there pet safe ways to eliminate static in pet fur beyond a humidifier (especially in rabbits)?
-I have 2 rabbits, and in the winter they become so full of static that I can't even pet them without giving/receiving a static shock.
-Using a humidifier helps a great deal. Yet, even with relative humidity at 50%, static shocks begin after just a few strokes across their back.
-While this isn't surprising as rabbit hair is one of the most positively charged natural substances on Earth, it's quite annoying as the discharge is usually to the rabbits' ears or nose, or to my face.  I'd love to find another way to combat it that won't harm my rabbits.
-Are there any natural and safe-to-eat anti-static treatments?
-Am I correct to assume that dryer sheets, diluted fabric softener and/or anti-static salon products are too toxic to use on a pet?
-"
-375,jev-latest,pets,1.0,0.58,482,130,,pets,True,"How urgent is it to replace a leaking fish tank?
-It Looked like a quality fish tank. I bought it new in box from walmart. Worked great for 45 days or so and now I see water coming out at bottom of front panel at seam. 
-It is losing about 5 drops of water per hour.
-Is this an emergency or should I just pick up a new one next weekend?
-"
-398,jev-latest,pets,1.0,0.71,598,130,,pets,True,"My cat is keeping me awake at night
-I have 2 cats: the male is extremely affectionate, while the female from the same litter is more mellow and likes to keep herself to herself most of the time. They are both spayed and neutered.  
-When we go to bed, the male will often sleep on the bed with us then wake us up by rubbing up me, patting my face and then purring continuously in the middle of the night. While this sounds funny it is wearing thin! 
-I have tried putting them in their room with toys, litter, scratch post and scratch pad by the door. However they howl continuously and pull the carpet up and will not just settle. 
-This is becoming a problem and is starting to affect my job due to lack of sleep. My cats are my world. What can I try to stop all their separation and night behaviour? I cannot bear to rehome them. They are good during the day. 
-"
-369,jev-latest,pets,1.0,0.6,438,130,,pets,True,"Why does my cat fart a lot?
-My cat farts a lot. In addition, his belly seems tight, like he's full of gas.
-Should I be concerned about this flatulence?
-"
-359,jev-latest,pets,1.0,0.6,432,130,,pets,True,"Are either of my guppies pregnant?
-Bottom one seems to be, but I'm not positive. Please help me, I need to know before she pops!
-
-"
-304,jev-latest,pets,1.0,0.73,495,130,,pets,True,"Sexing my beardies
-My beard dragons sex. Have two one goes crazy bobbing head up and down and black beard. The other one is bigger but no bobbing and does have like a beard . We put them in together and the smaller one bites and hold big one down then big one just tries to get away. The one we know is a male which is smaller won't stop bobbin but other one just stares at other one through tank. Need help
-"
-362,jev-latest,pets,1.0,0.73,542,130,,pets,True,"What mouse traps are pet safe?
-We recently discovered that we have another mouse in our apartment.  We also have a cat.  
-Now, our cat has caught a mouse before, and has shown interest in doing so again, but we don't want to encourage her to eat a mouse - we don't know if other people in the apartment use poison or not.  And we aren't keeping her just to kill mice. 
-So, we'd like to get traps, safe traps, that can kill the mouse but not harm our cat.  What sort of trap can we get that would do this?  
-We don't care if the mouse lives or dies - we just want it caught and gone.  
-"
-373,jev-latest,pets,1.0,0.6,593,130,,pets,True,"I’ve raised a baby magpie and wanting to release it back into the wild
-I found a young baby magpie that had been pushed out of the nest way too early since it was still developing feathers. So I took it in and raised it but now I have had it for three weeks and I want to release it back into the wild. I am wondering will they be alright. I have tried to get other magpies that I believe are the parents but I’m not sure to come and feed it so I don’t have to. Though I let the baby magpie sit on a tree near the nest that it fell out of one day and another magpie came up to it to feed it, however the baby magpie didn’t take the food. I wonder why? So now I have let it stay in the house because it keeps coming back and I don’t know what to do. Just wondering what I should do and if anyone else has experienced this?
-"
-312,jev-latest,pets,0.93,0.59,446,130,,pets,True,"Am I at risk of rabies? I touched a wet patch of grass but I didn't see any animal nearby
-There was no animal nearby and the grass was moist. The weather was hot. It was 35° C
-"
-370,jev-latest,pets,1.0,0.64,447,130,,pets,True,"Animal companionship?
-When were animals first used strictly for companionship? I can’t find the answer in my usual places for information (I.E. books) I also figured that other people might find it interesting as well!
-"
-358,jev-latest,pets,1.0,0.69,583,130,,pets,True,"Blister or infection?
-My dog was neutered about 14 days ago. And the wound healed very well said my vet(about a week ago) and it seemed like it too. However, a couple days ago, right next to the surgical sight (not actually on it), a red blister type thing appeared. And today it's gotten a bit bigger. I've taken a picture and posted it on this post. Is this something to be worried about and needs immediate medical attention? Also, for the last week or so, we've been playing with him and taking him to the park. So could that have aggravated the issue?
-
-Also, I don't know if this information will help, but when we was neutered, they patched him up with medical glue instead of stitches. He doesn't lick the wound nor pay it any attention. He doesn't seem to be in pain either in that area.
-"
-345,jev-latest,pets,1.0,0.62,495,130,,pets,True,"My kitten ran away, what are the chances of her coming home and/or surviving?
-We have a 3-4 month old stray kitten. She's fed, loved, played with and taken to the vet. Today, my door was cracked open for 5 seconds and she ran out into the the woods. My husband and I tried looking for her, it's been over 4 hours. What are her chances of coming home and or surviving?
-Update: kitten has returned.
-"
-350,jev-latest,pets,1.0,0.79,478,130,,pets,True,"How to train a dog not to jump on the bed
-My girlfriend has a 3yo shiba inu that's driving me crazy. I'm always stressed because I'm afraid of dogs and when I'm at her home especially because the dog always jump over the bed. So.. how can I teach the dog not to do it even if I'm not someone important in the dog's life?
-"
-367,jev-latest,pets,1.0,0.61,464,130,,pets,True,"Why does my cat meow less than I expect it to?
-My 1-year-old cat only meows when he wants food or when he wants to play. However, I have observed other cats meowing and purring much more often than my cat. 
-Is there something wrong with my cat's behavior? 
-"
-303,jev-latest,pets,1.0,0.69,508,130,,pets,True,"Is this DIY doggy bath wipe safe?
-My friend babysat my 6 month old bulldog puppy and used a DIY dog bath wipes. The recipe was 2 to 3 cups of water, 1 tablespoon of ""my pet's friend"" oatmeal enhanced deodorizing shampoo, 1/4 cup coconut oil organic and 1 drop of pure tea tree oil.
-My dog is licking himself after she wiped him down. Should I take him to the vet? Will he get sick? Is this DIY toxic? Thank you.
-"
-314,jev-latest,pets,1.0,0.68,469,130,,pets,True,"Bloated, hiding and rapid breathing danio
-I was wondering if anyone can give any advice about one of my danios. It is a little bloated and keeps hiding in the plants. At one point I noticed it was breathing rapidly. In my tank I also have 3 cardinal tetra and 2 shrimps. 
-Thank you 
-"
-374,jev-latest,pets,1.0,0.7,515,130,,pets,True,"Why does my puppy smell like cookies in the morning?
-Obviously this is not a complaint! I don't mind that she smells like cookies when I take her out of her crate in the morning (particularly when considering the other things she could smell like). The only things in her crate (plastic) at night are herself (7mo Finnish Lapphund), a Kong ring, and a Petstages cold chew. She sometimes smells like cookies when she wakes up from naps in her other crate (wire), too.
-Why does she smell like cookies? And, is this normal?
-"
-330,jev-latest,pets,1.0,0.64,442,130,,pets,True,"Why do dogs lean against you?
-I've read on some sites that dogs lean on you because they feel comfortable with you. Other sites say that it is a sign of dominance. So, is it good or bad?
-"
-316,jev-latest,pets,1.0,0.77,507,130,,pets,True,"Is my ball python hungry or not?
-Okay, so I bought my ball python about 5 days ago from a reptile show. He is a one month old and the breeder told me he was due to eat today. 
-He seemed very interested at first and struck, but he missed. He then would not strike again. So I left it in his cage and it's still there. 
-I'm very concerned this is my first snake so I've never been in this situation before. Any help would be very appreciated thank you.
-"
-371,jev-latest,pets,1.0,0.72,537,130,,pets,True,"How long will it take my kittens to settle?
-We bought home two beautiful Bengal kittens about a week and a half ago (15 weeks old) as the new additions to our family, a brother and sister.  Whilst they are eating, popping, sleeping and cleaning themselves just fine, and playing by themselves and with us, they are incredibly nervous when anyone tries to approach them and they will not be stroked or handled.  
-I just want them to be happy and secure and part of the family, and for them to be comfortable with us to show and receive affection.  Can anyone give me any advice on how long this might take and any top tips for encouraging engagement with us?
-"
-425,jev-latest,politics,0.47,0.67,482,132,,politics,True,"How does Brexit affect trade between the UK and countries outside of the EU?
-While the negotiations between the UK and the EU are currently front-page news, what happens to treaties and agreements UK is automatically a party of by virtue of their EU-membership?
-Are there important agreements and treaties that need to be negotiated to allow a post-EU UK to trade with other countries, especially members of the G20?
-"
-461,jev-latest,politics,1.0,0.69,518,132,,politics,True,"Is Darfur genocide religious/racial in nature?
-It seems to me that political correctness obfuscates objective presentation of the Darfur genocide. I have heard oral narratives that frame it in terms of race (Arab vs Black) and religion [Muslim vs Christian (or maybe Animist)] but the Wikipedia page does not put it that way. OTOH, the Srebrenica massacre is readily presented as directed against Muslims by Serbs (Christians).
-Is it accurate to frame the ongoing atrocities in Darfur as perpetrated by Arab Muslims again Black Christians and Animists?
-"
-431,jev-latest,politics,1.0,0.6,469,132,,politics,True,"Can the US House and Senate make allowance for self-quarantined members to vote remotely?
-Can the US House and Senate make allowance for self-quarantined members to vote remotely?
-Is the requirement that a member be in chamber in the constitution or law - or is it part of the senate or house's rules which they could amend for this specific crisis?
-"
-469,jev-latest,politics,1.0,0.65,602,132,,politics,True,"History of a single party winning majority of legislative seats under proportional representation system?
-A single political party winning majority of legislative seats is - in theory - very difficult under proportional representation system.
-Examples I am aware:
-
-Portugal 2022: The Socialist Party won 112 out of 230 seats under party-list PR system, giving PM Antonio Costa an outright majority. Context unclear.
-
-New Zealand 2020: The Labour Party won 65 out of 120 seats under MMP system, giving PM Jacinda Ardern an outright majority. The election was widely framed a verdict on Labour's response to COVID-19.
-
-Sweden 1968: The Social Democrat won 125 out of 233 seats under party-list PR system, giving PM Tage Erlander an outright majority. Context unclear.
-
-
-Are there other examples in history where it happened? What are the circumstances that caused political parties to achieve such electoral performance?
-"
-415,jev-latest,politics,1.0,1.06,548,132,,politics,True,"Has Russia shown any indication, before the war, that it would court-martial its soldiers if they commit war crimes?
-There is a number of reports of claims of Russian soldiers committing war crimes during the prosecution of Russia's 2022 war of aggression on Ukraine.
-Usually armies prevent their own soldiers from committing war crimes by having clear rules of engagement which forbid them.  Such prohibitions are only credible if they are enforced through some sort of military adjudications.
-Has Russia made it clear that its soldiers committing war crimes in Ukraine would be punished for them in some way?  Or has it stayed silent on the subject, or even indicated that it would sanction, or even order, committing war crimes under some circumstances?
-"
-443,jev-latest,politics,1.0,0.65,575,132,,politics,True,"Why would China object to a US-friendly Korea on their border?
-I typically hear two main justifications offered for China's support of North Korea: collapse of the DPRK would result in one or both of
-
-A refugee crisis as displaced North Koreans seek asylum in China
-One way or another, the establishment of a government friendly to the US on China's borders
-
-For example, this article, cited in this Po answer.
-
-I have a hard time following the logic behind the second reason. The only issue I can see in sharing a border with a US-friendly power is vulnerability in the event of a ground invasion of Chinese territory. The only circumstance I can conceive of that would involve a major act of aggression on China's part against the territory of a neighbor. Even then, it seems unlikely.
-Is there some other reason why a ""buffer state"" is important?
-"
-445,jev-latest,politics,1.0,0.6,453,132,,politics,True,"Can a candidate for US president un-suspend their campaign?
-When candidates for US president drop out of the race, they ""suspend"" their campaign. The fact that they use that word makes me wonder if they can un-suspend it if they wished to?
-"
-475,jev-latest,politics,1.0,0.59,516,132,,politics,True,"Why would China be against the U.S. charging companies and individuals for making fentanyl precursors?
-https://www.youtube.com/watch?v=wmx_pmKUlkc
-Why would China be against the U.S. charging companies and individuals for making fentanyl precursors? I don't understand why China would be against this. Isn't selling fentanyl precursors illegal in the United States? If they were selling them illegally what is the issue with the U.S. issuing charges against them? How does China justify such a stand on this issue and is it completely warranted?
-"
-406,jev-latest,politics,0.58,0.65,430,132,,politics,True,"What is the name of this kind of political regime run by AI?
-What is the name of a political regime where an Artificial Intelligence rules all and make decisions?
-"
-444,jev-latest,politics,0.87,0.8,586,132,,politics,True,"Why free-market capitalism has became more associated to the right than to the left, to which it originally belonged?
-If I am not mistaken, classical liberalism, among which economic liberalism (laissez-faire), was at the beginning supported by the left. The right on the other hand, was for the maintenance of the old-regime order, that is, the King and the Church.
-But now, at least roughly, being in the U.S, in England, or in France, economic liberalism (laissez-faire) supporting has moved to the right (which is still nonetheless conservative, with a defense of traditional values, especially religious ones (Catholicism in France and Protestantism in the U.S.)). I find it even more confounding in the case of the historically catholic France, given that catholicism has a tendency to disdain money and commerce.
-I wonder why is that.
-"
-426,jev-latest,politics,1.0,0.67,449,132,,politics,True,"Did any group in Turkey oppose Cyprus invasion?
-Did any group in Turkey oppose Cyprus invasion?
-If Yes,
-
-Were they political groups or non-political/human-rights groups?  
-What was their rationale or objective?  
-Were they arrested?
-
-"
-463,jev-latest,politics,0.88,0.69,489,132,,politics,True,"What are famous studies that ended up deeply changing how the police operate?
-In the book “Talking to Strangers” Malcolm Gladwell talks about how novel scientific approaches to policing ended up finding out that stop and frisk of motor vehicles could drastically reduce crime, and how this was quickly adopted by most of the US.
-This reminded me of the movie Money Ball.
-What are other famous examples that changed how the police operate? Not necessarily limited to the US.
-"
-497,jev-latest,politics,1.0,0.63,439,132,,politics,True,"Puerto Rico's political parties and statehood
-What would happen to Puerto Rico's political parties if it became the 51st state?  Is there any historical precedent for what happens? 
-"
-439,jev-latest,politics,1.0,0.68,552,132,,politics,True,"Can an incumbent Vice President vote in a contingent election in which (s)he is a candidate?
-If no Vice Presidential candidate gets a majority of votes in the Electoral College, a Contingent Election will be held in the Senate to elect a new VP.
-Normally, if a vote in the Senate is tied, then the VP (as President of the Senate) casts a tie-breaking vote.  However, if the incumbent VP is also a candidate in a contingent election, this can be seen as a conflict of interest.
-Is there anything in the US Constitution, US Code, Rules of the Senate, or elsewhere, that would require the VP to recuse him/herself from such a vote?  Or would (s)he be able to vote regardless?
-"
-404,jev-latest,economics,0.71,0.7,506,132,,politics,False,"When was the USPS post office retiree healthcare benefits started?
-I discovered in this answer that the United States Postal Service needs a $6B bailout every year due to retiree healthcare benefits, which are separate from its pension fund. 
-
-What year did the USPS retiree healthcare benefits start? 
-Did it start in 2006 when Congress mandated funding? 
-Was it under-funded from its inception until 2006?
-Was the retiree healthcare benefits created by congress or by the USPS itself?
-
-"
-476,jev-latest,politics,1.0,0.77,515,132,,politics,True,"Is every house vote taken one vote at a time?
-The US House of Representatives appear to be currently voting on retaining the current Speaker of the House in his position.
-LIVE: The House is now voting on ousting Kevin McCarthy as speaker https://t.co/SoqMLSboxQ https://t.co/ANKfGPIuiE— Bloomberg (@business) October 3, 2023
-They appear to be doing this by responding yea or nah to a roll call.
-Is this how every vote is done? It seems very time consuming.
-"
-480,jev-latest,politics,1.0,0.64,608,132,,politics,True,"What is this section 179 that was referred to in the hearings on the S.84 authorizing the exception for Gen. Mattis to serve as Sec. Def?
-In the Senate committee hearings on granting the exception to Gen. Mattis to serve as Sec Def, Sen./Chairman McCain said:
-
-before you is a copy of section 179 of the recently enacted continuing resolution that provides for expedited consideration of a specifically described bill. S. 84 is the qualifying legislation prescribed in section 179 as qualifying legislation. S. 84 is entitled to an expedited procedure that will enable the incoming President to nominate him, for the Senate to give advice and consent for General Mattis to serve as Secretary of Defense, hopefully on the evening of the upcoming inauguration day [...] In order to avail ourselves of the expedited procedure, the bill may not be amended.
-
-What is that ""section 179 of the recently enacted continuing resolution"" saying exactly?
-"
-458,jev-latest,politics,1.0,0.64,443,132,,politics,True,"What is Pro-Europeanism?
-I was reading a list of some political parties and one of them supports the idea of ""Pro-Europeanism"". What is that and is it supported by a lot of people?
-"
-466,jev-latest,politics,1.0,0.64,553,132,,politics,True,"Why hasn't the Attorney General investigated Justice Thomas?
-It sounds like Justice Thomas has made clear and egregious mistakes in disclosure,
-
-Over the past two decades, Supreme Court Justice Clarence Thomas has reported on mandatory financial disclosure forms that he received hundreds of thousands of dollars in income from a real estate firm. But that real estate closed its doors in 2006, according to a Washington Post investigation.
-
-Who decides whether or not this amounts to bribery or has colored his decisions? Certainly, if so, this would be illegal, right? Why hasn't a tribunal or case been opened to investigate this regardless of if the result of if he can be removed from post, he is subject to the laws of any other appointed bureaucrats, right?
-"
-413,jev-latest,politics,0.76,0.6,502,132,,politics,True,"Can the president be investigated by the SEC for stock manipulation?
-Can the president be investigated by the SEC for stock manipulation? This year the SEC investigated Elon Musk for possible stock manipulation through social media posts, and he was ordered to stop making tweets related to his business. Today, Trump made a post that led to a major drop in the stock market. This wasn't the only time he made a post that impacted the market. Is it possible that the SEC tell the president to stop tweeting and investigate for stock market manipulation?
-"
-813,jev-latest,travel,0.99,0.6,559,130,,travel,True,"Can I have my flight tickets reimbursed when traveling to South Africa on a tourist visa?
-This question came in -part due to this question. I'll be traveling to South Africa for an open-source conference for which I'll get my flight-tickets reimbursed at the end of the conference. Could/Would this reimbursement be in anyway equated to remuneration ?
-http://www.vfsglobal.com/southafrica/india/conferences.html 
-Common-sense/logic says that should not be so, as remuneration is for doing some work but in this case I would just be an attendee. I will be doing some volunteering but that is not tied in anyways with the travel sponsorship that I'll receive at the end of the conference.  
-"
-804,jev-latest,travel,1.0,0.59,466,130,,travel,True,"Travelling with expensive jewelries gift from my princess employer
- 
-Im worried  because one of my relative from philippines told me i cant go home with this expensive jewelries that my employer gave me because she love that i work good for her.  She told me that philippine airport will question me because of this. 
-"
-816,jev-latest,travel,1.0,0.79,584,130,,travel,True,"Is it cold enough in England/London to have to wear a woolen/winter hat?
-I'm from a tropical climate environment and I'll be travelling to England/London on the 6th of December for about 5 days, so I'll have to pack winter clothing for the first time in my life.
-I'm expecting much lower temperatures than where I'm from. 
-Does anyone know if England/London during this time of year will be cold enough that wearing one of those woolen/winter hats is necessary (I'd prefer not to go and buy/wear them if I have to)? 
-My level of cold tolerance, I would say, is about average.
-I saw some videos of England during this time of year, and only about a third of the people in those videos were wearing one of those hats outdoors, so I presume it isn't that necessary, but would still like to receive some suggestions.
-"
-841,jev-latest,politics,0.49,0.65,478,132,,travel,False,"Are US Border Officials allowed to ask for my passwords from a legal perspective?
-Can US Border Officials (e.g. Customs Officials at JFK Airport) legally require a non US citizen (whether a tourist, visa, or green card holder) for his or her passwords (phone, laptop, facebook, email, etc...)? Don't they need a warrant for that? Do different states have different rules?
-"
-892,jev-latest,travel,1.0,0.62,531,130,,travel,True,"SIM for voice calls while travelling to Europe
-I am planning to travel to Europe next week to countries like France, Switzerland, Italy, Austria from India. France being the first destination.
-I am confused regarding what to do for voice calls, like which option would be cheapest for me.
-Should I just go ahead and active international roaming on my Vodafone India number (which I checked would be slightly expensive though this seems to be the most hassle-free option)
-What are the other options I have. I heard about calling cards which I can get there. How do they work? Are they very cheap? Would they work across all the countries? What are their charges like?
-"
-838,jev-latest,travel,0.91,0.64,511,130,,travel,True,"Can I interrupt quarantine to go get the 2nd dose of the vaccine after coming back from an amber list-country?
-From here I read
-
-If you have been in a country or territory on the:
-
-[...]
-amber list - you must quarantine in the place you’re staying and take 2 COVID-19 tests
-
-
-This makes me think I can't leave the house, not even to only go to the place where I can get the 2nd dose of the vaccine.
-I'm asking anyway to understand if that's the case or not.
-"
-893,jev-latest,travel,1.0,0.7,596,130,,travel,True,"How Much Could You Expect Accommodations to be Pricewise in Japan?
-I am planning to go to Japan with a fairly sized group of friends (About 6 other people) for next late next year ~Summer-Fall 2022. Nothing is set in stone as we are still waiting for a proper re-opening.
-[I am from Puerto Rico which is quite far from Japan.]
-It would be our first international trip, so we were wondering what could we expect on average for accommodations a day.
-Our budget is around $1.5k-$2.5k per person for a week-long trip. [without tickets included and train pass.]
-We are also planning on visiting other major cities, so I was also wondering if prices vary by a significant amount from city to city.
-I have been studying Japanese regularly for a few years now and I am able to hold a conversation, a little shaky but I can, and we are also traveling with a Chinese speaker.
-"
-867,jev-latest,politics,0.55,0.68,478,132,,travel,False,"How to know what you can't openly talk about in China / Hong Kong?
-When I was in Hong Kong / Shenzhen, the friends I was visiting worked for a non-profit that had to be very careful about mentioning anything religious, as they could apparently lose funding from the government of China.
-Are there particular topics of conversation that will get you into trouble (with authorities) that are specific to China?
-"
-807,jev-latest,travel,1.0,0.66,438,130,,travel,True,"How to get refund on tatkal waitlisted ticket?
-Do I have to cancel the the waitlisted tatkal ticket to get refund or will it get refunded automatically without any cancellation of ticket?
-"
-852,jev-latest,travel,1.0,0.76,510,130,,travel,True,"Transiting through America then returning by boat
-I'm going to be transiting through America (not leaving the airport) and heading to Guadeloupe in December, then sailing on a friend's boat and will be back in the US in January and flying off from there in March.  
-Do I need to apply for a transit ESTA and then a tourist one at a later date or can I get a 90 day one and use it for both? Also, as a passenger on a boat, do you know if I need any other paperwork?
-"
-823,jev-latest,travel,1.0,0.61,570,130,,travel,True,"How long should I stay in the US?
-I need help on my situation. I applied for a visitor visa to the US. When I filled in my application, I requested a month and I was given a 2-year multiple entry visa. 
-I know that, at the port of entry, it's the immigration officer that determines one's stay. I now want to stay for 4 months, if the officer gives me 6 months when I enter. I don't plan to overstay and ruin my future travel chances.
-What should I do to not  ruin my chances, but still stay for 4 months? Can I book a return for one month then, later, extend it to 4 months? 
-If I stay for 4 months, won't they think I am not truthful the next time I apply for a visa? 
-"
-832,jev-latest,travel,1.0,0.63,595,130,,travel,True,"Travelling to Algeria through Barcelona
-I am contacting you guys concerning problems during my trip through Barcelona Airport.
-I have booked two separate flight from the UK to Barcelona with Vueling, and then Barcelona to Algeria with Air Algérie from the same airport. I hold an Algerian passport and I'm not required to get a Schengen (airport) transit visa in Spain.
-However, since my flights are separate (not connecting) and with two different airlines, I was wondering:
-
-Do I need a visa to Spain (transit or short stay) to board my plane from the UK? Since the first flight is not connected to the second, I was concerned that the airline won't allow me to board to Spain without a visa
-Can I stay in the international transit Area even though the flights are not connected?
-Can I get my checked luggage in the transit area to check-in again for my next flight? Or should I just take hand luggage
-
-Thank you
-"
-874,jev-latest,travel,0.99,0.67,484,130,,travel,True,"Is there ""all you can race"" go-karting around Gold Coast, QLD, Australia?
-Does anyone know of any ""all you can race"" go-karting places in/near/around Gold Coast, Queensland?
-I don't care if the conditions are hellish, for example: ""this offer only applies during the graveyard shift (23:00 - 07:00)"".
-"
-808,jev-latest,travel,1.0,0.65,592,130,,travel,True,"What documents do I need to do a visa run at Thailand/Myanmar border?
-I'm having a hard time figuring out what documents I need to provide when I show up at the Burmese border to do a Thai visa run.
-According to http://www.mip.gov.mm/portfolio/the-required-terms-and-conditions-for-visa-on-arrival/ there's a ton of requirements, but maybe only some of them will apply to me.
-My plan is to hop up to Mae Sai, get my passport stamped and then re-enter Thailand (I have a double-entry tourist visa for Thailand, so I'm not worried about that part).
-What documents do I need to satisfy entry requirements at the Burmese border?  Also, is there a fee that I will need to pay?  Can I pay the fee in Baht, or do I need to acquire Kyat/Dollars?
-I am a US citizen, if that is important.
-"
-814,jev-latest,travel,1.0,0.8,587,130,,travel,True,"2 hours from central Boulder to flight departure from Denver, feasible?
-I'll soon be attending an event in Boulder that's scheduled to end at 5 PM sharp.  I'm connecting to a once-daily international flight from SFO, so my choices are to either:
-
-Book an itinerary that departs from DEN at 6:55 PM, or
-Stay an extra day in Boulder, fly out the next day, and arrive back home a day later
-
-Given likely rush hour traffic (I'll Uber/Lyft), TSA security lines etc, is option 1 feasible?  Checking in online, no bags, but also no special TSA status (Clear etc).
-Note: There's also a later DEN-SFO flight that would get me there in time, but due to the vagaries of airline pricing it costs $2000 more, which I can't really justify -- an extra hotel night is way cheaper.
-"
-897,jev-latest,travel,1.0,0.67,488,130,,travel,True,"Since New York doesn't have a residential parking permit system, can a tourist park in Manhattan for free?
-It seems that neither New York in general nor Manhattan have any kind of residential parking system as of 2016. Does this mean that a tourist can just go and park a car in Manhattan free of charge?
-I am aware that driving in central NYC is a bad idea but it's always nice to get free parking if possible. 
-"
-815,jev-latest,travel,0.97,0.66,549,130,,travel,True,"2 passports,2 different names, not OK dual citizenship
-Hi in case 4 of dual citizenship (2 passports,2 different names, not OK dual citizenship). My question is why bother to make all the detour through country C when I can reserve a flight from A  to to C  by transit connection at B  and by arriving at B  not head to the transit connections but instead to the exit with my B passport. Ofcourse I never fly to C and I only make the reservation so that the airline in A  country lets me board the plane to B since I don't have a visa for B country (but I have their passport which they don't know!)
-.  Sorry for the duplicate moderators but I cannot comment !
-"
-850,jev-latest,travel,1.0,0.66,529,130,,travel,True,"What is the best way to go to Pudong Airport from downtown Shanghai at night?
-I am staying in downtown Shanghai and have a flight from Shanghai to Paris at 12:30am (half an hour after midnight). According to WikiVoyage, the subway line 2 and Maglev train stop running after 9pm and 9:30pm respectively. Airport shuttle bus (line 2 from Jing'an temple) seems to stop after 9:30pm too. And taxi is simply too expensive. 
-Are there any local tricks or methods to travel to the international airport which is supposed to open 24 hours?
-"
-894,jev-latest,travel,1.0,0.68,576,130,,travel,True,"Is there any travel management software / webportal available?
-All my sportive trips such as biking or hiking, I enter in an online portal called www.hikr.org. This portal allows to enter tour description, mark waypoints, and share the tour with others. Additionally, there are some nice statistics available, as for example the mountains you have visited or the mountain huts you stayed in.
-Additionally, I use mytourbook.org to manage my GPS tracks of my tours. This software allows me to watch all my tours on a map and also to calculate some nice statistics about the length, the altitude etc of each tour, week, month, year or category.
-Is there anything similar for travel trips? For example an online portal where I can enter all my trips, share it with others to get some inspiration for further trips and maybe also mark cities I've visited during my travel.
-"
-870,jev-latest,travel,1.0,0.93,456,130,,travel,True,"Do I need to stamp my Trenitalia/Trenord tickets?
-Is buying a ticket enough? Do I have to stamp (""convalidare"") it? What if all the stamping machines are broken? What if I didn't have the time to stamp my ticket?
-"
+record_id,gold,label,confidence,latency_s,input_tokens,output_tokens,model
+84,ai,ai,0.71,0.75,488,130,jev-latest
+54,ai,ai,0.88,0.76,460,130,jev-latest
+71,ai,ai,0.74,0.68,515,130,jev-latest
+46,ai,datascience,0.86,0.68,525,133,jev-latest
+45,ai,ai,0.95,0.68,456,130,jev-latest
+40,ai,ai,0.9,0.72,446,130,jev-latest
+23,ai,ai,0.6,0.67,467,130,jev-latest
+81,ai,ai,0.9,0.92,554,130,jev-latest
+11,ai,ai,0.83,1.03,467,130,jev-latest
+1,ai,ai,0.94,0.77,531,130,jev-latest
+19,ai,datascience,0.94,0.76,493,133,jev-latest
+31,ai,ai,0.73,0.67,572,130,jev-latest
+74,ai,ai,0.56,0.73,538,130,jev-latest
+34,ai,ai,0.88,0.7,532,130,jev-latest
+91,ai,ai,0.88,0.59,592,130,jev-latest
+5,ai,ai,0.93,0.73,533,130,jev-latest
+77,ai,datascience,0.8,0.72,542,133,jev-latest
+78,ai,ai,0.63,0.87,456,130,jev-latest
+13,ai,ai,0.95,0.62,575,130,jev-latest
+32,ai,ai,0.98,0.61,557,130,jev-latest
+280,astronomy,astronomy,1.0,0.63,489,131,jev-latest
+238,astronomy,astronomy,1.0,0.69,539,131,jev-latest
+266,astronomy,astronomy,1.0,0.75,482,131,jev-latest
+255,astronomy,astronomy,0.98,0.78,514,131,jev-latest
+216,astronomy,astronomy,1.0,0.66,504,131,jev-latest
+221,astronomy,astronomy,1.0,0.64,439,131,jev-latest
+300,astronomy,astronomy,1.0,0.64,518,131,jev-latest
+226,astronomy,astronomy,1.0,0.7,490,131,jev-latest
+257,astronomy,astronomy,1.0,0.63,533,131,jev-latest
+218,astronomy,astronomy,1.0,0.78,426,131,jev-latest
+260,astronomy,astronomy,1.0,0.68,504,131,jev-latest
+294,astronomy,astronomy,1.0,0.61,500,131,jev-latest
+288,astronomy,astronomy,1.0,0.65,497,131,jev-latest
+267,astronomy,astronomy,1.0,0.65,500,131,jev-latest
+256,astronomy,astronomy,1.0,0.59,558,131,jev-latest
+274,astronomy,astronomy,1.0,0.76,546,131,jev-latest
+240,astronomy,astronomy,1.0,0.65,575,131,jev-latest
+231,astronomy,astronomy,1.0,0.59,491,131,jev-latest
+217,astronomy,astronomy,1.0,0.98,437,131,jev-latest
+250,astronomy,astronomy,1.0,0.7,442,131,jev-latest
+749,bicycles,bicycles,1.0,0.75,542,132,jev-latest
+729,bicycles,bicycles,1.0,0.7,575,132,jev-latest
+786,bicycles,bicycles,1.0,0.6,567,132,jev-latest
+784,bicycles,bicycles,1.0,0.63,475,132,jev-latest
+715,bicycles,bicycles,1.0,0.61,527,132,jev-latest
+710,bicycles,bicycles,1.0,0.63,468,132,jev-latest
+743,bicycles,bicycles,1.0,0.68,495,132,jev-latest
+722,bicycles,bicycles,0.99,0.74,449,132,jev-latest
+776,bicycles,bicycles,1.0,0.61,442,132,jev-latest
+794,bicycles,bicycles,1.0,0.78,519,132,jev-latest
+745,bicycles,bicycles,1.0,0.64,482,132,jev-latest
+727,bicycles,bicycles,1.0,0.6,510,132,jev-latest
+761,bicycles,bicycles,1.0,0.79,559,132,jev-latest
+713,bicycles,bicycles,1.0,0.67,474,132,jev-latest
+721,bicycles,bicycles,1.0,0.63,448,132,jev-latest
+747,bicycles,bicycles,1.0,0.7,450,132,jev-latest
+746,bicycles,bicycles,1.0,0.7,485,132,jev-latest
+741,bicycles,bicycles,1.0,0.68,482,132,jev-latest
+714,bicycles,bicycles,1.0,0.65,517,132,jev-latest
+762,bicycles,bicycles,1.0,0.79,555,132,jev-latest
+599,bioinformatics,bioinformatics,1.0,0.72,605,133,jev-latest
+505,bioinformatics,bioinformatics,1.0,0.69,494,133,jev-latest
+534,bioinformatics,bioinformatics,1.0,0.6,537,133,jev-latest
+562,bioinformatics,bioinformatics,1.0,0.79,484,133,jev-latest
+594,bioinformatics,bioinformatics,0.97,0.78,558,133,jev-latest
+585,bioinformatics,bioinformatics,1.0,0.78,588,133,jev-latest
+552,bioinformatics,bioinformatics,1.0,0.76,600,133,jev-latest
+595,bioinformatics,bioinformatics,0.99,0.64,487,133,jev-latest
+511,bioinformatics,bioinformatics,1.0,0.64,550,133,jev-latest
+589,bioinformatics,bioinformatics,1.0,0.62,457,133,jev-latest
+510,bioinformatics,bioinformatics,1.0,0.69,499,133,jev-latest
+555,bioinformatics,bioinformatics,1.0,0.65,506,133,jev-latest
+557,bioinformatics,bioinformatics,1.0,0.59,558,133,jev-latest
+573,bioinformatics,bioinformatics,1.0,0.65,478,133,jev-latest
+575,bioinformatics,bioinformatics,1.0,0.61,439,133,jev-latest
+543,bioinformatics,bioinformatics,1.0,0.71,512,133,jev-latest
+545,bioinformatics,bioinformatics,0.97,0.66,548,133,jev-latest
+515,bioinformatics,bioinformatics,0.85,0.64,495,133,jev-latest
+582,bioinformatics,bioinformatics,1.0,0.8,528,133,jev-latest
+512,bioinformatics,bioinformatics,1.0,0.65,481,133,jev-latest
+1095,chess,chess,1.0,0.71,459,131,jev-latest
+1041,chess,chess,1.0,0.67,479,131,jev-latest
+1007,chess,chess,1.0,0.67,498,131,jev-latest
+1027,chess,chess,1.0,0.57,446,131,jev-latest
+1078,chess,chess,1.0,0.68,591,131,jev-latest
+1069,chess,chess,1.0,0.75,564,131,jev-latest
+1100,chess,chess,1.0,0.59,577,131,jev-latest
+1075,chess,chess,0.99,0.62,469,131,jev-latest
+1025,chess,chess,1.0,0.68,645,131,jev-latest
+1059,chess,chess,1.0,0.78,500,131,jev-latest
+1011,chess,chess,1.0,0.77,524,131,jev-latest
+1090,chess,chess,1.0,0.76,506,131,jev-latest
+1098,chess,chess,1.0,0.73,483,131,jev-latest
+1015,chess,chess,1.0,0.61,452,131,jev-latest
+1035,chess,chess,1.0,0.63,512,131,jev-latest
+1043,chess,chess,1.0,0.76,524,131,jev-latest
+1003,chess,chess,1.0,0.7,476,131,jev-latest
+1018,chess,chess,1.0,0.58,458,131,jev-latest
+1050,chess,chess,1.0,0.58,548,131,jev-latest
+1020,chess,chess,1.0,0.6,495,131,jev-latest
+159,coffee,coffee,1.0,0.69,444,130,jev-latest
+145,coffee,coffee,1.0,0.71,572,130,jev-latest
+101,coffee,coffee,1.0,0.65,531,130,jev-latest
+104,coffee,coffee,0.95,0.59,437,130,jev-latest
+132,coffee,coffee,1.0,0.59,493,130,jev-latest
+163,coffee,coffee,1.0,0.99,502,130,jev-latest
+138,coffee,coffee,1.0,0.71,446,130,jev-latest
+127,coffee,coffee,1.0,0.68,475,130,jev-latest
+133,coffee,coffee,1.0,0.79,454,130,jev-latest
+139,coffee,coffee,1.0,0.76,571,130,jev-latest
+191,coffee,coffee,1.0,0.63,462,130,jev-latest
+161,coffee,coffee,1.0,0.69,547,130,jev-latest
+197,coffee,coffee,0.97,0.67,476,130,jev-latest
+193,coffee,coffee,1.0,0.59,499,130,jev-latest
+189,coffee,coffee,0.85,0.78,449,130,jev-latest
+192,coffee,coffee,1.0,0.65,435,130,jev-latest
+186,coffee,coffee,1.0,0.62,483,130,jev-latest
+142,coffee,coffee,1.0,0.6,467,130,jev-latest
+156,coffee,coffee,0.91,0.61,538,130,jev-latest
+106,coffee,coffee,1.0,0.81,430,130,jev-latest
+1279,datascience,datascience,0.95,0.66,561,133,jev-latest
+1269,datascience,ai,0.57,0.8,456,130,jev-latest
+1252,datascience,datascience,0.99,0.61,476,133,jev-latest
+1273,datascience,datascience,0.97,0.62,574,133,jev-latest
+1284,datascience,datascience,0.98,0.71,490,133,jev-latest
+1240,datascience,datascience,0.92,0.66,559,133,jev-latest
+1293,datascience,datascience,0.94,0.67,501,133,jev-latest
+1207,datascience,datascience,0.67,0.63,446,133,jev-latest
+1248,datascience,datascience,0.94,0.63,556,133,jev-latest
+1249,datascience,datascience,0.95,0.62,485,133,jev-latest
+1202,datascience,datascience,1.0,0.66,541,133,jev-latest
+1268,datascience,ai,0.58,0.68,481,130,jev-latest
+1243,datascience,datascience,0.95,0.6,523,133,jev-latest
+1246,datascience,datascience,0.87,0.6,569,133,jev-latest
+1251,datascience,datascience,0.92,0.78,446,133,jev-latest
+1234,datascience,datascience,0.85,0.6,492,133,jev-latest
+1282,datascience,ai,0.57,0.66,501,130,jev-latest
+1266,datascience,ai,0.61,0.61,453,130,jev-latest
+1222,datascience,datascience,0.98,0.61,570,133,jev-latest
+1299,datascience,datascience,0.98,0.8,513,133,jev-latest
+1181,economics,economics,1.0,0.73,462,132,jev-latest
+1160,economics,economics,1.0,0.73,597,132,jev-latest
+1107,economics,economics,1.0,0.58,504,132,jev-latest
+1113,economics,economics,1.0,0.58,593,132,jev-latest
+1141,economics,economics,0.82,0.67,541,132,jev-latest
+1109,economics,economics,1.0,0.69,564,132,jev-latest
+1166,economics,economics,1.0,0.73,484,132,jev-latest
+1136,economics,economics,1.0,0.59,465,132,jev-latest
+1142,economics,economics,1.0,0.61,563,132,jev-latest
+1116,economics,economics,0.96,0.64,483,132,jev-latest
+1135,economics,economics,1.0,0.59,455,132,jev-latest
+1152,economics,economics,1.0,0.64,497,132,jev-latest
+1191,economics,economics,1.0,0.66,497,132,jev-latest
+1129,economics,economics,1.0,0.65,441,132,jev-latest
+1188,economics,economics,1.0,0.7,530,132,jev-latest
+1161,economics,economics,0.99,0.72,511,132,jev-latest
+1122,economics,economics,1.0,0.71,547,132,jev-latest
+1168,economics,economics,1.0,0.68,611,132,jev-latest
+1190,economics,economics,1.0,0.64,476,132,jev-latest
+1146,economics,economics,1.0,0.8,565,132,jev-latest
+993,fitness,fitness,1.0,0.62,467,130,jev-latest
+965,fitness,fitness,1.0,0.65,599,130,jev-latest
+986,fitness,fitness,1.0,0.63,484,130,jev-latest
+937,fitness,fitness,1.0,0.67,587,130,jev-latest
+997,fitness,fitness,1.0,0.76,480,130,jev-latest
+911,fitness,fitness,1.0,0.65,465,130,jev-latest
+983,fitness,fitness,1.0,0.76,559,130,jev-latest
+974,fitness,fitness,1.0,0.76,436,130,jev-latest
+920,fitness,fitness,1.0,0.66,451,130,jev-latest
+931,fitness,fitness,1.0,0.7,455,130,jev-latest
+929,fitness,fitness,1.0,0.75,477,130,jev-latest
+939,fitness,fitness,1.0,0.68,556,130,jev-latest
+933,fitness,fitness,1.0,0.63,466,130,jev-latest
+964,fitness,fitness,1.0,0.58,441,130,jev-latest
+960,fitness,fitness,1.0,0.62,478,130,jev-latest
+940,fitness,fitness,1.0,0.62,435,130,jev-latest
+990,fitness,fitness,1.0,0.6,470,130,jev-latest
+913,fitness,fitness,1.0,0.71,481,130,jev-latest
+969,fitness,fitness,1.0,0.58,456,130,jev-latest
+973,fitness,fitness,1.0,0.64,558,130,jev-latest
+618,genai,genai,0.75,0.81,472,131,jev-latest
+677,genai,ai,0.6,0.59,547,130,jev-latest
+635,genai,ai,0.54,0.69,597,130,jev-latest
+607,genai,genai,0.88,0.72,523,131,jev-latest
+616,genai,ai,0.62,0.62,466,130,jev-latest
+668,genai,ai,0.54,0.65,530,130,jev-latest
+690,genai,genai,0.49,0.63,564,131,jev-latest
+643,genai,genai,0.52,0.66,449,131,jev-latest
+629,genai,ai,0.56,0.67,529,130,jev-latest
+630,genai,genai,0.52,0.78,483,131,jev-latest
+689,genai,genai,0.52,0.73,533,131,jev-latest
+678,genai,genai,0.55,0.88,460,131,jev-latest
+625,genai,genai,0.81,0.7,553,131,jev-latest
+685,genai,genai,0.79,0.68,540,131,jev-latest
+632,genai,genai,0.6,0.58,438,131,jev-latest
+695,genai,genai,0.5,0.79,534,131,jev-latest
+650,genai,genai,0.57,0.77,482,131,jev-latest
+697,genai,genai,0.72,0.62,579,131,jev-latest
+628,genai,genai,0.59,0.61,501,131,jev-latest
+648,genai,genai,0.78,0.57,494,131,jev-latest
+1320,movies,movies,1.0,0.62,477,130,jev-latest
+1349,movies,movies,1.0,0.79,476,130,jev-latest
+1346,movies,movies,1.0,0.77,459,130,jev-latest
+1303,movies,movies,1.0,0.69,475,130,jev-latest
+1309,movies,movies,1.0,0.67,475,130,jev-latest
+1301,movies,movies,1.0,0.94,436,130,jev-latest
+1391,movies,movies,1.0,0.76,466,130,jev-latest
+1357,movies,movies,1.0,0.61,495,130,jev-latest
+1393,movies,movies,1.0,0.62,452,130,jev-latest
+1328,movies,movies,1.0,0.73,515,130,jev-latest
+1350,movies,movies,1.0,0.59,480,130,jev-latest
+1387,movies,movies,1.0,0.96,597,130,jev-latest
+1368,movies,movies,1.0,0.62,598,130,jev-latest
+1375,movies,movies,1.0,0.74,503,130,jev-latest
+1316,movies,movies,0.82,0.58,531,130,jev-latest
+1369,movies,movies,1.0,0.62,494,130,jev-latest
+1341,movies,movies,1.0,0.7,507,130,jev-latest
+1365,movies,movies,1.0,0.77,565,130,jev-latest
+1321,movies,movies,1.0,0.63,480,130,jev-latest
+1382,movies,movies,1.0,0.78,533,130,jev-latest
+310,pets,pets,1.0,0.64,586,130,jev-latest
+375,pets,pets,1.0,0.58,482,130,jev-latest
+398,pets,pets,1.0,0.71,598,130,jev-latest
+369,pets,pets,1.0,0.6,438,130,jev-latest
+359,pets,pets,1.0,0.6,432,130,jev-latest
+304,pets,pets,1.0,0.73,495,130,jev-latest
+362,pets,pets,1.0,0.73,542,130,jev-latest
+373,pets,pets,1.0,0.6,593,130,jev-latest
+312,pets,pets,0.93,0.59,446,130,jev-latest
+370,pets,pets,1.0,0.64,447,130,jev-latest
+358,pets,pets,1.0,0.69,583,130,jev-latest
+345,pets,pets,1.0,0.62,495,130,jev-latest
+350,pets,pets,1.0,0.79,478,130,jev-latest
+367,pets,pets,1.0,0.61,464,130,jev-latest
+303,pets,pets,1.0,0.69,508,130,jev-latest
+314,pets,pets,1.0,0.68,469,130,jev-latest
+374,pets,pets,1.0,0.7,515,130,jev-latest
+330,pets,pets,1.0,0.64,442,130,jev-latest
+316,pets,pets,1.0,0.77,507,130,jev-latest
+371,pets,pets,1.0,0.72,537,130,jev-latest
+425,politics,politics,0.47,0.67,482,132,jev-latest
+461,politics,politics,1.0,0.69,518,132,jev-latest
+431,politics,politics,1.0,0.6,469,132,jev-latest
+469,politics,politics,1.0,0.65,602,132,jev-latest
+415,politics,politics,1.0,1.06,548,132,jev-latest
+443,politics,politics,1.0,0.65,575,132,jev-latest
+445,politics,politics,1.0,0.6,453,132,jev-latest
+475,politics,politics,1.0,0.59,516,132,jev-latest
+406,politics,politics,0.58,0.65,430,132,jev-latest
+444,politics,politics,0.87,0.8,586,132,jev-latest
+426,politics,politics,1.0,0.67,449,132,jev-latest
+463,politics,politics,0.88,0.69,489,132,jev-latest
+497,politics,politics,1.0,0.63,439,132,jev-latest
+439,politics,politics,1.0,0.68,552,132,jev-latest
+404,politics,economics,0.71,0.7,506,132,jev-latest
+476,politics,politics,1.0,0.77,515,132,jev-latest
+480,politics,politics,1.0,0.64,608,132,jev-latest
+458,politics,politics,1.0,0.64,443,132,jev-latest
+466,politics,politics,1.0,0.64,553,132,jev-latest
+413,politics,politics,0.76,0.6,502,132,jev-latest
+813,travel,travel,0.99,0.6,559,130,jev-latest
+804,travel,travel,1.0,0.59,466,130,jev-latest
+816,travel,travel,1.0,0.79,584,130,jev-latest
+841,travel,politics,0.49,0.65,478,132,jev-latest
+892,travel,travel,1.0,0.62,531,130,jev-latest
+838,travel,travel,0.91,0.64,511,130,jev-latest
+893,travel,travel,1.0,0.7,596,130,jev-latest
+867,travel,politics,0.55,0.68,478,132,jev-latest
+807,travel,travel,1.0,0.66,438,130,jev-latest
+852,travel,travel,1.0,0.76,510,130,jev-latest
+823,travel,travel,1.0,0.61,570,130,jev-latest
+832,travel,travel,1.0,0.63,595,130,jev-latest
+874,travel,travel,0.99,0.67,484,130,jev-latest
+808,travel,travel,1.0,0.65,592,130,jev-latest
+814,travel,travel,1.0,0.8,587,130,jev-latest
+897,travel,travel,1.0,0.67,488,130,jev-latest
+815,travel,travel,0.97,0.66,549,130,jev-latest
+850,travel,travel,1.0,0.66,529,130,jev-latest
+894,travel,travel,1.0,0.68,576,130,jev-latest
+870,travel,travel,1.0,0.93,456,130,jev-latest
+84,ai,ai,,,190,180,gpt-5.6-luna
+54,ai,ai,,,157,33,gpt-5.6-luna
+71,ai,ai,,,219,46,gpt-5.6-luna
+46,ai,datascience,,,219,82,gpt-5.6-luna
+45,ai,ai,,,157,66,gpt-5.6-luna
+40,ai,ai,,,148,43,gpt-5.6-luna
+23,ai,ai,,,166,145,gpt-5.6-luna
+81,ai,ai,,,253,50,gpt-5.6-luna
+11,ai,ai,,,170,42,gpt-5.6-luna
+1,ai,ai,,,226,48,gpt-5.6-luna
+19,ai,datascience,,,190,48,gpt-5.6-luna
+31,ai,ai,,,272,51,gpt-5.6-luna
+74,ai,ai,,,234,118,gpt-5.6-luna
+34,ai,ai,,,230,41,gpt-5.6-luna
+91,ai,ai,,,287,59,gpt-5.6-luna
+5,ai,ai,,,233,49,gpt-5.6-luna
+77,ai,datascience,,,241,33,gpt-5.6-luna
+78,ai,ai,,,160,85,gpt-5.6-luna
+13,ai,ai,,,273,11,gpt-5.6-luna
+32,ai,ai,,,251,45,gpt-5.6-luna
+280,astronomy,astronomy,,,191,25,gpt-5.6-luna
+238,astronomy,astronomy,,,242,23,gpt-5.6-luna
+266,astronomy,astronomy,,,184,27,gpt-5.6-luna
+255,astronomy,astronomy,,,216,25,gpt-5.6-luna
+216,astronomy,astronomy,,,202,12,gpt-5.6-luna
+221,astronomy,astronomy,,,139,28,gpt-5.6-luna
+300,astronomy,astronomy,,,222,29,gpt-5.6-luna
+226,astronomy,astronomy,,,192,23,gpt-5.6-luna
+257,astronomy,astronomy,,,233,25,gpt-5.6-luna
+218,astronomy,astronomy,,,128,25,gpt-5.6-luna
+260,astronomy,astronomy,,,205,23,gpt-5.6-luna
+294,astronomy,astronomy,,,200,23,gpt-5.6-luna
+288,astronomy,astronomy,,,194,25,gpt-5.6-luna
+267,astronomy,astronomy,,,203,23,gpt-5.6-luna
+256,astronomy,astronomy,,,251,28,gpt-5.6-luna
+274,astronomy,astronomy,,,246,23,gpt-5.6-luna
+240,astronomy,astronomy,,,270,23,gpt-5.6-luna
+231,astronomy,astronomy,,,192,23,gpt-5.6-luna
+217,astronomy,astronomy,,,140,23,gpt-5.6-luna
+250,astronomy,astronomy,,,143,25,gpt-5.6-luna
+749,bicycles,bicycles,,,241,13,gpt-5.6-luna
+729,bicycles,bicycles,,,268,30,gpt-5.6-luna
+786,bicycles,bicycles,,,259,13,gpt-5.6-luna
+784,bicycles,bicycles,,,179,31,gpt-5.6-luna
+715,bicycles,bicycles,,,228,13,gpt-5.6-luna
+710,bicycles,bicycles,,,169,24,gpt-5.6-luna
+743,bicycles,bicycles,,,192,13,gpt-5.6-luna
+722,bicycles,bicycles,,,150,29,gpt-5.6-luna
+776,bicycles,bicycles,,,144,27,gpt-5.6-luna
+794,bicycles,bicycles,,,222,13,gpt-5.6-luna
+745,bicycles,bicycles,,,178,13,gpt-5.6-luna
+727,bicycles,bicycles,,,206,29,gpt-5.6-luna
+761,bicycles,bicycles,,,256,28,gpt-5.6-luna
+713,bicycles,bicycles,,,175,28,gpt-5.6-luna
+721,bicycles,bicycles,,,148,24,gpt-5.6-luna
+747,bicycles,bicycles,,,150,13,gpt-5.6-luna
+746,bicycles,bicycles,,,180,28,gpt-5.6-luna
+741,bicycles,bicycles,,,183,13,gpt-5.6-luna
+714,bicycles,bicycles,,,213,26,gpt-5.6-luna
+762,bicycles,bicycles,,,255,13,gpt-5.6-luna
+599,bioinformatics,bioinformatics,,,293,32,gpt-5.6-luna
+505,bioinformatics,bioinformatics,,,198,31,gpt-5.6-luna
+534,bioinformatics,bioinformatics,,,231,26,gpt-5.6-luna
+562,bioinformatics,bioinformatics,,,185,34,gpt-5.6-luna
+594,bioinformatics,bioinformatics,,,257,36,gpt-5.6-luna
+585,bioinformatics,bioinformatics,,,284,61,gpt-5.6-luna
+552,bioinformatics,bioinformatics,,,297,26,gpt-5.6-luna
+595,bioinformatics,bioinformatics,,,184,12,gpt-5.6-luna
+511,bioinformatics,bioinformatics,,,248,28,gpt-5.6-luna
+589,bioinformatics,bioinformatics,,,161,26,gpt-5.6-luna
+510,bioinformatics,bioinformatics,,,200,12,gpt-5.6-luna
+555,bioinformatics,bioinformatics,,,210,32,gpt-5.6-luna
+557,bioinformatics,bioinformatics,,,253,35,gpt-5.6-luna
+573,bioinformatics,bioinformatics,,,179,33,gpt-5.6-luna
+575,bioinformatics,bioinformatics,,,141,54,gpt-5.6-luna
+543,bioinformatics,bioinformatics,,,210,26,gpt-5.6-luna
+545,bioinformatics,bioinformatics,,,244,12,gpt-5.6-luna
+515,bioinformatics,bioinformatics,,,198,57,gpt-5.6-luna
+582,bioinformatics,bioinformatics,,,228,36,gpt-5.6-luna
+512,bioinformatics,bioinformatics,,,184,30,gpt-5.6-luna
+1095,chess,chess,,,157,25,gpt-5.6-luna
+1041,chess,chess,,,183,25,gpt-5.6-luna
+1007,chess,chess,,,200,12,gpt-5.6-luna
+1027,chess,chess,,,149,12,gpt-5.6-luna
+1078,chess,chess,,,285,29,gpt-5.6-luna
+1069,chess,chess,,,261,28,gpt-5.6-luna
+1100,chess,chess,,,274,12,gpt-5.6-luna
+1075,chess,chess,,,171,12,gpt-5.6-luna
+1025,chess,chess,,,297,30,gpt-5.6-luna
+1059,chess,chess,,,201,23,gpt-5.6-luna
+1011,chess,chess,,,223,24,gpt-5.6-luna
+1090,chess,chess,,,208,12,gpt-5.6-luna
+1098,chess,chess,,,186,23,gpt-5.6-luna
+1015,chess,chess,,,155,25,gpt-5.6-luna
+1035,chess,chess,,,209,25,gpt-5.6-luna
+1043,chess,chess,,,222,12,gpt-5.6-luna
+1003,chess,chess,,,178,25,gpt-5.6-luna
+1018,chess,chess,,,159,25,gpt-5.6-luna
+1050,chess,chess,,,250,28,gpt-5.6-luna
+1020,chess,chess,,,195,24,gpt-5.6-luna
+159,coffee,coffee,,,146,11,gpt-5.6-luna
+145,coffee,coffee,,,271,11,gpt-5.6-luna
+101,coffee,coffee,,,235,11,gpt-5.6-luna
+104,coffee,coffee,,,141,41,gpt-5.6-luna
+132,coffee,coffee,,,195,11,gpt-5.6-luna
+163,coffee,coffee,,,206,23,gpt-5.6-luna
+138,coffee,coffee,,,149,23,gpt-5.6-luna
+127,coffee,coffee,,,176,24,gpt-5.6-luna
+133,coffee,coffee,,,158,24,gpt-5.6-luna
+139,coffee,coffee,,,266,11,gpt-5.6-luna
+191,coffee,coffee,,,158,25,gpt-5.6-luna
+161,coffee,coffee,,,248,28,gpt-5.6-luna
+197,coffee,coffee,,,178,24,gpt-5.6-luna
+193,coffee,coffee,,,199,24,gpt-5.6-luna
+189,coffee,coffee,,,152,24,gpt-5.6-luna
+192,coffee,coffee,,,138,11,gpt-5.6-luna
+186,coffee,coffee,,,184,23,gpt-5.6-luna
+142,coffee,coffee,,,168,24,gpt-5.6-luna
+156,coffee,coffee,,,239,27,gpt-5.6-luna
+106,coffee,coffee,,,134,24,gpt-5.6-luna
+1279,datascience,datascience,,,265,66,gpt-5.6-luna
+1269,datascience,datascience,,,159,73,gpt-5.6-luna
+1252,datascience,datascience,,,174,47,gpt-5.6-luna
+1273,datascience,datascience,,,277,33,gpt-5.6-luna
+1284,datascience,datascience,,,185,27,gpt-5.6-luna
+1240,datascience,datascience,,,262,12,gpt-5.6-luna
+1293,datascience,datascience,,,200,39,gpt-5.6-luna
+1207,datascience,datascience,,,148,50,gpt-5.6-luna
+1248,datascience,datascience,,,249,31,gpt-5.6-luna
+1249,datascience,datascience,,,186,42,gpt-5.6-luna
+1202,datascience,datascience,,,237,43,gpt-5.6-luna
+1268,datascience,datascience,,,180,74,gpt-5.6-luna
+1243,datascience,datascience,,,220,28,gpt-5.6-luna
+1246,datascience,datascience,,,269,68,gpt-5.6-luna
+1251,datascience,datascience,,,148,55,gpt-5.6-luna
+1234,datascience,datascience,,,189,57,gpt-5.6-luna
+1282,datascience,ai,,,200,202,gpt-5.6-luna
+1266,datascience,ai,,,150,50,gpt-5.6-luna
+1222,datascience,datascience,,,268,27,gpt-5.6-luna
+1299,datascience,datascience,,,204,12,gpt-5.6-luna
+1181,economics,economics,,,161,25,gpt-5.6-luna
+1160,economics,economics,,,291,12,gpt-5.6-luna
+1107,economics,economics,,,193,25,gpt-5.6-luna
+1113,economics,economics,,,280,12,gpt-5.6-luna
+1141,economics,economics,,,243,35,gpt-5.6-luna
+1109,economics,economics,,,264,25,gpt-5.6-luna
+1166,economics,economics,,,185,30,gpt-5.6-luna
+1136,economics,economics,,,165,12,gpt-5.6-luna
+1142,economics,economics,,,256,29,gpt-5.6-luna
+1116,economics,economics,,,187,25,gpt-5.6-luna
+1135,economics,economics,,,156,30,gpt-5.6-luna
+1152,economics,economics,,,198,23,gpt-5.6-luna
+1191,economics,economics,,,198,43,gpt-5.6-luna
+1129,economics,economics,,,145,25,gpt-5.6-luna
+1188,economics,economics,,,233,28,gpt-5.6-luna
+1161,economics,economics,,,213,25,gpt-5.6-luna
+1122,economics,economics,,,244,28,gpt-5.6-luna
+1168,economics,economics,,,302,29,gpt-5.6-luna
+1190,economics,economics,,,180,23,gpt-5.6-luna
+1146,economics,economics,,,264,25,gpt-5.6-luna
+993,fitness,fitness,,,169,24,gpt-5.6-luna
+965,fitness,fitness,,,300,37,gpt-5.6-luna
+986,fitness,fitness,,,179,24,gpt-5.6-luna
+937,fitness,fitness,,,281,11,gpt-5.6-luna
+997,fitness,fitness,,,179,34,gpt-5.6-luna
+911,fitness,fitness,,,166,24,gpt-5.6-luna
+983,fitness,fitness,,,255,11,gpt-5.6-luna
+974,fitness,fitness,,,137,24,gpt-5.6-luna
+920,fitness,fitness,,,155,24,gpt-5.6-luna
+931,fitness,fitness,,,158,24,gpt-5.6-luna
+929,fitness,fitness,,,173,29,gpt-5.6-luna
+939,fitness,fitness,,,257,32,gpt-5.6-luna
+933,fitness,fitness,,,163,24,gpt-5.6-luna
+964,fitness,fitness,,,143,24,gpt-5.6-luna
+960,fitness,fitness,,,180,24,gpt-5.6-luna
+940,fitness,fitness,,,138,29,gpt-5.6-luna
+990,fitness,fitness,,,172,24,gpt-5.6-luna
+913,fitness,fitness,,,185,24,gpt-5.6-luna
+969,fitness,fitness,,,156,24,gpt-5.6-luna
+973,fitness,fitness,,,260,41,gpt-5.6-luna
+618,genai,genai,,,170,34,gpt-5.6-luna
+677,genai,genai,,,249,117,gpt-5.6-luna
+635,genai,ai,,,290,11,gpt-5.6-luna
+607,genai,genai,,,225,42,gpt-5.6-luna
+616,genai,ai,,,169,162,gpt-5.6-luna
+668,genai,genai,,,224,86,gpt-5.6-luna
+690,genai,genai,,,262,61,gpt-5.6-luna
+643,genai,genai,,,153,97,gpt-5.6-luna
+629,genai,ai,,,232,99,gpt-5.6-luna
+630,genai,genai,,,182,34,gpt-5.6-luna
+689,genai,genai,,,224,80,gpt-5.6-luna
+678,genai,genai,,,160,72,gpt-5.6-luna
+625,genai,genai,,,252,39,gpt-5.6-luna
+685,genai,genai,,,241,53,gpt-5.6-luna
+632,genai,genai,,,142,51,gpt-5.6-luna
+695,genai,genai,,,227,82,gpt-5.6-luna
+650,genai,genai,,,184,54,gpt-5.6-luna
+697,genai,genai,,,278,31,gpt-5.6-luna
+628,genai,genai,,,196,32,gpt-5.6-luna
+648,genai,genai,,,194,41,gpt-5.6-luna
+1320,movies,movies,,,180,53,gpt-5.6-luna
+1349,movies,movies,,,179,27,gpt-5.6-luna
+1346,movies,movies,,,161,27,gpt-5.6-luna
+1303,movies,movies,,,177,22,gpt-5.6-luna
+1309,movies,movies,,,177,27,gpt-5.6-luna
+1301,movies,movies,,,140,26,gpt-5.6-luna
+1391,movies,movies,,,168,27,gpt-5.6-luna
+1357,movies,movies,,,199,31,gpt-5.6-luna
+1393,movies,movies,,,153,26,gpt-5.6-luna
+1328,movies,movies,,,217,27,gpt-5.6-luna
+1350,movies,movies,,,176,26,gpt-5.6-luna
+1387,movies,movies,,,286,34,gpt-5.6-luna
+1368,movies,movies,,,287,33,gpt-5.6-luna
+1375,movies,movies,,,204,28,gpt-5.6-luna
+1316,movies,astronomy,,,228,37,gpt-5.6-luna
+1369,movies,movies,,,195,26,gpt-5.6-luna
+1341,movies,movies,,,206,26,gpt-5.6-luna
+1365,movies,movies,,,264,28,gpt-5.6-luna
+1321,movies,movies,,,181,28,gpt-5.6-luna
+1382,movies,movies,,,230,42,gpt-5.6-luna
+310,pets,pets,,,281,28,gpt-5.6-luna
+375,pets,pets,,,183,11,gpt-5.6-luna
+398,pets,pets,,,297,11,gpt-5.6-luna
+369,pets,pets,,,140,11,gpt-5.6-luna
+359,pets,pets,,,134,11,gpt-5.6-luna
+304,pets,pets,,,197,29,gpt-5.6-luna
+362,pets,pets,,,241,11,gpt-5.6-luna
+373,pets,pets,,,297,46,gpt-5.6-luna
+312,pets,pets,,,148,62,gpt-5.6-luna
+370,pets,pets,,,145,33,gpt-5.6-luna
+358,pets,pets,,,279,11,gpt-5.6-luna
+345,pets,pets,,,197,11,gpt-5.6-luna
+350,pets,pets,,,176,27,gpt-5.6-luna
+367,pets,pets,,,166,11,gpt-5.6-luna
+303,pets,pets,,,209,26,gpt-5.6-luna
+314,pets,pets,,,172,28,gpt-5.6-luna
+374,pets,pets,,,217,11,gpt-5.6-luna
+330,pets,pets,,,145,11,gpt-5.6-luna
+316,pets,pets,,,207,11,gpt-5.6-luna
+371,pets,pets,,,240,24,gpt-5.6-luna
+425,politics,politics,,,183,35,gpt-5.6-luna
+461,politics,politics,,,219,41,gpt-5.6-luna
+431,politics,politics,,,173,25,gpt-5.6-luna
+469,politics,politics,,,283,31,gpt-5.6-luna
+415,politics,politics,,,246,42,gpt-5.6-luna
+443,politics,politics,,,273,37,gpt-5.6-luna
+445,politics,politics,,,155,25,gpt-5.6-luna
+475,politics,politics,,,215,25,gpt-5.6-luna
+406,politics,politics,,,134,46,gpt-5.6-luna
+444,politics,politics,,,281,29,gpt-5.6-luna
+426,politics,politics,,,150,32,gpt-5.6-luna
+463,politics,politics,,,192,55,gpt-5.6-luna
+497,politics,politics,,,140,25,gpt-5.6-luna
+439,politics,politics,,,256,25,gpt-5.6-luna
+404,politics,politics,,,201,43,gpt-5.6-luna
+476,politics,politics,,,214,23,gpt-5.6-luna
+480,politics,politics,,,290,32,gpt-5.6-luna
+458,politics,politics,,,143,25,gpt-5.6-luna
+466,politics,politics,,,248,12,gpt-5.6-luna
+413,politics,politics,,,205,34,gpt-5.6-luna
+813,travel,travel,,,248,28,gpt-5.6-luna
+804,travel,travel,,,167,25,gpt-5.6-luna
+816,travel,travel,,,281,11,gpt-5.6-luna
+841,travel,travel,,,181,32,gpt-5.6-luna
+892,travel,travel,,,235,11,gpt-5.6-luna
+838,travel,travel,,,210,31,gpt-5.6-luna
+893,travel,travel,,,296,24,gpt-5.6-luna
+867,travel,travel,,,181,37,gpt-5.6-luna
+807,travel,travel,,,140,27,gpt-5.6-luna
+852,travel,travel,,,210,24,gpt-5.6-luna
+823,travel,travel,,,270,24,gpt-5.6-luna
+832,travel,travel,,,292,24,gpt-5.6-luna
+874,travel,travel,,,183,33,gpt-5.6-luna
+808,travel,travel,,,286,27,gpt-5.6-luna
+814,travel,travel,,,281,11,gpt-5.6-luna
+897,travel,travel,,,188,23,gpt-5.6-luna
+815,travel,travel,,,250,24,gpt-5.6-luna
+850,travel,travel,,,228,22,gpt-5.6-luna
+894,travel,travel,,,277,24,gpt-5.6-luna
+870,travel,travel,,,156,24,gpt-5.6-luna
+84,ai,ai,,,190,33,gpt-5.6-terra
+54,ai,ai,,,157,42,gpt-5.6-terra
+71,ai,ai,,,219,33,gpt-5.6-terra
+46,ai,datascience,,,219,29,gpt-5.6-terra
+45,ai,ai,,,157,96,gpt-5.6-terra
+40,ai,ai,,,148,47,gpt-5.6-terra
+23,ai,datascience,,,166,176,gpt-5.6-terra
+81,ai,ai,,,253,11,gpt-5.6-terra
+11,ai,ai,,,170,48,gpt-5.6-terra
+1,ai,ai,,,226,49,gpt-5.6-terra
+19,ai,datascience,,,190,30,gpt-5.6-terra
+31,ai,ai,,,272,27,gpt-5.6-terra
+74,ai,ai,,,234,11,gpt-5.6-terra
+34,ai,ai,,,230,41,gpt-5.6-terra
+91,ai,ai,,,287,45,gpt-5.6-terra
+5,ai,ai,,,233,35,gpt-5.6-terra
+77,ai,datascience,,,241,34,gpt-5.6-terra
+78,ai,ai,,,160,102,gpt-5.6-terra
+13,ai,ai,,,273,40,gpt-5.6-terra
+32,ai,ai,,,251,11,gpt-5.6-terra
+280,astronomy,astronomy,,,191,43,gpt-5.6-terra
+238,astronomy,astronomy,,,242,12,gpt-5.6-terra
+266,astronomy,astronomy,,,184,23,gpt-5.6-terra
+255,astronomy,astronomy,,,216,23,gpt-5.6-terra
+216,astronomy,astronomy,,,202,23,gpt-5.6-terra
+221,astronomy,astronomy,,,139,24,gpt-5.6-terra
+300,astronomy,astronomy,,,222,33,gpt-5.6-terra
+226,astronomy,astronomy,,,192,23,gpt-5.6-terra
+257,astronomy,astronomy,,,233,12,gpt-5.6-terra
+218,astronomy,astronomy,,,128,23,gpt-5.6-terra
+260,astronomy,astronomy,,,205,26,gpt-5.6-terra
+294,astronomy,astronomy,,,200,23,gpt-5.6-terra
+288,astronomy,astronomy,,,194,12,gpt-5.6-terra
+267,astronomy,astronomy,,,203,23,gpt-5.6-terra
+256,astronomy,astronomy,,,251,24,gpt-5.6-terra
+274,astronomy,astronomy,,,246,12,gpt-5.6-terra
+240,astronomy,astronomy,,,270,12,gpt-5.6-terra
+231,astronomy,astronomy,,,192,23,gpt-5.6-terra
+217,astronomy,astronomy,,,140,23,gpt-5.6-terra
+250,astronomy,astronomy,,,143,28,gpt-5.6-terra
+749,bicycles,bicycles,,,241,13,gpt-5.6-terra
+729,bicycles,bicycles,,,268,13,gpt-5.6-terra
+786,bicycles,bicycles,,,259,13,gpt-5.6-terra
+784,bicycles,bicycles,,,179,13,gpt-5.6-terra
+715,bicycles,bicycles,,,228,13,gpt-5.6-terra
+710,bicycles,bicycles,,,169,13,gpt-5.6-terra
+743,bicycles,bicycles,,,192,13,gpt-5.6-terra
+722,bicycles,bicycles,,,150,24,gpt-5.6-terra
+776,bicycles,bicycles,,,144,24,gpt-5.6-terra
+794,bicycles,bicycles,,,222,13,gpt-5.6-terra
+745,bicycles,bicycles,,,178,13,gpt-5.6-terra
+727,bicycles,bicycles,,,206,24,gpt-5.6-terra
+761,bicycles,bicycles,,,256,13,gpt-5.6-terra
+713,bicycles,bicycles,,,175,13,gpt-5.6-terra
+721,bicycles,bicycles,,,148,13,gpt-5.6-terra
+747,bicycles,bicycles,,,150,13,gpt-5.6-terra
+746,bicycles,bicycles,,,180,24,gpt-5.6-terra
+741,bicycles,bicycles,,,183,24,gpt-5.6-terra
+714,bicycles,bicycles,,,213,24,gpt-5.6-terra
+762,bicycles,bicycles,,,255,13,gpt-5.6-terra
+599,bioinformatics,bioinformatics,,,293,26,gpt-5.6-terra
+505,bioinformatics,bioinformatics,,,198,24,gpt-5.6-terra
+534,bioinformatics,bioinformatics,,,231,12,gpt-5.6-terra
+562,bioinformatics,bioinformatics,,,185,25,gpt-5.6-terra
+594,bioinformatics,bioinformatics,,,257,34,gpt-5.6-terra
+585,bioinformatics,bioinformatics,,,284,12,gpt-5.6-terra
+552,bioinformatics,bioinformatics,,,297,25,gpt-5.6-terra
+595,bioinformatics,bioinformatics,,,184,24,gpt-5.6-terra
+511,bioinformatics,bioinformatics,,,248,12,gpt-5.6-terra
+589,bioinformatics,bioinformatics,,,161,23,gpt-5.6-terra
+510,bioinformatics,bioinformatics,,,200,38,gpt-5.6-terra
+555,bioinformatics,bioinformatics,,,210,45,gpt-5.6-terra
+557,bioinformatics,bioinformatics,,,253,12,gpt-5.6-terra
+573,bioinformatics,bioinformatics,,,179,28,gpt-5.6-terra
+575,bioinformatics,bioinformatics,,,141,37,gpt-5.6-terra
+543,bioinformatics,bioinformatics,,,210,24,gpt-5.6-terra
+545,bioinformatics,bioinformatics,,,244,24,gpt-5.6-terra
+515,bioinformatics,bioinformatics,,,198,25,gpt-5.6-terra
+582,bioinformatics,bioinformatics,,,228,29,gpt-5.6-terra
+512,bioinformatics,bioinformatics,,,184,26,gpt-5.6-terra
+1095,chess,chess,,,157,24,gpt-5.6-terra
+1041,chess,chess,,,183,25,gpt-5.6-terra
+1007,chess,chess,,,200,23,gpt-5.6-terra
+1027,chess,chess,,,149,12,gpt-5.6-terra
+1078,chess,chess,,,285,12,gpt-5.6-terra
+1069,chess,chess,,,261,12,gpt-5.6-terra
+1100,chess,chess,,,274,12,gpt-5.6-terra
+1075,chess,chess,,,171,12,gpt-5.6-terra
+1025,chess,chess,,,297,12,gpt-5.6-terra
+1059,chess,chess,,,201,12,gpt-5.6-terra
+1011,chess,chess,,,223,12,gpt-5.6-terra
+1090,chess,chess,,,208,26,gpt-5.6-terra
+1098,chess,chess,,,186,23,gpt-5.6-terra
+1015,chess,chess,,,155,12,gpt-5.6-terra
+1035,chess,chess,,,209,23,gpt-5.6-terra
+1043,chess,chess,,,222,12,gpt-5.6-terra
+1003,chess,chess,,,178,12,gpt-5.6-terra
+1018,chess,chess,,,159,22,gpt-5.6-terra
+1050,chess,chess,,,250,12,gpt-5.6-terra
+1020,chess,chess,,,195,23,gpt-5.6-terra
+159,coffee,coffee,,,146,11,gpt-5.6-terra
+145,coffee,coffee,,,271,11,gpt-5.6-terra
+101,coffee,coffee,,,235,11,gpt-5.6-terra
+104,coffee,coffee,,,141,26,gpt-5.6-terra
+132,coffee,coffee,,,195,11,gpt-5.6-terra
+163,coffee,coffee,,,206,11,gpt-5.6-terra
+138,coffee,coffee,,,149,11,gpt-5.6-terra
+127,coffee,coffee,,,176,11,gpt-5.6-terra
+133,coffee,coffee,,,158,25,gpt-5.6-terra
+139,coffee,coffee,,,266,11,gpt-5.6-terra
+191,coffee,coffee,,,158,11,gpt-5.6-terra
+161,coffee,coffee,,,248,22,gpt-5.6-terra
+197,coffee,coffee,,,178,27,gpt-5.6-terra
+193,coffee,coffee,,,199,24,gpt-5.6-terra
+189,coffee,coffee,,,152,68,gpt-5.6-terra
+192,coffee,coffee,,,138,22,gpt-5.6-terra
+186,coffee,coffee,,,184,11,gpt-5.6-terra
+142,coffee,coffee,,,168,22,gpt-5.6-terra
+156,coffee,coffee,,,239,11,gpt-5.6-terra
+106,coffee,coffee,,,134,22,gpt-5.6-terra
+1279,datascience,datascience,,,265,12,gpt-5.6-terra
+1269,datascience,datascience,,,159,63,gpt-5.6-terra
+1252,datascience,datascience,,,174,12,gpt-5.6-terra
+1273,datascience,datascience,,,277,12,gpt-5.6-terra
+1284,datascience,datascience,,,185,12,gpt-5.6-terra
+1240,datascience,datascience,,,262,12,gpt-5.6-terra
+1293,datascience,datascience,,,200,29,gpt-5.6-terra
+1207,datascience,datascience,,,148,35,gpt-5.6-terra
+1248,datascience,datascience,,,249,12,gpt-5.6-terra
+1249,datascience,datascience,,,186,40,gpt-5.6-terra
+1202,datascience,datascience,,,237,44,gpt-5.6-terra
+1268,datascience,ai,,,180,41,gpt-5.6-terra
+1243,datascience,ai,,,220,11,gpt-5.6-terra
+1246,datascience,datascience,,,269,26,gpt-5.6-terra
+1251,datascience,datascience,,,148,29,gpt-5.6-terra
+1234,datascience,datascience,,,189,71,gpt-5.6-terra
+1282,datascience,datascience,,,200,58,gpt-5.6-terra
+1266,datascience,ai,,,150,57,gpt-5.6-terra
+1222,datascience,datascience,,,268,12,gpt-5.6-terra
+1299,datascience,datascience,,,204,30,gpt-5.6-terra
+1181,economics,economics,,,161,23,gpt-5.6-terra
+1160,economics,economics,,,291,12,gpt-5.6-terra
+1107,economics,economics,,,193,23,gpt-5.6-terra
+1113,economics,economics,,,280,23,gpt-5.6-terra
+1141,economics,economics,,,243,27,gpt-5.6-terra
+1109,economics,economics,,,264,12,gpt-5.6-terra
+1166,economics,economics,,,185,26,gpt-5.6-terra
+1136,economics,economics,,,165,23,gpt-5.6-terra
+1142,economics,economics,,,256,23,gpt-5.6-terra
+1116,economics,economics,,,187,23,gpt-5.6-terra
+1135,economics,economics,,,156,25,gpt-5.6-terra
+1152,economics,economics,,,198,12,gpt-5.6-terra
+1191,economics,economics,,,198,24,gpt-5.6-terra
+1129,economics,economics,,,145,23,gpt-5.6-terra
+1188,economics,economics,,,233,12,gpt-5.6-terra
+1161,economics,economics,,,213,23,gpt-5.6-terra
+1122,economics,economics,,,244,12,gpt-5.6-terra
+1168,economics,economics,,,302,12,gpt-5.6-terra
+1190,economics,economics,,,180,26,gpt-5.6-terra
+1146,economics,economics,,,264,23,gpt-5.6-terra
+993,fitness,fitness,,,169,22,gpt-5.6-terra
+965,fitness,fitness,,,300,11,gpt-5.6-terra
+986,fitness,fitness,,,179,11,gpt-5.6-terra
+937,fitness,fitness,,,281,11,gpt-5.6-terra
+997,fitness,fitness,,,179,22,gpt-5.6-terra
+911,fitness,fitness,,,166,11,gpt-5.6-terra
+983,fitness,fitness,,,255,11,gpt-5.6-terra
+974,fitness,fitness,,,137,26,gpt-5.6-terra
+920,fitness,fitness,,,155,11,gpt-5.6-terra
+931,fitness,fitness,,,158,11,gpt-5.6-terra
+929,fitness,fitness,,,173,27,gpt-5.6-terra
+939,fitness,fitness,,,257,21,gpt-5.6-terra
+933,fitness,fitness,,,163,22,gpt-5.6-terra
+964,fitness,fitness,,,143,26,gpt-5.6-terra
+960,fitness,fitness,,,180,11,gpt-5.6-terra
+940,fitness,fitness,,,138,23,gpt-5.6-terra
+990,fitness,fitness,,,172,25,gpt-5.6-terra
+913,fitness,fitness,,,185,11,gpt-5.6-terra
+969,fitness,fitness,,,156,11,gpt-5.6-terra
+973,fitness,fitness,,,260,28,gpt-5.6-terra
+618,genai,genai,,,170,44,gpt-5.6-terra
+677,genai,ai,,,249,11,gpt-5.6-terra
+635,genai,ai,,,290,11,gpt-5.6-terra
+607,genai,genai,,,225,12,gpt-5.6-terra
+616,genai,ai,,,169,11,gpt-5.6-terra
+668,genai,ai,,,224,91,gpt-5.6-terra
+690,genai,genai,,,262,12,gpt-5.6-terra
+643,genai,ai,,,153,190,gpt-5.6-terra
+629,genai,genai,,,232,49,gpt-5.6-terra
+630,genai,genai,,,182,49,gpt-5.6-terra
+689,genai,genai,,,224,59,gpt-5.6-terra
+678,genai,genai,,,160,55,gpt-5.6-terra
+625,genai,genai,,,252,12,gpt-5.6-terra
+685,genai,genai,,,241,12,gpt-5.6-terra
+632,genai,genai,,,142,103,gpt-5.6-terra
+695,genai,genai,,,227,12,gpt-5.6-terra
+650,genai,genai,,,184,43,gpt-5.6-terra
+697,genai,genai,,,278,12,gpt-5.6-terra
+628,genai,genai,,,196,41,gpt-5.6-terra
+648,genai,genai,,,194,46,gpt-5.6-terra
+1320,movies,movies,,,180,48,gpt-5.6-terra
+1349,movies,movies,,,179,23,gpt-5.6-terra
+1346,movies,movies,,,161,22,gpt-5.6-terra
+1303,movies,movies,,,177,11,gpt-5.6-terra
+1309,movies,movies,,,177,29,gpt-5.6-terra
+1301,movies,movies,,,140,22,gpt-5.6-terra
+1391,movies,movies,,,168,22,gpt-5.6-terra
+1357,movies,movies,,,199,26,gpt-5.6-terra
+1393,movies,movies,,,153,26,gpt-5.6-terra
+1328,movies,movies,,,217,22,gpt-5.6-terra
+1350,movies,movies,,,176,26,gpt-5.6-terra
+1387,movies,movies,,,286,31,gpt-5.6-terra
+1368,movies,movies,,,287,22,gpt-5.6-terra
+1375,movies,movies,,,204,23,gpt-5.6-terra
+1316,movies,movies,,,228,22,gpt-5.6-terra
+1369,movies,movies,,,195,22,gpt-5.6-terra
+1341,movies,movies,,,206,25,gpt-5.6-terra
+1365,movies,movies,,,264,27,gpt-5.6-terra
+1321,movies,movies,,,181,30,gpt-5.6-terra
+1382,movies,movies,,,230,29,gpt-5.6-terra
+310,pets,pets,,,281,11,gpt-5.6-terra
+375,pets,pets,,,183,11,gpt-5.6-terra
+398,pets,pets,,,297,11,gpt-5.6-terra
+369,pets,pets,,,140,22,gpt-5.6-terra
+359,pets,pets,,,134,31,gpt-5.6-terra
+304,pets,pets,,,197,24,gpt-5.6-terra
+362,pets,pets,,,241,11,gpt-5.6-terra
+373,pets,pets,,,297,41,gpt-5.6-terra
+312,pets,pets,,,148,52,gpt-5.6-terra
+370,pets,pets,,,145,32,gpt-5.6-terra
+358,pets,pets,,,279,11,gpt-5.6-terra
+345,pets,pets,,,197,11,gpt-5.6-terra
+350,pets,pets,,,176,11,gpt-5.6-terra
+367,pets,pets,,,166,11,gpt-5.6-terra
+303,pets,pets,,,209,11,gpt-5.6-terra
+314,pets,pets,,,172,28,gpt-5.6-terra
+374,pets,pets,,,217,11,gpt-5.6-terra
+330,pets,pets,,,145,22,gpt-5.6-terra
+316,pets,pets,,,207,11,gpt-5.6-terra
+371,pets,pets,,,240,11,gpt-5.6-terra
+425,politics,politics,,,183,37,gpt-5.6-terra
+461,politics,politics,,,219,28,gpt-5.6-terra
+431,politics,politics,,,173,12,gpt-5.6-terra
+469,politics,politics,,,283,23,gpt-5.6-terra
+415,politics,politics,,,246,23,gpt-5.6-terra
+443,politics,politics,,,273,12,gpt-5.6-terra
+445,politics,politics,,,155,23,gpt-5.6-terra
+475,politics,politics,,,215,24,gpt-5.6-terra
+406,politics,politics,,,134,66,gpt-5.6-terra
+444,politics,politics,,,281,27,gpt-5.6-terra
+426,politics,politics,,,150,41,gpt-5.6-terra
+463,politics,politics,,,192,58,gpt-5.6-terra
+497,politics,politics,,,140,23,gpt-5.6-terra
+439,politics,politics,,,256,23,gpt-5.6-terra
+404,politics,politics,,,201,31,gpt-5.6-terra
+476,politics,politics,,,214,23,gpt-5.6-terra
+480,politics,politics,,,290,34,gpt-5.6-terra
+458,politics,politics,,,143,27,gpt-5.6-terra
+466,politics,politics,,,248,23,gpt-5.6-terra
+413,politics,politics,,,205,12,gpt-5.6-terra
+813,travel,travel,,,248,11,gpt-5.6-terra
+804,travel,travel,,,167,23,gpt-5.6-terra
+816,travel,travel,,,281,11,gpt-5.6-terra
+841,travel,politics,,,181,34,gpt-5.6-terra
+892,travel,travel,,,235,11,gpt-5.6-terra
+838,travel,travel,,,210,34,gpt-5.6-terra
+893,travel,travel,,,296,11,gpt-5.6-terra
+867,travel,travel,,,181,26,gpt-5.6-terra
+807,travel,travel,,,140,31,gpt-5.6-terra
+852,travel,travel,,,210,22,gpt-5.6-terra
+823,travel,travel,,,270,11,gpt-5.6-terra
+832,travel,travel,,,292,11,gpt-5.6-terra
+874,travel,travel,,,183,33,gpt-5.6-terra
+808,travel,travel,,,286,11,gpt-5.6-terra
+814,travel,travel,,,281,11,gpt-5.6-terra
+897,travel,travel,,,188,26,gpt-5.6-terra
+815,travel,travel,,,250,27,gpt-5.6-terra
+850,travel,travel,,,228,11,gpt-5.6-terra
+894,travel,travel,,,277,11,gpt-5.6-terra
+870,travel,travel,,,156,22,gpt-5.6-terra

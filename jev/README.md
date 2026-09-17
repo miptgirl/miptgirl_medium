@@ -13,7 +13,9 @@ value with a confidence attached.
 
 ## Contents
 
-- `jev_typesafe_poc.ipynb` - the notebook, committed with real outputs from a live run
+- `jev_typesafe_poc.ipynb` - the API walkthrough, committed with real outputs
+- `benchmark_banking77.ipynb` - Jev vs GPT on 77-intent classification
+- `benchmark_stackexchange.ipynb` - Jev vs GPT on 14-topic classification (easy control)
 
 It covers a minimal client with bearer auth and exponential backoff on `429`/`529`, one call per
 question type, a batch evaluation over synthetic support tickets, confidence-based routing to
