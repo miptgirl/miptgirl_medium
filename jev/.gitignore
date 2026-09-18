@@ -3,3 +3,8 @@
 cache/
 __pycache__/
 .DS_Store
+
+# kept local, deliberately out of the PR
+jev_typesafe_poc.ipynb
+README.md
+data/
