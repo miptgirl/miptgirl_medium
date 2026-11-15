@@ -1,0 +1,20 @@
+{
+  "extraction": "EXP-001/read",
+  "arithmetic": "EXP-001/math",
+  "counts": "EXP-001/counts",
+  "staged": "EXP-001/math_staged",
+  "chart": "EXP-003/chart",
+  "chart_versions": [
+    "EXP-003/chart",
+    "EXP-008/chart",
+    "EXP-001/chart"
+  ],
+  "multi_chart": "EXP-003/multi_chart",
+  "effect": "IDEA-01/estimate",
+  "forecast": "forecast/578/30",
+  "forecast_members": "forecast_members/578/30",
+  "one_shot": "EXP-001/math_one_shot",
+  "forecast_spring": "forecast_spring/456/30",
+  "forecast_co2": "forecast_co2/228/12",
+  "chart_facts": "EXP-003/chart_facts"
+}

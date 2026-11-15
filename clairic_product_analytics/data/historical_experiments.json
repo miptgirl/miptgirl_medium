@@ -1,0 +1,82 @@
+[
+  {
+    "experiment_id": "HIST-01",
+    "experiment_type": "UI changes",
+    "device": "mobile",
+    "market": "Germany",
+    "observed_uplift_pct": 14.9,
+    "description": "Allow shoppers to check out as guests instead of creating an account before payment."
+  },
+  {
+    "experiment_id": "HIST-02",
+    "experiment_type": "UI changes",
+    "device": "desktop",
+    "market": "UK",
+    "observed_uplift_pct": -5.93,
+    "description": "Require shoppers to create an account and complete a profile before reaching payment."
+  },
+  {
+    "experiment_id": "HIST-03",
+    "experiment_type": "UI changes",
+    "device": "mobile",
+    "market": "UK",
+    "observed_uplift_pct": 9.97,
+    "description": "Pre-fill known delivery details and remove two optional fields from the checkout form."
+  },
+  {
+    "experiment_id": "HIST-04",
+    "experiment_type": "UI changes",
+    "device": "desktop",
+    "market": "Germany",
+    "observed_uplift_pct": -8.89,
+    "description": "Add a mandatory preferences screen between the basket and payment pages."
+  },
+  {
+    "experiment_id": "HIST-05",
+    "experiment_type": "Performance improvements",
+    "device": "mobile",
+    "market": "Germany",
+    "observed_uplift_pct": 2.02,
+    "description": "Compress product images to reduce initial page loading time without changing the page layout."
+  },
+  {
+    "experiment_id": "HIST-06",
+    "experiment_type": "Performance improvements",
+    "device": "desktop",
+    "market": "UK",
+    "observed_uplift_pct": 0.8,
+    "description": "Cache category-page responses so repeat requests load faster, keeping the content unchanged."
+  },
+  {
+    "experiment_id": "HIST-07",
+    "experiment_type": "Performance improvements",
+    "device": "mobile",
+    "market": "UK",
+    "observed_uplift_pct": 1.44,
+    "description": "Defer off-screen scripts to improve mobile page loading without altering the purchase flow."
+  },
+  {
+    "experiment_id": "HIST-08",
+    "experiment_type": "Bug fixes",
+    "device": "mobile",
+    "market": "Germany",
+    "observed_uplift_pct": 1.21,
+    "description": "Fix an intermittent checkout issue where the first tap on the submit button is ignored."
+  },
+  {
+    "experiment_id": "HIST-09",
+    "experiment_type": "Bug fixes",
+    "device": "desktop",
+    "market": "UK",
+    "observed_uplift_pct": 0.46,
+    "description": "Fix a rare postcode-validation error that rejects valid payment details."
+  },
+  {
+    "experiment_id": "HIST-10",
+    "experiment_type": "UI changes",
+    "device": "desktop",
+    "market": "Germany",
+    "observed_uplift_pct": 8.95,
+    "description": "Preserve basket contents when shoppers return from a product page instead of making them start again."
+  }
+]

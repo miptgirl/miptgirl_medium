@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__/
+results/
+.env
+*.local.json
+.DS_Store

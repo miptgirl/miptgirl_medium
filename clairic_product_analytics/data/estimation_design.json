@@ -1,0 +1,156 @@
+{
+  "base_effect_pct": {
+    "UI changes": 10.0,
+    "Performance improvements": 1.5,
+    "Bug fixes": 0.8
+  },
+  "device_multiplier": {
+    "mobile": 1.25,
+    "desktop": 0.75
+  },
+  "market_multiplier": {
+    "Germany": 1.2,
+    "UK": 0.8
+  },
+  "formula": "type base × device multiplier × market multiplier × UI direction sign (sign is +1 for performance and bug fixes)",
+  "historical_measurement_noise_sd": 0.12,
+  "model_sees": "Experiment descriptions, types, devices, markets and ten observed histories only. Neither numerical coefficients, structural assumptions nor reference signs are included in the model input.",
+  "latent_targets": [
+    {
+      "experiment_id": "IDEA-01",
+      "experiment_type": "UI changes",
+      "device": "mobile",
+      "market": "Germany",
+      "latent_uplift_pct": 15.0,
+      "description": "Remove an unnecessary purchase step.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-02",
+      "experiment_type": "UI changes",
+      "device": "desktop",
+      "market": "UK",
+      "latent_uplift_pct": -6.0,
+      "description": "Require an extra confirmation before purchase.",
+      "reference_sign": -1
+    },
+    {
+      "experiment_id": "IDEA-03",
+      "experiment_type": "UI changes",
+      "device": "mobile",
+      "market": "UK",
+      "latent_uplift_pct": 10.0,
+      "description": "Remove an unnecessary purchase step.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-04",
+      "experiment_type": "UI changes",
+      "device": "desktop",
+      "market": "Germany",
+      "latent_uplift_pct": -9.0,
+      "description": "Require an extra confirmation before purchase.",
+      "reference_sign": -1
+    },
+    {
+      "experiment_id": "IDEA-05",
+      "experiment_type": "UI changes",
+      "device": "mobile",
+      "market": "Germany",
+      "latent_uplift_pct": 15.0,
+      "description": "Remove an unnecessary purchase step.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-06",
+      "experiment_type": "Performance improvements",
+      "device": "mobile",
+      "market": "Germany",
+      "latent_uplift_pct": 2.25,
+      "description": "Reduce product-page loading time without changing the page content.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-07",
+      "experiment_type": "Performance improvements",
+      "device": "desktop",
+      "market": "UK",
+      "latent_uplift_pct": 0.9,
+      "description": "Reduce product-page loading time without changing the page content.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-08",
+      "experiment_type": "Performance improvements",
+      "device": "mobile",
+      "market": "UK",
+      "latent_uplift_pct": 1.5,
+      "description": "Reduce product-page loading time without changing the page content.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-09",
+      "experiment_type": "Performance improvements",
+      "device": "desktop",
+      "market": "Germany",
+      "latent_uplift_pct": 1.3499999999999999,
+      "description": "Reduce product-page loading time without changing the page content.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-10",
+      "experiment_type": "Performance improvements",
+      "device": "mobile",
+      "market": "Germany",
+      "latent_uplift_pct": 2.25,
+      "description": "Reduce product-page loading time without changing the page content.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-11",
+      "experiment_type": "Bug fixes",
+      "device": "mobile",
+      "market": "Germany",
+      "latent_uplift_pct": 1.2,
+      "description": "Fix a rare checkout validation error without changing the normal flow.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-12",
+      "experiment_type": "Bug fixes",
+      "device": "desktop",
+      "market": "UK",
+      "latent_uplift_pct": 0.4800000000000001,
+      "description": "Fix a rare checkout validation error without changing the normal flow.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-13",
+      "experiment_type": "Bug fixes",
+      "device": "mobile",
+      "market": "UK",
+      "latent_uplift_pct": 0.8,
+      "description": "Fix a rare checkout validation error without changing the normal flow.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-14",
+      "experiment_type": "Bug fixes",
+      "device": "desktop",
+      "market": "Germany",
+      "latent_uplift_pct": 0.7200000000000001,
+      "description": "Fix a rare checkout validation error without changing the normal flow.",
+      "reference_sign": 1
+    },
+    {
+      "experiment_id": "IDEA-15",
+      "experiment_type": "Bug fixes",
+      "device": "mobile",
+      "market": "Germany",
+      "latent_uplift_pct": 1.2,
+      "description": "Fix a rare checkout validation error without changing the normal flow.",
+      "reference_sign": 1
+    }
+  ],
+  "reference_sign_rule": "Evaluator-only: positive UI interventions remove purchase friction; negative UI interventions add a required step. Other types have positive reference sign."
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Bike Sharing",
+  "creator": "Hadi Fanaee-T",
+  "year": 2013,
+  "doi": "https://doi.org/10.24432/C5W894",
+  "url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+  "download_url": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "downloaded_on": "2026-11-14",
+  "raw_sha256": "a6bcf826782d3c0fbfdcbeead17cd0884185a0dafe8ff10cd48a874ee7ba18be",
+  "transformations": "Selected dteday,cnt,casual,registered; renamed date and rentals; added English weekday labels. Counts unchanged. No timezone conversion.",
+  "forecast_example_start": "2012-08-01",
+  "history_days": 365,
+  "horizon_days": 30,
+  "no_future_features": "No future counts, weather, temperatures or other observed future covariates are sent."
+}
