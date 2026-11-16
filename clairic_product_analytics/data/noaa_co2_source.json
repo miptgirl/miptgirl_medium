@@ -1,0 +1,14 @@
+{
+  "title": "NOAA Mauna Loa monthly mean CO2",
+  "url": "https://gml.noaa.gov/ccgg/trends/data.html",
+  "download_url": "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_mlo.csv",
+  "terms": "https://gml.noaa.gov/about/disclaimer.html",
+  "rights": "NOAA government information is public domain unless otherwise annotated; acknowledge source and do not imply endorsement.",
+  "acknowledgement": "Data provided by NOAA Global Monitoring Laboratory, Boulder, Colorado, USA (https://gml.noaa.gov).",
+  "downloaded_on": "2026-11-14",
+  "raw_sha256": "d895fb5b4a59fb5e4cd98e69b7667fe5bef595c6581f630852b12cb41c07f675",
+  "transformation": "Selected positive monthly average values from 2000 through 2019; added first-of-month date labels; values and ppm units unchanged.",
+  "example_start": "2019-01-01",
+  "horizon_months": 12,
+  "history_months": 120
+}

@@ -1,0 +1,38 @@
+{
+  "seed": 20261112,
+  "historical_experiments": 20,
+  "proposed_experiments": 15,
+  "daily_periods": 731,
+  "backtest_origins": 60,
+  "history_days": 365,
+  "forecast_horizon": 30,
+  "timezone": "Source-dependent; see ab_timezone and forecast_date_basis",
+  "currency": "GBP",
+  "assignment": "unique visitor; one binary purchase per visitor",
+  "forecast_series": "Capital Bikeshare daily rentals",
+  "report_style": "Individually authored multilingual analyst notes; varied detail; some values derive from totals or durations",
+  "suite_version": 4,
+  "model_cases": 347,
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de"
+  ],
+  "chart_generator": "Plotly",
+  "extension_seed": 20261114,
+  "real_forecast_source": "https://doi.org/10.24432/C5W894",
+  "estimation_history": 10,
+  "ab_timezone": "UTC",
+  "forecast_date_basis": "Original daily dataset dates; no timezone conversion",
+  "arithmetic_routes": [
+    "direct",
+    "one_shot",
+    "two_stage"
+  ],
+  "forecast_options": [
+    "summer_rentals_30_days",
+    "spring_rentals_30_days",
+    "co2_12_months"
+  ]
+}

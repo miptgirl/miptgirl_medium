@@ -1,0 +1,107 @@
+[
+  {
+    "experiment_id": "IDEA-01",
+    "experiment_type": "UI changes",
+    "device": "mobile",
+    "market": "Germany",
+    "description": "Remove an unnecessary purchase step."
+  },
+  {
+    "experiment_id": "IDEA-02",
+    "experiment_type": "UI changes",
+    "device": "desktop",
+    "market": "UK",
+    "description": "Require an extra confirmation before purchase."
+  },
+  {
+    "experiment_id": "IDEA-03",
+    "experiment_type": "UI changes",
+    "device": "mobile",
+    "market": "UK",
+    "description": "Remove an unnecessary purchase step."
+  },
+  {
+    "experiment_id": "IDEA-04",
+    "experiment_type": "UI changes",
+    "device": "desktop",
+    "market": "Germany",
+    "description": "Require an extra confirmation before purchase."
+  },
+  {
+    "experiment_id": "IDEA-05",
+    "experiment_type": "UI changes",
+    "device": "mobile",
+    "market": "Germany",
+    "description": "Remove an unnecessary purchase step."
+  },
+  {
+    "experiment_id": "IDEA-06",
+    "experiment_type": "Performance improvements",
+    "device": "mobile",
+    "market": "Germany",
+    "description": "Reduce product-page loading time without changing the page content."
+  },
+  {
+    "experiment_id": "IDEA-07",
+    "experiment_type": "Performance improvements",
+    "device": "desktop",
+    "market": "UK",
+    "description": "Reduce product-page loading time without changing the page content."
+  },
+  {
+    "experiment_id": "IDEA-08",
+    "experiment_type": "Performance improvements",
+    "device": "mobile",
+    "market": "UK",
+    "description": "Reduce product-page loading time without changing the page content."
+  },
+  {
+    "experiment_id": "IDEA-09",
+    "experiment_type": "Performance improvements",
+    "device": "desktop",
+    "market": "Germany",
+    "description": "Reduce product-page loading time without changing the page content."
+  },
+  {
+    "experiment_id": "IDEA-10",
+    "experiment_type": "Performance improvements",
+    "device": "mobile",
+    "market": "Germany",
+    "description": "Reduce product-page loading time without changing the page content."
+  },
+  {
+    "experiment_id": "IDEA-11",
+    "experiment_type": "Bug fixes",
+    "device": "mobile",
+    "market": "Germany",
+    "description": "Fix a rare checkout validation error without changing the normal flow."
+  },
+  {
+    "experiment_id": "IDEA-12",
+    "experiment_type": "Bug fixes",
+    "device": "desktop",
+    "market": "UK",
+    "description": "Fix a rare checkout validation error without changing the normal flow."
+  },
+  {
+    "experiment_id": "IDEA-13",
+    "experiment_type": "Bug fixes",
+    "device": "mobile",
+    "market": "UK",
+    "description": "Fix a rare checkout validation error without changing the normal flow."
+  },
+  {
+    "experiment_id": "IDEA-14",
+    "experiment_type": "Bug fixes",
+    "device": "desktop",
+    "market": "Germany",
+    "description": "Fix a rare checkout validation error without changing the normal flow."
+  },
+  {
+    "experiment_id": "IDEA-15",
+    "experiment_type": "Bug fixes",
+    "device": "mobile",
+    "market": "Germany",
+    "description": "Fix a rare checkout validation error without changing the normal flow."
+  }
+]

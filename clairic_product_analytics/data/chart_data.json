@@ -1,0 +1,2067 @@
+{
+  "EXP-001": {
+    "experiment_id": "EXP-001",
+    "experiment_type": "Search",
+    "start_date": "2026-01-05",
+    "end_date": "2026-01-25",
+    "better_option": "equal",
+    "control_visitors": 59106,
+    "control_orders": 1585,
+    "control_cvr_pct": 2.68,
+    "control_ci_low_pct": 2.55,
+    "control_ci_high_pct": 2.81,
+    "treatment_visitors": 59117,
+    "treatment_orders": 1543,
+    "treatment_cvr_pct": 2.61,
+    "treatment_ci_low_pct": 2.48,
+    "treatment_ci_high_pct": 2.74,
+    "relative_uplift_pct": -2.67,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-01-05",
+        "A": 2606,
+        "B": 2715
+      },
+      {
+        "date": "2026-01-06",
+        "A": 2684,
+        "B": 2542
+      },
+      {
+        "date": "2026-01-07",
+        "A": 2674,
+        "B": 2679
+      },
+      {
+        "date": "2026-01-08",
+        "A": 2737,
+        "B": 2592
+      },
+      {
+        "date": "2026-01-09",
+        "A": 2692,
+        "B": 2677
+      },
+      {
+        "date": "2026-01-10",
+        "A": 3124,
+        "B": 3208
+      },
+      {
+        "date": "2026-01-11",
+        "A": 3090,
+        "B": 3173
+      },
+      {
+        "date": "2026-01-12",
+        "A": 2663,
+        "B": 2637
+      },
+      {
+        "date": "2026-01-13",
+        "A": 2666,
+        "B": 2625
+      },
+      {
+        "date": "2026-01-14",
+        "A": 2748,
+        "B": 2763
+      },
+      {
+        "date": "2026-01-15",
+        "A": 2641,
+        "B": 2623
+      },
+      {
+        "date": "2026-01-16",
+        "A": 2683,
+        "B": 2698
+      },
+      {
+        "date": "2026-01-17",
+        "A": 3195,
+        "B": 3165
+      },
+      {
+        "date": "2026-01-18",
+        "A": 3146,
+        "B": 3186
+      },
+      {
+        "date": "2026-01-19",
+        "A": 2636,
+        "B": 2596
+      },
+      {
+        "date": "2026-01-20",
+        "A": 2751,
+        "B": 2664
+      },
+      {
+        "date": "2026-01-21",
+        "A": 2623,
+        "B": 2717
+      },
+      {
+        "date": "2026-01-22",
+        "A": 2694,
+        "B": 2691
+      },
+      {
+        "date": "2026-01-23",
+        "A": 2632,
+        "B": 2682
+      },
+      {
+        "date": "2026-01-24",
+        "A": 3213,
+        "B": 3258
+      },
+      {
+        "date": "2026-01-25",
+        "A": 3208,
+        "B": 3226
+      }
+    ]
+  },
+  "EXP-002": {
+    "experiment_id": "EXP-002",
+    "experiment_type": "Discovery",
+    "start_date": "2026-01-17",
+    "end_date": "2026-01-30",
+    "better_option": "equal",
+    "control_visitors": 42546,
+    "control_orders": 1548,
+    "control_cvr_pct": 3.64,
+    "control_ci_low_pct": 3.46,
+    "control_ci_high_pct": 3.82,
+    "treatment_visitors": 42558,
+    "treatment_orders": 1525,
+    "treatment_cvr_pct": 3.58,
+    "treatment_ci_low_pct": 3.41,
+    "treatment_ci_high_pct": 3.76,
+    "relative_uplift_pct": -1.51,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-01-17",
+        "A": 3473,
+        "B": 3428
+      },
+      {
+        "date": "2026-01-18",
+        "A": 3526,
+        "B": 3499
+      },
+      {
+        "date": "2026-01-19",
+        "A": 2837,
+        "B": 2849
+      },
+      {
+        "date": "2026-01-20",
+        "A": 2853,
+        "B": 2829
+      },
+      {
+        "date": "2026-01-21",
+        "A": 2788,
+        "B": 2840
+      },
+      {
+        "date": "2026-01-22",
+        "A": 2922,
+        "B": 2949
+      },
+      {
+        "date": "2026-01-23",
+        "A": 2865,
+        "B": 2887
+      },
+      {
+        "date": "2026-01-24",
+        "A": 3451,
+        "B": 3451
+      },
+      {
+        "date": "2026-01-25",
+        "A": 3426,
+        "B": 3392
+      },
+      {
+        "date": "2026-01-26",
+        "A": 2908,
+        "B": 2899
+      },
+      {
+        "date": "2026-01-27",
+        "A": 2892,
+        "B": 2916
+      },
+      {
+        "date": "2026-01-28",
+        "A": 2856,
+        "B": 2892
+      },
+      {
+        "date": "2026-01-29",
+        "A": 2928,
+        "B": 2851
+      },
+      {
+        "date": "2026-01-30",
+        "A": 2821,
+        "B": 2876
+      }
+    ]
+  },
+  "EXP-003": {
+    "experiment_id": "EXP-003",
+    "experiment_type": "Product detail",
+    "start_date": "2026-01-29",
+    "end_date": "2026-02-11",
+    "better_option": "B",
+    "control_visitors": 47051,
+    "control_orders": 1165,
+    "control_cvr_pct": 2.48,
+    "control_ci_low_pct": 2.34,
+    "control_ci_high_pct": 2.62,
+    "treatment_visitors": 46989,
+    "treatment_orders": 1297,
+    "treatment_cvr_pct": 2.76,
+    "treatment_ci_low_pct": 2.62,
+    "treatment_ci_high_pct": 2.91,
+    "relative_uplift_pct": 11.48,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-01-29",
+        "A": 3088,
+        "B": 3257
+      },
+      {
+        "date": "2026-01-30",
+        "A": 3124,
+        "B": 3145
+      },
+      {
+        "date": "2026-01-31",
+        "A": 3807,
+        "B": 3794
+      },
+      {
+        "date": "2026-02-01",
+        "A": 3931,
+        "B": 3768
+      },
+      {
+        "date": "2026-02-02",
+        "A": 3272,
+        "B": 3149
+      },
+      {
+        "date": "2026-02-03",
+        "A": 3162,
+        "B": 3205
+      },
+      {
+        "date": "2026-02-04",
+        "A": 3271,
+        "B": 3181
+      },
+      {
+        "date": "2026-02-05",
+        "A": 3225,
+        "B": 3162
+      },
+      {
+        "date": "2026-02-06",
+        "A": 3095,
+        "B": 3161
+      },
+      {
+        "date": "2026-02-07",
+        "A": 3764,
+        "B": 3780
+      },
+      {
+        "date": "2026-02-08",
+        "A": 3791,
+        "B": 3831
+      },
+      {
+        "date": "2026-02-09",
+        "A": 3145,
+        "B": 3307
+      },
+      {
+        "date": "2026-02-10",
+        "A": 3220,
+        "B": 3095
+      },
+      {
+        "date": "2026-02-11",
+        "A": 3156,
+        "B": 3154
+      }
+    ]
+  },
+  "EXP-004": {
+    "experiment_id": "EXP-004",
+    "experiment_type": "Pricing",
+    "start_date": "2026-02-10",
+    "end_date": "2026-03-02",
+    "better_option": "B",
+    "control_visitors": 32624,
+    "control_orders": 1048,
+    "control_cvr_pct": 3.21,
+    "control_ci_low_pct": 3.03,
+    "control_ci_high_pct": 3.41,
+    "treatment_visitors": 32702,
+    "treatment_orders": 1183,
+    "treatment_cvr_pct": 3.62,
+    "treatment_ci_low_pct": 3.42,
+    "treatment_ci_high_pct": 3.83,
+    "relative_uplift_pct": 12.61,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-02-10",
+        "A": 1456,
+        "B": 1457
+      },
+      {
+        "date": "2026-02-11",
+        "A": 1463,
+        "B": 1507
+      },
+      {
+        "date": "2026-02-12",
+        "A": 1468,
+        "B": 1429
+      },
+      {
+        "date": "2026-02-13",
+        "A": 1477,
+        "B": 1479
+      },
+      {
+        "date": "2026-02-14",
+        "A": 1764,
+        "B": 1751
+      },
+      {
+        "date": "2026-02-15",
+        "A": 1741,
+        "B": 1732
+      },
+      {
+        "date": "2026-02-16",
+        "A": 1486,
+        "B": 1498
+      },
+      {
+        "date": "2026-02-17",
+        "A": 1490,
+        "B": 1497
+      },
+      {
+        "date": "2026-02-18",
+        "A": 1451,
+        "B": 1511
+      },
+      {
+        "date": "2026-02-19",
+        "A": 1515,
+        "B": 1479
+      },
+      {
+        "date": "2026-02-20",
+        "A": 1487,
+        "B": 1390
+      },
+      {
+        "date": "2026-02-21",
+        "A": 1840,
+        "B": 1857
+      },
+      {
+        "date": "2026-02-22",
+        "A": 1759,
+        "B": 1805
+      },
+      {
+        "date": "2026-02-23",
+        "A": 1445,
+        "B": 1501
+      },
+      {
+        "date": "2026-02-24",
+        "A": 1478,
+        "B": 1516
+      },
+      {
+        "date": "2026-02-25",
+        "A": 1377,
+        "B": 1502
+      },
+      {
+        "date": "2026-02-26",
+        "A": 1414,
+        "B": 1517
+      },
+      {
+        "date": "2026-02-27",
+        "A": 1443,
+        "B": 1457
+      },
+      {
+        "date": "2026-02-28",
+        "A": 1789,
+        "B": 1734
+      },
+      {
+        "date": "2026-03-01",
+        "A": 1780,
+        "B": 1689
+      },
+      {
+        "date": "2026-03-02",
+        "A": 1501,
+        "B": 1394
+      }
+    ]
+  },
+  "EXP-005": {
+    "experiment_id": "EXP-005",
+    "experiment_type": "Delivery",
+    "start_date": "2026-02-22",
+    "end_date": "2026-03-07",
+    "better_option": "equal",
+    "control_visitors": 48761,
+    "control_orders": 1436,
+    "control_cvr_pct": 2.94,
+    "control_ci_low_pct": 2.8,
+    "control_ci_high_pct": 3.1,
+    "treatment_visitors": 48836,
+    "treatment_orders": 1421,
+    "treatment_cvr_pct": 2.91,
+    "treatment_ci_low_pct": 2.76,
+    "treatment_ci_high_pct": 3.06,
+    "relative_uplift_pct": -1.2,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-02-22",
+        "A": 3913,
+        "B": 3885
+      },
+      {
+        "date": "2026-02-23",
+        "A": 3313,
+        "B": 3330
+      },
+      {
+        "date": "2026-02-24",
+        "A": 3275,
+        "B": 3272
+      },
+      {
+        "date": "2026-02-25",
+        "A": 3320,
+        "B": 3288
+      },
+      {
+        "date": "2026-02-26",
+        "A": 3300,
+        "B": 3242
+      },
+      {
+        "date": "2026-02-27",
+        "A": 3276,
+        "B": 3224
+      },
+      {
+        "date": "2026-02-28",
+        "A": 3946,
+        "B": 3942
+      },
+      {
+        "date": "2026-03-01",
+        "A": 4032,
+        "B": 3926
+      },
+      {
+        "date": "2026-03-02",
+        "A": 3334,
+        "B": 3384
+      },
+      {
+        "date": "2026-03-03",
+        "A": 3251,
+        "B": 3361
+      },
+      {
+        "date": "2026-03-04",
+        "A": 3285,
+        "B": 3341
+      },
+      {
+        "date": "2026-03-05",
+        "A": 3269,
+        "B": 3371
+      },
+      {
+        "date": "2026-03-06",
+        "A": 3318,
+        "B": 3287
+      },
+      {
+        "date": "2026-03-07",
+        "A": 3929,
+        "B": 3983
+      }
+    ]
+  },
+  "EXP-006": {
+    "experiment_id": "EXP-006",
+    "experiment_type": "Checkout",
+    "start_date": "2026-03-06",
+    "end_date": "2026-03-19",
+    "better_option": "B",
+    "control_visitors": 47735,
+    "control_orders": 2507,
+    "control_cvr_pct": 5.25,
+    "control_ci_low_pct": 5.06,
+    "control_ci_high_pct": 5.46,
+    "treatment_visitors": 47874,
+    "treatment_orders": 2767,
+    "treatment_cvr_pct": 5.78,
+    "treatment_ci_low_pct": 5.57,
+    "treatment_ci_high_pct": 5.99,
+    "relative_uplift_pct": 10.05,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-03-06",
+        "A": 3302,
+        "B": 3244
+      },
+      {
+        "date": "2026-03-07",
+        "A": 3886,
+        "B": 3872
+      },
+      {
+        "date": "2026-03-08",
+        "A": 3780,
+        "B": 3851
+      },
+      {
+        "date": "2026-03-09",
+        "A": 3205,
+        "B": 3261
+      },
+      {
+        "date": "2026-03-10",
+        "A": 3297,
+        "B": 3306
+      },
+      {
+        "date": "2026-03-11",
+        "A": 3184,
+        "B": 3141
+      },
+      {
+        "date": "2026-03-12",
+        "A": 3201,
+        "B": 3241
+      },
+      {
+        "date": "2026-03-13",
+        "A": 3191,
+        "B": 3252
+      },
+      {
+        "date": "2026-03-14",
+        "A": 3855,
+        "B": 3876
+      },
+      {
+        "date": "2026-03-15",
+        "A": 3849,
+        "B": 3835
+      },
+      {
+        "date": "2026-03-16",
+        "A": 3189,
+        "B": 3253
+      },
+      {
+        "date": "2026-03-17",
+        "A": 3237,
+        "B": 3281
+      },
+      {
+        "date": "2026-03-18",
+        "A": 3332,
+        "B": 3214
+      },
+      {
+        "date": "2026-03-19",
+        "A": 3227,
+        "B": 3247
+      }
+    ]
+  },
+  "EXP-007": {
+    "experiment_id": "EXP-007",
+    "experiment_type": "Payments",
+    "start_date": "2026-03-18",
+    "end_date": "2026-04-07",
+    "better_option": "equal",
+    "control_visitors": 30826,
+    "control_orders": 1077,
+    "control_cvr_pct": 3.49,
+    "control_ci_low_pct": 3.29,
+    "control_ci_high_pct": 3.7,
+    "treatment_visitors": 30972,
+    "treatment_orders": 1000,
+    "treatment_cvr_pct": 3.23,
+    "treatment_ci_low_pct": 3.04,
+    "treatment_ci_high_pct": 3.43,
+    "relative_uplift_pct": -7.59,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-03-18",
+        "A": 1415,
+        "B": 1328
+      },
+      {
+        "date": "2026-03-19",
+        "A": 1361,
+        "B": 1486
+      },
+      {
+        "date": "2026-03-20",
+        "A": 1411,
+        "B": 1378
+      },
+      {
+        "date": "2026-03-21",
+        "A": 1657,
+        "B": 1690
+      },
+      {
+        "date": "2026-03-22",
+        "A": 1622,
+        "B": 1667
+      },
+      {
+        "date": "2026-03-23",
+        "A": 1374,
+        "B": 1335
+      },
+      {
+        "date": "2026-03-24",
+        "A": 1360,
+        "B": 1312
+      },
+      {
+        "date": "2026-03-25",
+        "A": 1398,
+        "B": 1368
+      },
+      {
+        "date": "2026-03-26",
+        "A": 1408,
+        "B": 1427
+      },
+      {
+        "date": "2026-03-27",
+        "A": 1370,
+        "B": 1430
+      },
+      {
+        "date": "2026-03-28",
+        "A": 1640,
+        "B": 1697
+      },
+      {
+        "date": "2026-03-29",
+        "A": 1700,
+        "B": 1694
+      },
+      {
+        "date": "2026-03-30",
+        "A": 1369,
+        "B": 1443
+      },
+      {
+        "date": "2026-03-31",
+        "A": 1418,
+        "B": 1424
+      },
+      {
+        "date": "2026-04-01",
+        "A": 1365,
+        "B": 1360
+      },
+      {
+        "date": "2026-04-02",
+        "A": 1409,
+        "B": 1367
+      },
+      {
+        "date": "2026-04-03",
+        "A": 1427,
+        "B": 1379
+      },
+      {
+        "date": "2026-04-04",
+        "A": 1683,
+        "B": 1697
+      },
+      {
+        "date": "2026-04-05",
+        "A": 1635,
+        "B": 1683
+      },
+      {
+        "date": "2026-04-06",
+        "A": 1412,
+        "B": 1425
+      },
+      {
+        "date": "2026-04-07",
+        "A": 1392,
+        "B": 1382
+      }
+    ]
+  },
+  "EXP-008": {
+    "experiment_id": "EXP-008",
+    "experiment_type": "Retention",
+    "start_date": "2026-03-30",
+    "end_date": "2026-04-12",
+    "better_option": "A",
+    "control_visitors": 60424,
+    "control_orders": 2340,
+    "control_cvr_pct": 3.87,
+    "control_ci_low_pct": 3.72,
+    "control_ci_high_pct": 4.03,
+    "treatment_visitors": 60512,
+    "treatment_orders": 2128,
+    "treatment_cvr_pct": 3.52,
+    "treatment_ci_low_pct": 3.37,
+    "treatment_ci_high_pct": 3.67,
+    "relative_uplift_pct": -9.19,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-03-30",
+        "A": 4141,
+        "B": 4127
+      },
+      {
+        "date": "2026-03-31",
+        "A": 4098,
+        "B": 4233
+      },
+      {
+        "date": "2026-04-01",
+        "A": 4198,
+        "B": 4120
+      },
+      {
+        "date": "2026-04-02",
+        "A": 4184,
+        "B": 4054
+      },
+      {
+        "date": "2026-04-03",
+        "A": 4095,
+        "B": 4159
+      },
+      {
+        "date": "2026-04-04",
+        "A": 4822,
+        "B": 4961
+      },
+      {
+        "date": "2026-04-05",
+        "A": 4884,
+        "B": 4793
+      },
+      {
+        "date": "2026-04-06",
+        "A": 4127,
+        "B": 4056
+      },
+      {
+        "date": "2026-04-07",
+        "A": 4021,
+        "B": 4172
+      },
+      {
+        "date": "2026-04-08",
+        "A": 4062,
+        "B": 4021
+      },
+      {
+        "date": "2026-04-09",
+        "A": 4094,
+        "B": 4071
+      },
+      {
+        "date": "2026-04-10",
+        "A": 4012,
+        "B": 4055
+      },
+      {
+        "date": "2026-04-11",
+        "A": 4927,
+        "B": 4801
+      },
+      {
+        "date": "2026-04-12",
+        "A": 4759,
+        "B": 4889
+      }
+    ]
+  },
+  "EXP-009": {
+    "experiment_id": "EXP-009",
+    "experiment_type": "Performance",
+    "start_date": "2026-04-11",
+    "end_date": "2026-04-24",
+    "better_option": "B",
+    "control_visitors": 27126,
+    "control_orders": 1141,
+    "control_cvr_pct": 4.21,
+    "control_ci_low_pct": 3.97,
+    "control_ci_high_pct": 4.45,
+    "treatment_visitors": 27104,
+    "treatment_orders": 1257,
+    "treatment_cvr_pct": 4.64,
+    "treatment_ci_low_pct": 4.39,
+    "treatment_ci_high_pct": 4.89,
+    "relative_uplift_pct": 10.26,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-04-11",
+        "A": 2239,
+        "B": 2122
+      },
+      {
+        "date": "2026-04-12",
+        "A": 2237,
+        "B": 2198
+      },
+      {
+        "date": "2026-04-13",
+        "A": 1855,
+        "B": 1792
+      },
+      {
+        "date": "2026-04-14",
+        "A": 1815,
+        "B": 1928
+      },
+      {
+        "date": "2026-04-15",
+        "A": 1868,
+        "B": 1857
+      },
+      {
+        "date": "2026-04-16",
+        "A": 1805,
+        "B": 1871
+      },
+      {
+        "date": "2026-04-17",
+        "A": 1878,
+        "B": 1911
+      },
+      {
+        "date": "2026-04-18",
+        "A": 2155,
+        "B": 2172
+      },
+      {
+        "date": "2026-04-19",
+        "A": 2266,
+        "B": 2170
+      },
+      {
+        "date": "2026-04-20",
+        "A": 1868,
+        "B": 1884
+      },
+      {
+        "date": "2026-04-21",
+        "A": 1786,
+        "B": 1834
+      },
+      {
+        "date": "2026-04-22",
+        "A": 1853,
+        "B": 1792
+      },
+      {
+        "date": "2026-04-23",
+        "A": 1717,
+        "B": 1714
+      },
+      {
+        "date": "2026-04-24",
+        "A": 1784,
+        "B": 1859
+      }
+    ]
+  },
+  "EXP-010": {
+    "experiment_id": "EXP-010",
+    "experiment_type": "Trust",
+    "start_date": "2026-04-23",
+    "end_date": "2026-05-13",
+    "better_option": "A",
+    "control_visitors": 53432,
+    "control_orders": 2190,
+    "control_cvr_pct": 4.1,
+    "control_ci_low_pct": 3.93,
+    "control_ci_high_pct": 4.27,
+    "treatment_visitors": 53344,
+    "treatment_orders": 2022,
+    "treatment_cvr_pct": 3.79,
+    "treatment_ci_low_pct": 3.63,
+    "treatment_ci_high_pct": 3.96,
+    "relative_uplift_pct": -7.52,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-04-23",
+        "A": 2485,
+        "B": 2393
+      },
+      {
+        "date": "2026-04-24",
+        "A": 2438,
+        "B": 2446
+      },
+      {
+        "date": "2026-04-25",
+        "A": 2916,
+        "B": 2887
+      },
+      {
+        "date": "2026-04-26",
+        "A": 2810,
+        "B": 2910
+      },
+      {
+        "date": "2026-04-27",
+        "A": 2463,
+        "B": 2383
+      },
+      {
+        "date": "2026-04-28",
+        "A": 2412,
+        "B": 2495
+      },
+      {
+        "date": "2026-04-29",
+        "A": 2391,
+        "B": 2386
+      },
+      {
+        "date": "2026-04-30",
+        "A": 2345,
+        "B": 2381
+      },
+      {
+        "date": "2026-05-01",
+        "A": 2378,
+        "B": 2336
+      },
+      {
+        "date": "2026-05-02",
+        "A": 2802,
+        "B": 2846
+      },
+      {
+        "date": "2026-05-03",
+        "A": 2903,
+        "B": 2828
+      },
+      {
+        "date": "2026-05-04",
+        "A": 2452,
+        "B": 2386
+      },
+      {
+        "date": "2026-05-05",
+        "A": 2487,
+        "B": 2360
+      },
+      {
+        "date": "2026-05-06",
+        "A": 2385,
+        "B": 2467
+      },
+      {
+        "date": "2026-05-07",
+        "A": 2488,
+        "B": 2457
+      },
+      {
+        "date": "2026-05-08",
+        "A": 2370,
+        "B": 2420
+      },
+      {
+        "date": "2026-05-09",
+        "A": 2814,
+        "B": 2914
+      },
+      {
+        "date": "2026-05-10",
+        "A": 2876,
+        "B": 2779
+      },
+      {
+        "date": "2026-05-11",
+        "A": 2414,
+        "B": 2429
+      },
+      {
+        "date": "2026-05-12",
+        "A": 2411,
+        "B": 2421
+      },
+      {
+        "date": "2026-05-13",
+        "A": 2392,
+        "B": 2420
+      }
+    ]
+  },
+  "EXP-011": {
+    "experiment_id": "EXP-011",
+    "experiment_type": "Search",
+    "start_date": "2026-05-05",
+    "end_date": "2026-05-18",
+    "better_option": "equal",
+    "control_visitors": 56654,
+    "control_orders": 2457,
+    "control_cvr_pct": 4.34,
+    "control_ci_low_pct": 4.17,
+    "control_ci_high_pct": 4.51,
+    "treatment_visitors": 56632,
+    "treatment_orders": 2515,
+    "treatment_cvr_pct": 4.44,
+    "treatment_ci_low_pct": 4.27,
+    "treatment_ci_high_pct": 4.61,
+    "relative_uplift_pct": 2.4,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-05-05",
+        "A": 3806,
+        "B": 3848
+      },
+      {
+        "date": "2026-05-06",
+        "A": 3804,
+        "B": 3902
+      },
+      {
+        "date": "2026-05-07",
+        "A": 4026,
+        "B": 3780
+      },
+      {
+        "date": "2026-05-08",
+        "A": 3856,
+        "B": 3833
+      },
+      {
+        "date": "2026-05-09",
+        "A": 4482,
+        "B": 4536
+      },
+      {
+        "date": "2026-05-10",
+        "A": 4546,
+        "B": 4542
+      },
+      {
+        "date": "2026-05-11",
+        "A": 3772,
+        "B": 3884
+      },
+      {
+        "date": "2026-05-12",
+        "A": 3804,
+        "B": 3920
+      },
+      {
+        "date": "2026-05-13",
+        "A": 3866,
+        "B": 3819
+      },
+      {
+        "date": "2026-05-14",
+        "A": 3847,
+        "B": 3798
+      },
+      {
+        "date": "2026-05-15",
+        "A": 3833,
+        "B": 3804
+      },
+      {
+        "date": "2026-05-16",
+        "A": 4537,
+        "B": 4523
+      },
+      {
+        "date": "2026-05-17",
+        "A": 4555,
+        "B": 4571
+      },
+      {
+        "date": "2026-05-18",
+        "A": 3920,
+        "B": 3872
+      }
+    ]
+  },
+  "EXP-012": {
+    "experiment_id": "EXP-012",
+    "experiment_type": "Discovery",
+    "start_date": "2026-05-17",
+    "end_date": "2026-05-30",
+    "better_option": "B",
+    "control_visitors": 56884,
+    "control_orders": 2185,
+    "control_cvr_pct": 3.84,
+    "control_ci_low_pct": 3.69,
+    "control_ci_high_pct": 4.0,
+    "treatment_visitors": 57007,
+    "treatment_orders": 2519,
+    "treatment_cvr_pct": 4.42,
+    "treatment_ci_low_pct": 4.25,
+    "treatment_ci_high_pct": 4.59,
+    "relative_uplift_pct": 15.04,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-05-17",
+        "A": 4589,
+        "B": 4717
+      },
+      {
+        "date": "2026-05-18",
+        "A": 3893,
+        "B": 3787
+      },
+      {
+        "date": "2026-05-19",
+        "A": 3805,
+        "B": 3834
+      },
+      {
+        "date": "2026-05-20",
+        "A": 3786,
+        "B": 3962
+      },
+      {
+        "date": "2026-05-21",
+        "A": 3866,
+        "B": 3810
+      },
+      {
+        "date": "2026-05-22",
+        "A": 3809,
+        "B": 3829
+      },
+      {
+        "date": "2026-05-23",
+        "A": 4636,
+        "B": 4589
+      },
+      {
+        "date": "2026-05-24",
+        "A": 4573,
+        "B": 4535
+      },
+      {
+        "date": "2026-05-25",
+        "A": 3834,
+        "B": 3888
+      },
+      {
+        "date": "2026-05-26",
+        "A": 3848,
+        "B": 3854
+      },
+      {
+        "date": "2026-05-27",
+        "A": 3850,
+        "B": 3909
+      },
+      {
+        "date": "2026-05-28",
+        "A": 3982,
+        "B": 3875
+      },
+      {
+        "date": "2026-05-29",
+        "A": 3828,
+        "B": 3861
+      },
+      {
+        "date": "2026-05-30",
+        "A": 4585,
+        "B": 4557
+      }
+    ]
+  },
+  "EXP-013": {
+    "experiment_id": "EXP-013",
+    "experiment_type": "Product detail",
+    "start_date": "2026-05-29",
+    "end_date": "2026-06-18",
+    "better_option": "B",
+    "control_visitors": 57015,
+    "control_orders": 2875,
+    "control_cvr_pct": 5.04,
+    "control_ci_low_pct": 4.87,
+    "control_ci_high_pct": 5.23,
+    "treatment_visitors": 57084,
+    "treatment_orders": 3103,
+    "treatment_cvr_pct": 5.44,
+    "treatment_ci_low_pct": 5.25,
+    "treatment_ci_high_pct": 5.62,
+    "relative_uplift_pct": 7.8,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-05-29",
+        "A": 2597,
+        "B": 2673
+      },
+      {
+        "date": "2026-05-30",
+        "A": 3043,
+        "B": 3030
+      },
+      {
+        "date": "2026-05-31",
+        "A": 3062,
+        "B": 3076
+      },
+      {
+        "date": "2026-06-01",
+        "A": 2653,
+        "B": 2607
+      },
+      {
+        "date": "2026-06-02",
+        "A": 2573,
+        "B": 2563
+      },
+      {
+        "date": "2026-06-03",
+        "A": 2531,
+        "B": 2480
+      },
+      {
+        "date": "2026-06-04",
+        "A": 2621,
+        "B": 2545
+      },
+      {
+        "date": "2026-06-05",
+        "A": 2622,
+        "B": 2535
+      },
+      {
+        "date": "2026-06-06",
+        "A": 3041,
+        "B": 3113
+      },
+      {
+        "date": "2026-06-07",
+        "A": 2916,
+        "B": 3010
+      },
+      {
+        "date": "2026-06-08",
+        "A": 2610,
+        "B": 2633
+      },
+      {
+        "date": "2026-06-09",
+        "A": 2574,
+        "B": 2598
+      },
+      {
+        "date": "2026-06-10",
+        "A": 2536,
+        "B": 2597
+      },
+      {
+        "date": "2026-06-11",
+        "A": 2520,
+        "B": 2596
+      },
+      {
+        "date": "2026-06-12",
+        "A": 2579,
+        "B": 2596
+      },
+      {
+        "date": "2026-06-13",
+        "A": 3084,
+        "B": 3060
+      },
+      {
+        "date": "2026-06-14",
+        "A": 3142,
+        "B": 3014
+      },
+      {
+        "date": "2026-06-15",
+        "A": 2590,
+        "B": 2574
+      },
+      {
+        "date": "2026-06-16",
+        "A": 2527,
+        "B": 2617
+      },
+      {
+        "date": "2026-06-17",
+        "A": 2583,
+        "B": 2595
+      },
+      {
+        "date": "2026-06-18",
+        "A": 2611,
+        "B": 2572
+      }
+    ]
+  },
+  "EXP-014": {
+    "experiment_id": "EXP-014",
+    "experiment_type": "Pricing",
+    "start_date": "2026-06-10",
+    "end_date": "2026-06-23",
+    "better_option": "B",
+    "control_visitors": 24519,
+    "control_orders": 1097,
+    "control_cvr_pct": 4.47,
+    "control_ci_low_pct": 4.22,
+    "control_ci_high_pct": 4.74,
+    "treatment_visitors": 24394,
+    "treatment_orders": 1259,
+    "treatment_cvr_pct": 5.16,
+    "treatment_ci_low_pct": 4.89,
+    "treatment_ci_high_pct": 5.45,
+    "relative_uplift_pct": 15.36,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-06-10",
+        "A": 1635,
+        "B": 1665
+      },
+      {
+        "date": "2026-06-11",
+        "A": 1657,
+        "B": 1672
+      },
+      {
+        "date": "2026-06-12",
+        "A": 1633,
+        "B": 1621
+      },
+      {
+        "date": "2026-06-13",
+        "A": 2002,
+        "B": 1974
+      },
+      {
+        "date": "2026-06-14",
+        "A": 2018,
+        "B": 1937
+      },
+      {
+        "date": "2026-06-15",
+        "A": 1647,
+        "B": 1691
+      },
+      {
+        "date": "2026-06-16",
+        "A": 1729,
+        "B": 1578
+      },
+      {
+        "date": "2026-06-17",
+        "A": 1630,
+        "B": 1658
+      },
+      {
+        "date": "2026-06-18",
+        "A": 1666,
+        "B": 1635
+      },
+      {
+        "date": "2026-06-19",
+        "A": 1630,
+        "B": 1708
+      },
+      {
+        "date": "2026-06-20",
+        "A": 1969,
+        "B": 1953
+      },
+      {
+        "date": "2026-06-21",
+        "A": 2058,
+        "B": 1926
+      },
+      {
+        "date": "2026-06-22",
+        "A": 1641,
+        "B": 1707
+      },
+      {
+        "date": "2026-06-23",
+        "A": 1604,
+        "B": 1669
+      }
+    ]
+  },
+  "EXP-015": {
+    "experiment_id": "EXP-015",
+    "experiment_type": "Delivery",
+    "start_date": "2026-06-22",
+    "end_date": "2026-07-05",
+    "better_option": "equal",
+    "control_visitors": 36305,
+    "control_orders": 1514,
+    "control_cvr_pct": 4.17,
+    "control_ci_low_pct": 3.97,
+    "control_ci_high_pct": 4.38,
+    "treatment_visitors": 36187,
+    "treatment_orders": 1507,
+    "treatment_cvr_pct": 4.16,
+    "treatment_ci_low_pct": 3.96,
+    "treatment_ci_high_pct": 4.38,
+    "relative_uplift_pct": -0.14,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-06-22",
+        "A": 2402,
+        "B": 2521
+      },
+      {
+        "date": "2026-06-23",
+        "A": 2413,
+        "B": 2390
+      },
+      {
+        "date": "2026-06-24",
+        "A": 2498,
+        "B": 2503
+      },
+      {
+        "date": "2026-06-25",
+        "A": 2460,
+        "B": 2379
+      },
+      {
+        "date": "2026-06-26",
+        "A": 2475,
+        "B": 2563
+      },
+      {
+        "date": "2026-06-27",
+        "A": 2972,
+        "B": 3025
+      },
+      {
+        "date": "2026-06-28",
+        "A": 2943,
+        "B": 2909
+      },
+      {
+        "date": "2026-06-29",
+        "A": 2430,
+        "B": 2408
+      },
+      {
+        "date": "2026-06-30",
+        "A": 2476,
+        "B": 2380
+      },
+      {
+        "date": "2026-07-01",
+        "A": 2445,
+        "B": 2423
+      },
+      {
+        "date": "2026-07-02",
+        "A": 2535,
+        "B": 2469
+      },
+      {
+        "date": "2026-07-03",
+        "A": 2491,
+        "B": 2403
+      },
+      {
+        "date": "2026-07-04",
+        "A": 2838,
+        "B": 2919
+      },
+      {
+        "date": "2026-07-05",
+        "A": 2927,
+        "B": 2895
+      }
+    ]
+  },
+  "EXP-016": {
+    "experiment_id": "EXP-016",
+    "experiment_type": "Checkout",
+    "start_date": "2026-07-04",
+    "end_date": "2026-07-24",
+    "better_option": "equal",
+    "control_visitors": 32938,
+    "control_orders": 1136,
+    "control_cvr_pct": 3.45,
+    "control_ci_low_pct": 3.26,
+    "control_ci_high_pct": 3.65,
+    "treatment_visitors": 33001,
+    "treatment_orders": 1199,
+    "treatment_cvr_pct": 3.63,
+    "treatment_ci_low_pct": 3.44,
+    "treatment_ci_high_pct": 3.84,
+    "relative_uplift_pct": 5.34,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-07-04",
+        "A": 1799,
+        "B": 1740
+      },
+      {
+        "date": "2026-07-05",
+        "A": 1760,
+        "B": 1795
+      },
+      {
+        "date": "2026-07-06",
+        "A": 1441,
+        "B": 1513
+      },
+      {
+        "date": "2026-07-07",
+        "A": 1585,
+        "B": 1516
+      },
+      {
+        "date": "2026-07-08",
+        "A": 1549,
+        "B": 1483
+      },
+      {
+        "date": "2026-07-09",
+        "A": 1471,
+        "B": 1435
+      },
+      {
+        "date": "2026-07-10",
+        "A": 1524,
+        "B": 1501
+      },
+      {
+        "date": "2026-07-11",
+        "A": 1724,
+        "B": 1703
+      },
+      {
+        "date": "2026-07-12",
+        "A": 1782,
+        "B": 1727
+      },
+      {
+        "date": "2026-07-13",
+        "A": 1507,
+        "B": 1550
+      },
+      {
+        "date": "2026-07-14",
+        "A": 1485,
+        "B": 1537
+      },
+      {
+        "date": "2026-07-15",
+        "A": 1484,
+        "B": 1506
+      },
+      {
+        "date": "2026-07-16",
+        "A": 1490,
+        "B": 1573
+      },
+      {
+        "date": "2026-07-17",
+        "A": 1483,
+        "B": 1494
+      },
+      {
+        "date": "2026-07-18",
+        "A": 1803,
+        "B": 1680
+      },
+      {
+        "date": "2026-07-19",
+        "A": 1749,
+        "B": 1797
+      },
+      {
+        "date": "2026-07-20",
+        "A": 1454,
+        "B": 1376
+      },
+      {
+        "date": "2026-07-21",
+        "A": 1445,
+        "B": 1567
+      },
+      {
+        "date": "2026-07-22",
+        "A": 1451,
+        "B": 1535
+      },
+      {
+        "date": "2026-07-23",
+        "A": 1487,
+        "B": 1500
+      },
+      {
+        "date": "2026-07-24",
+        "A": 1465,
+        "B": 1473
+      }
+    ]
+  },
+  "EXP-017": {
+    "experiment_id": "EXP-017",
+    "experiment_type": "Payments",
+    "start_date": "2026-07-16",
+    "end_date": "2026-07-29",
+    "better_option": "equal",
+    "control_visitors": 38935,
+    "control_orders": 1299,
+    "control_cvr_pct": 3.34,
+    "control_ci_low_pct": 3.16,
+    "control_ci_high_pct": 3.52,
+    "treatment_visitors": 39005,
+    "treatment_orders": 1364,
+    "treatment_cvr_pct": 3.5,
+    "treatment_ci_low_pct": 3.32,
+    "treatment_ci_high_pct": 3.68,
+    "relative_uplift_pct": 4.82,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-07-16",
+        "A": 2631,
+        "B": 2638
+      },
+      {
+        "date": "2026-07-17",
+        "A": 2623,
+        "B": 2647
+      },
+      {
+        "date": "2026-07-18",
+        "A": 3229,
+        "B": 3103
+      },
+      {
+        "date": "2026-07-19",
+        "A": 3131,
+        "B": 3124
+      },
+      {
+        "date": "2026-07-20",
+        "A": 2700,
+        "B": 2688
+      },
+      {
+        "date": "2026-07-21",
+        "A": 2648,
+        "B": 2712
+      },
+      {
+        "date": "2026-07-22",
+        "A": 2615,
+        "B": 2565
+      },
+      {
+        "date": "2026-07-23",
+        "A": 2704,
+        "B": 2704
+      },
+      {
+        "date": "2026-07-24",
+        "A": 2605,
+        "B": 2608
+      },
+      {
+        "date": "2026-07-25",
+        "A": 3033,
+        "B": 3157
+      },
+      {
+        "date": "2026-07-26",
+        "A": 3051,
+        "B": 3116
+      },
+      {
+        "date": "2026-07-27",
+        "A": 2688,
+        "B": 2599
+      },
+      {
+        "date": "2026-07-28",
+        "A": 2588,
+        "B": 2691
+      },
+      {
+        "date": "2026-07-29",
+        "A": 2689,
+        "B": 2653
+      }
+    ]
+  },
+  "EXP-018": {
+    "experiment_id": "EXP-018",
+    "experiment_type": "Retention",
+    "start_date": "2026-07-28",
+    "end_date": "2026-08-10",
+    "better_option": "equal",
+    "control_visitors": 61878,
+    "control_orders": 2417,
+    "control_cvr_pct": 3.91,
+    "control_ci_low_pct": 3.76,
+    "control_ci_high_pct": 4.06,
+    "treatment_visitors": 61942,
+    "treatment_orders": 2289,
+    "treatment_cvr_pct": 3.7,
+    "treatment_ci_low_pct": 3.55,
+    "treatment_ci_high_pct": 3.85,
+    "relative_uplift_pct": -5.39,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-07-28",
+        "A": 4225,
+        "B": 4239
+      },
+      {
+        "date": "2026-07-29",
+        "A": 4136,
+        "B": 4227
+      },
+      {
+        "date": "2026-07-30",
+        "A": 4120,
+        "B": 4249
+      },
+      {
+        "date": "2026-07-31",
+        "A": 4139,
+        "B": 4267
+      },
+      {
+        "date": "2026-08-01",
+        "A": 4900,
+        "B": 4980
+      },
+      {
+        "date": "2026-08-02",
+        "A": 5144,
+        "B": 5049
+      },
+      {
+        "date": "2026-08-03",
+        "A": 4224,
+        "B": 4158
+      },
+      {
+        "date": "2026-08-04",
+        "A": 4180,
+        "B": 4199
+      },
+      {
+        "date": "2026-08-05",
+        "A": 4215,
+        "B": 4202
+      },
+      {
+        "date": "2026-08-06",
+        "A": 4147,
+        "B": 4196
+      },
+      {
+        "date": "2026-08-07",
+        "A": 4233,
+        "B": 4121
+      },
+      {
+        "date": "2026-08-08",
+        "A": 5070,
+        "B": 5015
+      },
+      {
+        "date": "2026-08-09",
+        "A": 4920,
+        "B": 5003
+      },
+      {
+        "date": "2026-08-10",
+        "A": 4225,
+        "B": 4037
+      }
+    ]
+  },
+  "EXP-019": {
+    "experiment_id": "EXP-019",
+    "experiment_type": "Performance",
+    "start_date": "2026-08-09",
+    "end_date": "2026-08-29",
+    "better_option": "A",
+    "control_visitors": 57951,
+    "control_orders": 3206,
+    "control_cvr_pct": 5.53,
+    "control_ci_low_pct": 5.35,
+    "control_ci_high_pct": 5.72,
+    "treatment_visitors": 57804,
+    "treatment_orders": 2890,
+    "treatment_cvr_pct": 5.0,
+    "treatment_ci_low_pct": 4.82,
+    "treatment_ci_high_pct": 5.18,
+    "relative_uplift_pct": -9.63,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-08-09",
+        "A": 3168,
+        "B": 3156
+      },
+      {
+        "date": "2026-08-10",
+        "A": 2660,
+        "B": 2622
+      },
+      {
+        "date": "2026-08-11",
+        "A": 2593,
+        "B": 2672
+      },
+      {
+        "date": "2026-08-12",
+        "A": 2595,
+        "B": 2611
+      },
+      {
+        "date": "2026-08-13",
+        "A": 2612,
+        "B": 2585
+      },
+      {
+        "date": "2026-08-14",
+        "A": 2586,
+        "B": 2535
+      },
+      {
+        "date": "2026-08-15",
+        "A": 3137,
+        "B": 3001
+      },
+      {
+        "date": "2026-08-16",
+        "A": 3118,
+        "B": 3125
+      },
+      {
+        "date": "2026-08-17",
+        "A": 2554,
+        "B": 2551
+      },
+      {
+        "date": "2026-08-18",
+        "A": 2694,
+        "B": 2588
+      },
+      {
+        "date": "2026-08-19",
+        "A": 2620,
+        "B": 2614
+      },
+      {
+        "date": "2026-08-20",
+        "A": 2575,
+        "B": 2597
+      },
+      {
+        "date": "2026-08-21",
+        "A": 2658,
+        "B": 2573
+      },
+      {
+        "date": "2026-08-22",
+        "A": 3062,
+        "B": 3243
+      },
+      {
+        "date": "2026-08-23",
+        "A": 3181,
+        "B": 3091
+      },
+      {
+        "date": "2026-08-24",
+        "A": 2573,
+        "B": 2664
+      },
+      {
+        "date": "2026-08-25",
+        "A": 2577,
+        "B": 2644
+      },
+      {
+        "date": "2026-08-26",
+        "A": 2588,
+        "B": 2521
+      },
+      {
+        "date": "2026-08-27",
+        "A": 2632,
+        "B": 2729
+      },
+      {
+        "date": "2026-08-28",
+        "A": 2616,
+        "B": 2546
+      },
+      {
+        "date": "2026-08-29",
+        "A": 3152,
+        "B": 3136
+      }
+    ]
+  },
+  "EXP-020": {
+    "experiment_id": "EXP-020",
+    "experiment_type": "Trust",
+    "start_date": "2026-08-21",
+    "end_date": "2026-09-03",
+    "better_option": "equal",
+    "control_visitors": 24235,
+    "control_orders": 1376,
+    "control_cvr_pct": 5.68,
+    "control_ci_low_pct": 5.39,
+    "control_ci_high_pct": 5.98,
+    "treatment_visitors": 24335,
+    "treatment_orders": 1431,
+    "treatment_cvr_pct": 5.88,
+    "treatment_ci_low_pct": 5.59,
+    "treatment_ci_high_pct": 6.18,
+    "relative_uplift_pct": 3.57,
+    "ci_method": "Wilson 95% per arm; unpooled normal 95% for difference",
+    "daily_assignments": [
+      {
+        "date": "2026-08-21",
+        "A": 1638,
+        "B": 1673
+      },
+      {
+        "date": "2026-08-22",
+        "A": 1970,
+        "B": 1990
+      },
+      {
+        "date": "2026-08-23",
+        "A": 1993,
+        "B": 2004
+      },
+      {
+        "date": "2026-08-24",
+        "A": 1630,
+        "B": 1652
+      },
+      {
+        "date": "2026-08-25",
+        "A": 1651,
+        "B": 1598
+      },
+      {
+        "date": "2026-08-26",
+        "A": 1596,
+        "B": 1636
+      },
+      {
+        "date": "2026-08-27",
+        "A": 1612,
+        "B": 1725
+      },
+      {
+        "date": "2026-08-28",
+        "A": 1776,
+        "B": 1557
+      },
+      {
+        "date": "2026-08-29",
+        "A": 1894,
+        "B": 1916
+      },
+      {
+        "date": "2026-08-30",
+        "A": 1967,
+        "B": 1968
+      },
+      {
+        "date": "2026-08-31",
+        "A": 1619,
+        "B": 1728
+      },
+      {
+        "date": "2026-09-01",
+        "A": 1606,
+        "B": 1652
+      },
+      {
+        "date": "2026-09-02",
+        "A": 1626,
+        "B": 1625
+      },
+      {
+        "date": "2026-09-03",
+        "A": 1657,
+        "B": 1611
+      }
+    ]
+  }
+}
